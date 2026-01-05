@@ -5,5 +5,3 @@ Is it possible to identify and integrate core elements of a psychiatric patient 
 The aim of standardization in FHIR is interoperable data processing of health information. This includes biological measurement data, but more frequently the collection of health information using questionnaires.
 
 The data that is relevant for processing the research question is compiled here.
-
-Translated with DeepL.com (free version)
