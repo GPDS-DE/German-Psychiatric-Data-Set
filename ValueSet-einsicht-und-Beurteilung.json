@@ -1,0 +1,111 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Einsicht_und_Beurteilung",
+  "id": "einsicht-und-Beurteilung",
+  "title": "Einsicht und Beurteilung",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/einsicht-und-Beurteilung",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b1645",
+            "display": "Das Urteilsvermögen betreffende Funktionen"
+          },
+          {
+            "code": "b1644",
+            "display": "Das Einsichtsvermögen betreffende Funktionen"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "304688001",
+            "display": "Unable to make considered choices (finding)"
+          },
+          {
+            "code": "286776006",
+            "display": "Indecisive character (finding)"
+          },
+          {
+            "code": "719743007",
+            "display": "Able to make decisions (finding)"
+          },
+          {
+            "code": "247585004",
+            "display": "Difficulty making decisions (finding)"
+          },
+          {
+            "code": "365923008",
+            "display": "Finding related to decision making (finding)"
+          },
+          {
+            "code": "1157171003",
+            "display": "Does not use denial as a defense mechanism (finding)"
+          },
+          {
+            "code": "365945009",
+            "display": "Finding of illness behavior (finding)"
+          },
+          {
+            "code": "278871005",
+            "display": "Inappropriate illness behavior (finding)"
+          },
+          {
+            "code": "248020004",
+            "display": "Bizarre behavior (finding)"
+          },
+          {
+            "code": "61372001",
+            "display": "Aggressive behavior (finding)"
+          },
+          {
+            "code": "24340004",
+            "display": "Lack of insight (finding)"
+          },
+          {
+            "code": "1296859006",
+            "display": "Procedure declined (situation)"
+          },
+          {
+            "code": "714421002",
+            "display": "Difficulty agreeing with care plan (finding)"
+          },
+          {
+            "code": "64336009",
+            "display": "Incoherent thinking (finding)"
+          },
+          {
+            "code": "44376007",
+            "display": "Dissociative disorder (disorder)"
+          },
+          {
+            "code": "281770004",
+            "display": "Ego strength finding (finding)"
+          },
+          {
+            "code": "86917003",
+            "display": "Thought broadcast (finding)"
+          },
+          {
+            "code": "87076008",
+            "display": "Thought withdrawal (finding)"
+          },
+          {
+            "code": "50543005",
+            "display": "Thought insertion (finding)"
+          },
+          {
+            "code": "365320002",
+            "display": "Finding of independence of thought (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

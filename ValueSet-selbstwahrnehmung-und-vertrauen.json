@@ -1,0 +1,191 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Selbstwahrnehmung_und_Vertrauen",
+  "id": "selbstwahrnehmung-und-vertrauen",
+  "title": "Selbstwahrnehmung und Vertrauen",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/selbstwahrnehmung-und-vertrauen",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b1266",
+            "display": "Selbstvertrauen"
+          },
+          {
+            "code": "b1265",
+            "display": "Optimismus"
+          },
+          {
+            "code": "b1800",
+            "display": "Selbstwahrnehmung"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "225510008",
+            "display": "Self-image (observable entity)"
+          },
+          {
+            "code": "1149081002",
+            "display": "Feeling proud (finding)"
+          },
+          {
+            "code": "716408006",
+            "display": "Able to feel confident (finding)"
+          },
+          {
+            "code": "225509003",
+            "display": "Good self-image (finding)"
+          },
+          {
+            "code": "716454002",
+            "display": "Able to think creatively (finding)"
+          },
+          {
+            "code": "247799003",
+            "display": "Pessimistic (finding)"
+          },
+          {
+            "code": "225010003",
+            "display": "Feeling a failure (finding)"
+          },
+          {
+            "code": "248054003",
+            "display": "Self-neglect (finding)"
+          },
+          {
+            "code": "225973006",
+            "display": "Able to maintain self-esteem (finding)"
+          },
+          {
+            "code": "267077006",
+            "display": "Loss of self-esteem (finding)"
+          },
+          {
+            "code": "247892001",
+            "display": "Self-depreciation (finding)"
+          },
+          {
+            "code": "445179000",
+            "display": "Excessive self-criticism (finding)"
+          },
+          {
+            "code": "247893006",
+            "display": "Pathological guilt (finding)"
+          },
+          {
+            "code": "28669007",
+            "display": "Anhedonia (finding)"
+          },
+          {
+            "code": "365939001",
+            "display": "Finding related to self-esteem (finding)"
+          },
+          {
+            "code": "449892005",
+            "display": "Feeling safe (finding)"
+          },
+          {
+            "code": "430880004",
+            "display": "Self-confidence enhancement (procedure)"
+          },
+          {
+            "code": "23682002",
+            "display": "Love (finding)"
+          },
+          {
+            "code": "225018005",
+            "display": "Feeling unloved (finding)"
+          },
+          {
+            "code": "225017000",
+            "display": "Feeling unwanted (finding)"
+          },
+          {
+            "code": "53108004",
+            "display": "Delusion of guilt (finding)"
+          },
+          {
+            "code": "307077003",
+            "display": "Feeling hopeless (finding)"
+          },
+          {
+            "code": "7571003",
+            "display": "Feeling guilt (finding)"
+          },
+          {
+            "code": "286647002",
+            "display": "Low self-esteem (finding)"
+          },
+          {
+            "code": "225504008",
+            "display": "High self-esteem (finding)"
+          },
+          {
+            "code": "247891008",
+            "display": "Self-esteem (observable entity)"
+          },
+          {
+            "code": "80422002",
+            "display": "Destructive behavior (finding)"
+          },
+          {
+            "code": "704373005",
+            "display": "Lack of trust (finding)"
+          },
+          {
+            "code": "247888008",
+            "display": "Awareness of self (observable entity)"
+          },
+          {
+            "code": "281770004",
+            "display": "Ego strength finding (finding)"
+          },
+          {
+            "code": "33300005",
+            "display": "Feeling powerless (finding)"
+          },
+          {
+            "code": "366979004",
+            "display": "Depressed mood (finding)"
+          },
+          {
+            "code": "365129006",
+            "display": "Finding of level of hope (finding)"
+          },
+          {
+            "code": "286650004",
+            "display": "Lacking belief in own ability (finding)"
+          },
+          {
+            "code": "87828008",
+            "display": "Insufficiency (finding)"
+          },
+          {
+            "code": "1157171003",
+            "display": "Does not use denial as a defense mechanism (finding)"
+          },
+          {
+            "code": "247782004",
+            "display": "Excessive self-esteem (finding)"
+          },
+          {
+            "code": "44376007",
+            "display": "Dissociative disorder (disorder)"
+          },
+          {
+            "code": "93461009",
+            "display": "Gender dysphoria (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

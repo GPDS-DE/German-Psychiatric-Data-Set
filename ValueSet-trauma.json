@@ -1,0 +1,147 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Trauma",
+  "id": "trauma",
+  "title": "Trauma",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/trauma",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b640",
+            "display": "Sexuelle Funktionen"
+          },
+          {
+            "code": "d760",
+            "display": "Familienbeziehungen"
+          },
+          {
+            "code": "d6",
+            "display": "Häusliches Leben"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "90774003",
+            "display": "Victim of physical assault (finding)"
+          },
+          {
+            "code": "430139008",
+            "display": "Abuse by relative of victim (event)"
+          },
+          {
+            "code": "1279539008",
+            "display": "Victim of domestic violence (finding)"
+          },
+          {
+            "code": "161062006",
+            "display": "Child abuse in family (situation)"
+          },
+          {
+            "code": "161064007",
+            "display": "Child/parent violence (finding)"
+          },
+          {
+            "code": "371779005",
+            "display": "Physical child abuse (event)"
+          },
+          {
+            "code": "301377004",
+            "display": "Punishing with pain (finding)"
+          },
+          {
+            "code": "288391000119107",
+            "display": "History of victim of child physical abuse (situation)"
+          },
+          {
+            "code": "237461000119103",
+            "display": "Child victim of physical abuse (finding)"
+          },
+          {
+            "code": "225825002",
+            "display": "Victim of verbal abuse (finding)"
+          },
+          {
+            "code": "213017001",
+            "display": "Sexual abuse (event)"
+          },
+          {
+            "code": "225821006",
+            "display": "Victim of blackmail (finding)"
+          },
+          {
+            "code": "8441000175102",
+            "display": "Victim of forced sexual activity (finding)"
+          },
+          {
+            "code": "225830003",
+            "display": "Victim of sexual harassment (finding)"
+          },
+          {
+            "code": "371775004",
+            "display": "Emotional abuse of child (event)"
+          },
+          {
+            "code": "313217007",
+            "display": "History of emotional abuse (situation)"
+          },
+          {
+            "code": "95922009",
+            "display": "Child sex abuse (event)"
+          },
+          {
+            "code": "313216003",
+            "display": "History of sexual abuse (situation)"
+          },
+          {
+            "code": "55956009",
+            "display": "Disturbance in content of thought (finding)"
+          },
+          {
+            "code": "419620001",
+            "display": "Death (event)"
+          },
+          {
+            "code": "398033008",
+            "display": "Death of relative (event)"
+          },
+          {
+            "code": "740604001",
+            "display": "Family member deceased (situation)"
+          },
+          {
+            "code": "105447004",
+            "display": "Death of pet (event)"
+          },
+          {
+            "code": "161151009",
+            "display": "Death of unrelated person (event)"
+          },
+          {
+            "code": "224165005",
+            "display": "Financially secure (finding)"
+          },
+          {
+            "code": "449892005",
+            "display": "Feeling safe (finding)"
+          },
+          {
+            "code": "365550006",
+            "display": "Finding of financial circumstances (finding)"
+          },
+          {
+            "code": "1157171003",
+            "display": "Does not use denial as a defense mechanism (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

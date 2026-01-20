@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Weinen",
+  "id": "weinen",
+  "title": "Weinen",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/weinen",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b152",
+            "display": "Emotionale Funktionen"
+          },
+          {
+            "code": "b1521",
+            "display": "Affektkontrolle"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "304534000",
+            "display": "Crying (finding)"
+          },
+          {
+            "code": "28263002",
+            "display": "Crying (observable entity)"
+          },
+          {
+            "code": "715042002",
+            "display": "Difficulty crying (finding)"
+          },
+          {
+            "code": "247771007",
+            "display": "Cries easily (finding)"
+          },
+          {
+            "code": "715039008",
+            "display": "Unable to cry (finding)"
+          },
+          {
+            "code": "303220007",
+            "display": "Finding relating to crying (finding)"
+          },
+          {
+            "code": "162213003",
+            "display": "Crying, excessive (finding)"
+          },
+          {
+            "code": "271951008",
+            "display": "Crying associated with mood (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

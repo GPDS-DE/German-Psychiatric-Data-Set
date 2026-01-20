@@ -1,0 +1,178 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ICD_11_Diagnosen_aus_AMDP_und_CASCAP_2",
+  "id": "ICD-11-diagnosen-AMDP-CASCAP",
+  "title": "ICD-11-Diagnosen aus AMDP und CASCAP-2",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/ICD-11-diagnosen-AMDP-CASCAP",
+  "compose": {
+    "include": [
+      {
+        "system": "http://id.who.int/icd/release/11/mms",
+        "concept": [
+          {
+            "code": "VW4Z",
+            "display": "Interpersonelle Interaktionen und Beziehungen, nicht näher bezeichnet"
+          },
+          {
+            "code": "VW4Y",
+            "display": "Sonstige näher bezeichnete interpersonelle Interaktionen und Beziehungen"
+          },
+          {
+            "code": "MB23.Q",
+            "display": "Sozialer Rückzug"
+          },
+          {
+            "code": "MB23.D",
+            "display": "Mutismus"
+          },
+          {
+            "code": "6C9Y",
+            "display": "Sonstiges näher bezeichnetes disruptives Verhalten oder sonstige näher bezeichnete dissoziale Störungen"
+          },
+          {
+            "code": "6B45",
+            "display": "Störung der sozialen Bindung mit enthemmtem Verhalten"
+          },
+          {
+            "code": "6C90",
+            "display": "Störung des Sozialverhaltens mit oppositionellem, aufsässigem Verhalten"
+          },
+          {
+            "code": "MB23.0",
+            "display": "Aggressives Verhalten"
+          },
+          {
+            "code": "6D10.Z",
+            "display": "Persönlichkeitsstörung, Schweregrad nicht näher bezeichnet"
+          },
+          {
+            "code": "6C71",
+            "display": "Kleptomanie"
+          },
+          {
+            "code": "6C70",
+            "display": "Pyromanie"
+          },
+          {
+            "code": "6",
+            "display": "Psychische Störungen, Verhaltensstörungen oder neuromentale Entwicklungsstörungen"
+          },
+          {
+            "code": "6A00",
+            "display": "Störungen der Intelligenzentwicklung"
+          },
+          {
+            "code": "6A00.2",
+            "display": "Schwergradige Störung der Intelligenzentwicklung"
+          },
+          {
+            "code": "6A00.1",
+            "display": "Mittelgradige Störung der Intelligenzentwicklung"
+          },
+          {
+            "code": "6A00.0",
+            "display": "Leichtgradige Störung der Intelligenzentwicklung"
+          },
+          {
+            "code": "6A01.0",
+            "display": "Entwicklungsstörung der Lautbildung"
+          },
+          {
+            "code": "6A01.21",
+            "display": "Expressive Sprachentwicklungsstörung"
+          },
+          {
+            "code": "6A01.20",
+            "display": "Rezeptive und expressive Sprachentwicklungsstörung"
+          },
+          {
+            "code": "6A01.1",
+            "display": "Entwicklungsstörung des Sprechflusses"
+          },
+          {
+            "code": "6A04",
+            "display": "Entwicklungsstörung der motorischen Koordination"
+          },
+          {
+            "code": "6A0Y",
+            "display": "Sonstige näher bezeichnete neuromentale Entwicklungsstörung"
+          },
+          {
+            "code": "6A03",
+            "display": "Lernentwicklungsstörung"
+          },
+          {
+            "code": "VV00",
+            "display": "Funktionen der psychischen Energie und des Antriebs"
+          },
+          {
+            "code": "QE20",
+            "display": "Mangel an körperlicher Bewegung"
+          },
+          {
+            "code": "MB28.5",
+            "display": "Impulsivität"
+          },
+          {
+            "code": "MB21.5",
+            "display": "Ablenkbarkeit"
+          },
+          {
+            "code": "VV0Y",
+            "display": "Sonstige näher bezeichnete mentale Funktionen"
+          },
+          {
+            "code": "8A05.01",
+            "display": "Chronisch-motorische Ticstörung"
+          },
+          {
+            "code": "8A05.02",
+            "display": "Chronisch-phonische Ticstörung"
+          },
+          {
+            "code": "VV6Y",
+            "display": "Sonstige näher bezeichnete neuromuskuloskeletale und bewegungsbezogene Funktionen"
+          },
+          {
+            "code": "6B25.Y",
+            "display": "Sonstige näher bezeichnete Körperbezogene repetitive Verhaltensstörung"
+          },
+          {
+            "code": "MB24.3",
+            "display": "Angst"
+          },
+          {
+            "code": "6B05",
+            "display": "Störung mit Trennungsangst"
+          },
+          {
+            "code": "6B03",
+            "display": "Spezifische Phobie"
+          },
+          {
+            "code": "6B0Y",
+            "display": "Sonstige näher bezeichnete Angst- oder furchtbezogene Störungen"
+          },
+          {
+            "code": "6B04",
+            "display": "Soziale Angststörung"
+          },
+          {
+            "code": "6B02",
+            "display": "Agoraphobie"
+          },
+          {
+            "code": "6B01",
+            "display": "Panikstörung"
+          },
+          {
+            "code": "6B00",
+            "display": "Generalisierte Angststörung"
+          }
+        ]
+      }
+    ]
+  }
+}

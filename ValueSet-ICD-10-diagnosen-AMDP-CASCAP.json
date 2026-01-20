@@ -1,0 +1,266 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ICD_10_Diagnosen_aus_AMDP_und_CASCAP_2",
+  "id": "ICD-10-diagnosen-AMDP-CASCAP",
+  "title": "ICD-10-Diagnosen aus AMDP und CASCAP-2",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/ICD-10-diagnosen-AMDP-CASCAP",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+        "concept": [
+          {
+            "code": "F91.-",
+            "display": "Störungen des Sozialverhaltens"
+          },
+          {
+            "code": "R45.6",
+            "display": "Körperliche Gewalt"
+          },
+          {
+            "code": "F63.2",
+            "display": "Pathologisches Stehlen [Kleptomanie]"
+          },
+          {
+            "code": "F63.1",
+            "display": "Pathologische Brandstiftung [Pyromanie]"
+          },
+          {
+            "code": "F8.-",
+            "display": "Entwicklungsstörungen"
+          },
+          {
+            "code": "F7.-",
+            "display": "Intelligenzminderung"
+          },
+          {
+            "code": "F73",
+            "display": "Schwerste Intelligenzminderung"
+          },
+          {
+            "code": "F72",
+            "display": "Schwere Intelligenzminderung"
+          },
+          {
+            "code": "F70",
+            "display": "Leichte Intelligenzminderung"
+          },
+          {
+            "code": "F80.0",
+            "display": "Artikulationsstörung"
+          },
+          {
+            "code": "F80.1",
+            "display": "Expressive Sprachstörung"
+          },
+          {
+            "code": "F80.2",
+            "display": "Rezeptive Sprachstörung"
+          },
+          {
+            "code": "F98.5",
+            "display": "Stottern [Stammeln]"
+          },
+          {
+            "code": "F82.-",
+            "display": "Umschriebene Entwicklungsstörung der motorischen Funktionen"
+          },
+          {
+            "code": "F88",
+            "display": "Andere Entwicklungsstörungen"
+          },
+          {
+            "code": "F81.3",
+            "display": "Kombinierte Störungen schulischer Fertigkeiten"
+          },
+          {
+            "code": "F95.-",
+            "display": "Ticstörungen"
+          },
+          {
+            "code": "F98.-",
+            "display": "Andere Verhaltens- und emotionale Störungen mit Beginn in der Kindheit und Jugend"
+          },
+          {
+            "code": "F41.-",
+            "display": "Andere Angststörungen"
+          },
+          {
+            "code": "F40.8",
+            "display": "Sonstige phobische Störungen"
+          },
+          {
+            "code": "F41.8",
+            "display": "Sonstige spezifische Angststörungen"
+          },
+          {
+            "code": "F40.0",
+            "display": "Agoraphobie"
+          },
+          {
+            "code": "F41.0",
+            "display": "Panikstörung [episodisch paroxysmale Angst]"
+          },
+          {
+            "code": "F41.1",
+            "display": "Generalisierte Angststörung"
+          },
+          {
+            "code": "F42.-",
+            "display": "Zwangsstörung"
+          },
+          {
+            "code": "F42.0",
+            "display": "Vorwiegend Zwangsgedanken oder Grübelzwang"
+          },
+          {
+            "code": "F42.1",
+            "display": "Vorwiegend Zwangshandlungen [Zwangsrituale]"
+          },
+          {
+            "code": "F32.-",
+            "display": "Depressive Episode"
+          },
+          {
+            "code": "R45.84",
+            "display": "Anhedonia"
+          },
+          {
+            "code": "F3",
+            "display": "Affektive Störungen"
+          },
+          {
+            "code": "R45.3",
+            "display": "Demoralisierung und Apathie"
+          },
+          {
+            "code": "R45.1",
+            "display": "Ruhelosigkeit und Erregung"
+          },
+          {
+            "code": "F50.-",
+            "display": "Essstörungen"
+          },
+          {
+            "code": "F50.8",
+            "display": "Sonstige Essstörungen"
+          },
+          {
+            "code": "F45.-",
+            "display": "Somatoforme Störungen"
+          },
+          {
+            "code": "R11",
+            "display": "Übelkeit und Erbrechen"
+          },
+          {
+            "code": "F98.01",
+            "display": "Enuresis diurna"
+          },
+          {
+            "code": "F98.00",
+            "display": "Enuresis nocturna"
+          },
+          {
+            "code": "F98.1",
+            "display": "Nichtorganische Enkopresis"
+          },
+          {
+            "code": "G47.-",
+            "display": "Schlafstörungen"
+          },
+          {
+            "code": "F44.-",
+            "display": "Dissoziative Störungen [Konversionsstörungen]"
+          },
+          {
+            "code": "G90",
+            "display": "Krankheiten des autonomen Nervensystems"
+          },
+          {
+            "code": "R52.-",
+            "display": "Schmerz, anderenorts nicht klassifiziert"
+          },
+          {
+            "code": "R53",
+            "display": "Unwohlsein und Ermüdung"
+          },
+          {
+            "code": "F45.2",
+            "display": "Hypochondrische Störung"
+          },
+          {
+            "code": "R44.-",
+            "display": "Sonstige Symptome, die die Sinneswahrnehmungen und das Wahrnehmungsvermögen betreffen"
+          },
+          {
+            "code": "F65.0",
+            "display": "Fetischismus"
+          },
+          {
+            "code": "X84.9",
+            "display": "Vorsätzliche Selbstschädigung"
+          },
+          {
+            "code": "R45.-",
+            "display": "Symptome, die die Stimmung betreffen"
+          },
+          {
+            "code": "T51.-",
+            "display": "Toxische Wirkung von Alkohol"
+          },
+          {
+            "code": "F19.-",
+            "display": "Psychische und Verhaltensstörungen durch multiplen Substanzgebrauch und Konsum anderer psychotroper Substanzen"
+          },
+          {
+            "code": "R48.1",
+            "display": "Agnosie des Körperschemas"
+          },
+          {
+            "code": "F64.-",
+            "display": "Störungen der Geschlechtsidentität"
+          },
+          {
+            "code": "F52.-",
+            "display": "Sexuelle Funktionsstörungen, nicht verursacht durch eine organische Störung oder Krankheit"
+          },
+          {
+            "code": "F52.7",
+            "display": "Gesteigertes sexuelles Verlangen"
+          },
+          {
+            "code": "R40.0",
+            "display": "Somnoleszenz"
+          },
+          {
+            "code": "R41.0",
+            "display": "Orientierungsstörung, nicht näher bezeichnet"
+          },
+          {
+            "code": "F30.2",
+            "display": "Manie mit psychotischen Symptomen"
+          },
+          {
+            "code": "F22.-",
+            "display": "Anhaltende wahnhafte Störungen"
+          },
+          {
+            "code": "F20.-",
+            "display": "Schizophrenie"
+          },
+          {
+            "code": "F94.0",
+            "display": "Elektiver Mutismus"
+          },
+          {
+            "code": "R45.8",
+            "display": "Sonstige Symptome, die die Stimmung betreffen"
+          }
+        ]
+      }
+    ]
+  }
+}

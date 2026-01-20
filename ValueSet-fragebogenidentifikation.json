@@ -1,0 +1,127 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Fragebogenidentifikation",
+  "id": "fragebogenidentifikation",
+  "title": "Fragebogenidentifikation",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/fragebogenidentifikation",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "284490008",
+            "display": "Befund im Zusammenhang mit komplexem und sozialem Verhalten"
+          },
+          {
+            "code": "1156040003",
+            "display": "Self reported (qualifier value)"
+          },
+          {
+            "code": "761873006",
+            "display": "Assessment using MADRS (Montgomery-Åsberg Depression Rating Scale)"
+          },
+          {
+            "code": "770540000",
+            "display": "Trauma Screening Questionnaire (assessment scale)"
+          },
+          {
+            "code": "273306008",
+            "display": "Beck depression inventory (assessment scale)"
+          },
+          {
+            "code": "1231454007",
+            "display": "Hamilton Anxiety Rating Scale (assessment scale)"
+          },
+          {
+            "code": "273725009",
+            "display": "Quality of life scale (assessment scale)"
+          },
+          {
+            "code": "273362008",
+            "display": "Child depression scale (assessment scale)"
+          },
+          {
+            "code": "371528001",
+            "display": "Pathology report (record artifact)"
+          },
+          {
+            "code": "273403004",
+            "display": "Depression self rating scale (assessment scale)"
+          },
+          {
+            "code": "171207006",
+            "display": "Depression screening (procedure)"
+          },
+          {
+            "code": "458501000124102",
+            "display": "Young mania rating scale (assessment scale)"
+          },
+          {
+            "code": "304718000",
+            "display": "Child depression scale, second research edition (assessment scale)"
+          },
+          {
+            "code": "763265004",
+            "display": "Montgomery-Asberg Depression Rating Scale score (observable entity)"
+          },
+          {
+            "code": "770539002",
+            "display": "Trauma Screening Questionnaire score (observable entity)"
+          },
+          {
+            "code": "718366000",
+            "display": "Beck Depression Inventory II score (observable entity)"
+          },
+          {
+            "code": "273884004",
+            "display": "Trauma score (assessment scale)"
+          },
+          {
+            "code": "281850001",
+            "display": "Item score (qualifier value)"
+          }
+        ]
+      },
+      {
+        "system": "http://ncit.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C142453",
+            "display": "Clinician-reported Outcome"
+          },
+          {
+            "code": "C95401",
+            "display": "Patient Reported Outcome"
+          },
+          {
+            "code": "C135742",
+            "display": "Pediatric Outcomes Data Collection Instrument, Pediatric Parent-Reported Version Questionnaire"
+          },
+          {
+            "code": "C40438",
+            "display": "Beck Depression Inventory"
+          },
+          {
+            "code": "C101877",
+            "display": "HAMD 21 Questionnaire Question"
+          },
+          {
+            "code": "C122382",
+            "display": "Montgomery-Asberg Depression Rating Scale Questionnaire"
+          },
+          {
+            "code": "C102124",
+            "display": "Young Mania Rating Scale Questionnaire"
+          },
+          {
+            "code": "C154458",
+            "display": "CDRS-R Clinical Classification Question"
+          }
+        ]
+      }
+    ]
+  }
+}

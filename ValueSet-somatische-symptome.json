@@ -1,0 +1,239 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Somatische_Symptome",
+  "id": "somatische-symptome",
+  "title": "Somatische Symptome",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/somatische-symptome",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b515",
+            "display": "Verdauungsfunktion"
+          },
+          {
+            "code": "b5104",
+            "display": "Speichelfluss"
+          },
+          {
+            "code": "b5351",
+            "display": "Blähungsgefühl"
+          },
+          {
+            "code": "b5251",
+            "display": "Stuhlkonsistenz"
+          },
+          {
+            "code": "b5352",
+            "display": "Bauchkrämpfe"
+          },
+          {
+            "code": "b415",
+            "display": "Blutgefäßfunktion"
+          },
+          {
+            "code": "b4101",
+            "display": "Herzrhythmus"
+          },
+          {
+            "code": "b28010",
+            "display": "Kopf- und Nackenschmerzen"
+          },
+          {
+            "code": "b440",
+            "display": "Atmungsfunktion"
+          },
+          {
+            "code": "b4400",
+            "display": "Atemfrequenz"
+          },
+          {
+            "code": "b6208",
+            "display": "Miktionsfunktion, anders bezeichnet"
+          },
+          {
+            "code": "b830",
+            "display": "Andere Funktionen der Haut"
+          },
+          {
+            "code": "b1",
+            "display": "Körperfunktionen"
+          },
+          {
+            "code": "b280",
+            "display": "Schmerz"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "267045008",
+            "display": "Gastrointestinal symptom (finding)"
+          },
+          {
+            "code": "87715008",
+            "display": "Xerostomia (finding)"
+          },
+          {
+            "code": "308698004",
+            "display": "Flatulence symptom (finding)"
+          },
+          {
+            "code": "267060006",
+            "display": "Diarrhea symptom (finding)"
+          },
+          {
+            "code": "21522001",
+            "display": "Abdominal pain (finding)"
+          },
+          {
+            "code": "21829004",
+            "display": "Blood vessel finding (finding)"
+          },
+          {
+            "code": "80313002",
+            "display": "Palpitations (finding)"
+          },
+          {
+            "code": "25064002",
+            "display": "Headache (finding)"
+          },
+          {
+            "code": "365852007",
+            "display": "Respiratory function finding (finding)"
+          },
+          {
+            "code": "68978004",
+            "display": "Hyperventilation (finding)"
+          },
+          {
+            "code": "75088002",
+            "display": "Urgent desire to urinate (finding)"
+          },
+          {
+            "code": "415690000",
+            "display": "Sweating (finding)"
+          },
+          {
+            "code": "161874006",
+            "display": "Heavy feeling (finding)"
+          },
+          {
+            "code": "22253000",
+            "display": "Pain (finding)"
+          },
+          {
+            "code": "397725003",
+            "display": "Somatic sensation, function (observable entity)"
+          },
+          {
+            "code": "279001004",
+            "display": "Pain finding at anatomical site (finding)"
+          },
+          {
+            "code": "308492005",
+            "display": "Contusion - lesion (morphologic abnormality)"
+          },
+          {
+            "code": "263897001",
+            "display": "Feeling tense (finding)"
+          },
+          {
+            "code": "160245001",
+            "display": "No current problems or disability (situation)"
+          },
+          {
+            "code": "413320001",
+            "display": "Physical health problem (finding)"
+          },
+          {
+            "code": "271681002",
+            "display": "Stomach ache (finding)"
+          },
+          {
+            "code": "10601006",
+            "display": "Pain in lower limb (finding)"
+          },
+          {
+            "code": "406221003",
+            "display": "Health status (observable entity)"
+          },
+          {
+            "code": "82832008",
+            "display": "General body state finding (finding)"
+          },
+          {
+            "code": "135816001",
+            "display": "General health excellent (finding)"
+          },
+          {
+            "code": "102499006",
+            "display": "Fit and well (finding)"
+          },
+          {
+            "code": "363800008",
+            "display": "General wellbeing (observable entity)"
+          },
+          {
+            "code": "282474007",
+            "display": "Able to run (finding)"
+          },
+          {
+            "code": "68130003",
+            "display": "Physical activity (observable entity)"
+          },
+          {
+            "code": "302000008",
+            "display": "Does move (finding)"
+          },
+          {
+            "code": "282476009",
+            "display": "Does run (finding)"
+          },
+          {
+            "code": "762620006",
+            "display": "Somatic hallucination (finding)"
+          },
+          {
+            "code": "79890006",
+            "display": "Loss of appetite (finding)"
+          },
+          {
+            "code": "300359004",
+            "display": "Finding of vomiting (finding)"
+          },
+          {
+            "code": "281862002",
+            "display": "Daytime enuresis (finding)"
+          },
+          {
+            "code": "8009008",
+            "display": "Nocturnal enuresis (finding)"
+          },
+          {
+            "code": "302690004",
+            "display": "Encopresis (finding)"
+          },
+          {
+            "code": "231517009",
+            "display": "Unknown (code missing display)"
+          },
+          {
+            "code": "83482000",
+            "display": "Body dysmorphic disorder (disorder)"
+          },
+          {
+            "code": "93461009",
+            "display": "Gender dysphoria (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

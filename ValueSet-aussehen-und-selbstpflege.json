@@ -1,0 +1,79 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Aussehen_und_Selbstpflege",
+  "id": "aussehen-und-selbstpflege",
+  "title": "Aussehen und Selbspflege",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/aussehen-und-selbstpflege",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b130",
+            "display": "Funktionen der psychischen Energie und des Antriebs"
+          },
+          {
+            "code": "b1602",
+            "display": "Inhalt des Denkens"
+          },
+          {
+            "code": "d520",
+            "display": "Seine Körperteile pflegen"
+          },
+          {
+            "code": "d540",
+            "display": "Sich kleiden"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "302772006",
+            "display": "Looks ill (finding)"
+          },
+          {
+            "code": "248164005",
+            "display": "Clothing dirty (finding)"
+          },
+          {
+            "code": "366636003",
+            "display": "Facial appearance finding (finding)"
+          },
+          {
+            "code": "704435007",
+            "display": "Personal grooming activities, function (observable entity)"
+          },
+          {
+            "code": "704441000",
+            "display": "Able to perform personal grooming activity (finding)"
+          },
+          {
+            "code": "704439001",
+            "display": "Difficulty performing personal grooming activity (finding)"
+          },
+          {
+            "code": "704442007",
+            "display": "Self-dressing/personal grooming deficit (finding)"
+          },
+          {
+            "code": "704433000",
+            "display": "Finding related to ability to perform personal grooming activity (finding)"
+          },
+          {
+            "code": "248053009",
+            "display": "Self-care behavior (finding)"
+          },
+          {
+            "code": "290043008",
+            "display": "Self-care practice (regime/therapy)"
+          }
+        ]
+      }
+    ]
+  }
+}

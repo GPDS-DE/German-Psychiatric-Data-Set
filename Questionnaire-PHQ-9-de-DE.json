@@ -1,0 +1,647 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "PHQ-9-de-DE",
+  "language": "de-DE",
+  "title": "Patient Health Questionnaire - 9-Item Short-form",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "code": [
+    {
+      "code": "44249-1",
+      "system": "http://loinc.org",
+      "display": "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "q1-PHQ-9-de",
+      "type": "choice",
+      "text": "Wenig Interesse oder Freude an Ihren Tätigkeiten",
+      "code": [
+        {
+          "code": "44250-9",
+          "system": "http://loinc.org",
+          "display": "Little interest or pleasure in doing things"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "0 - Überhaupt nicht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "1 - An einzelnen Tagen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6570-1",
+            "display": "2 - An mehr als der Hälfte der Tage"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6571-9",
+            "display": "3 - Beinahe jeden Tag"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "q2-PHQ-9-de",
+      "type": "choice",
+      "text": "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit",
+      "code": [
+        {
+          "code": "44255-8",
+          "system": "http://loinc.org",
+          "display": "Feeling down, depressed, or hopeless"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "0 - Überhaupt nicht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "1 - An einzelnen Tagen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6570-1",
+            "display": "2 - An mehr als der Hälfte der Tage"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6571-9",
+            "display": "3 - Beinahe jeden Tag"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "q3-PHQ-9-de",
+      "type": "choice",
+      "text": "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf",
+      "code": [
+        {
+          "code": "44259-0",
+          "system": "http://loinc.org",
+          "display": "Trouble falling or staying asleep, or sleeping too much"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "0 - Überhaupt nicht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "1 - An einzelnen Tagen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6570-1",
+            "display": "2 - An mehr als der Hälfte der Tage"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6571-9",
+            "display": "3 - Beinahe jeden Tag"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "q4-PHQ-9-de",
+      "type": "choice",
+      "text": "Müdigkeit oder Gefühl, keine Energie zu haben",
+      "code": [
+        {
+          "code": "44254-1",
+          "system": "http://loinc.org",
+          "display": "Feeling tired or having little energy"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "0 - Überhaupt nicht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "1 - An einzelnen Tagen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6570-1",
+            "display": "2 - An mehr als der Hälfte der Tage"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6571-9",
+            "display": "3 - Beinahe jeden Tag"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "q5-PHQ-9-de",
+      "type": "choice",
+      "text": "Verminderter Appetit oder übermäßiges Bedürfnis zu essen",
+      "code": [
+        {
+          "code": "44251-7",
+          "system": "http://loinc.org",
+          "display": "Poor appetite or overeating"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "0 - Überhaupt nicht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "1 - An einzelnen Tagen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6570-1",
+            "display": "2 - An mehr als der Hälfte der Tage"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6571-9",
+            "display": "3 - Beinahe jeden Tag"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "q6-PHQ-9-de",
+      "type": "choice",
+      "text": "Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben",
+      "code": [
+        {
+          "code": "44258-2",
+          "system": "http://loinc.org",
+          "display": "Feeling bad about yourself-or that you are a failure or have let yourself or your family down"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "0 - Überhaupt nicht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "1 - An einzelnen Tagen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6570-1",
+            "display": "2 - An mehr als der Hälfte der Tage"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6571-9",
+            "display": "3 - Beinahe jeden Tag"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "q7-PHQ-9-de",
+      "type": "choice",
+      "text": "Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen",
+      "code": [
+        {
+          "code": "44252-5",
+          "system": "http://loinc.org",
+          "display": "Trouble concentrating on things, such as reading the newspaper or watching television"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "0 - Überhaupt nicht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "1 - An einzelnen Tagen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6570-1",
+            "display": "2 - An mehr als der Hälfte der Tage"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6571-9",
+            "display": "3 - Beinahe jeden Tag"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "q8-PHQ-9-de",
+      "type": "choice",
+      "text": "Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil „zappelig“ oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?",
+      "code": [
+        {
+          "code": "44253-3",
+          "system": "http://loinc.org",
+          "display": "Moving or speaking so slowly that other people could have noticed. Or the opposite – being so fidgety or restless that you were moving around a lot more than usual"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "0 - Überhaupt nicht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "1 - An einzelnen Tagen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6570-1",
+            "display": "2 - An mehr als der Hälfte der Tage"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6571-9",
+            "display": "3 - Beinahe jeden Tag"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "q9-PHQ-9-de",
+      "type": "choice",
+      "text": "Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten",
+      "code": [
+        {
+          "code": "44260-8",
+          "system": "http://loinc.org",
+          "display": "Thoughts that you would be better off dead, or of hurting yourself in some way"
+        }
+      ],
+      "required": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "0 - Überhaupt nicht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "1 - An einzelnen Tagen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6570-1",
+            "display": "2 - An mehr als der Hälfte der Tage"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6571-9",
+            "display": "3 - Beinahe jeden Tag"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "PHQ-9-de-score",
+      "type": "quantity",
+      "text": "PHQ-9-de-Score",
+      "code": [
+        {
+          "code": "44261-6",
+          "system": "http://loinc.org",
+          "display": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Gesamtpunktzahl des Fragebogens wird aufsummiert",
+            "name": "score",
+            "language": "text/fhirpath",
+            "expression": "%resource.answers().value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": true,
+      "readOnly": true
+    }
+  ]
+}

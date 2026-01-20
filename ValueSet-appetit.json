@@ -1,0 +1,123 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Appetit",
+  "id": "appetit",
+  "title": "Appetit",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/appetit",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b1302",
+            "display": "Appetit"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "249473004",
+            "display": "Altered appetite (finding)"
+          },
+          {
+            "code": "289161009",
+            "display": "Finding of appetite (finding)"
+          },
+          {
+            "code": "116336009",
+            "display": "Eating / feeding / drinking finding (finding)"
+          },
+          {
+            "code": "161825005",
+            "display": "Appetite normal (finding)"
+          },
+          {
+            "code": "64379006",
+            "display": "Decrease in appetite (finding)"
+          },
+          {
+            "code": "72405004",
+            "display": "Increased appetite (finding)"
+          },
+          {
+            "code": "79890006",
+            "display": "Loss of appetite (finding)"
+          },
+          {
+            "code": "102608004",
+            "display": "Excessive appetite (finding)"
+          },
+          {
+            "code": "105481005",
+            "display": "Refusing food (finding)"
+          },
+          {
+            "code": "249472009",
+            "display": "Always hungry (finding)"
+          },
+          {
+            "code": "55350005",
+            "display": "Hungry (finding)"
+          },
+          {
+            "code": "1078229009",
+            "display": "Food security (finding)"
+          },
+          {
+            "code": "33911006",
+            "display": "Food appetite, function (observable entity)"
+          },
+          {
+            "code": "1163282001",
+            "display": "Food preference (observable entity)"
+          },
+          {
+            "code": "288844004",
+            "display": "Eating, drinking and/or feeding function (observable entity)"
+          },
+          {
+            "code": "289163007",
+            "display": "Appetite problem (finding)"
+          },
+          {
+            "code": "726527001",
+            "display": "Weight (property) (qualifier value)"
+          },
+          {
+            "code": "48263008",
+            "display": "Eating (observable entity)"
+          },
+          {
+            "code": "1217374002",
+            "display": "Restrained eating behavior (finding)"
+          },
+          {
+            "code": "1162387003",
+            "display": "Binge eating behavior (finding)"
+          },
+          {
+            "code": "58424009",
+            "display": "Overeating (finding)"
+          },
+          {
+            "code": "37941009",
+            "display": "Rumination disorder (disorder)"
+          },
+          {
+            "code": "14077003",
+            "display": "Pica (disorder)"
+          },
+          {
+            "code": "300359004",
+            "display": "Finding of vomiting (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

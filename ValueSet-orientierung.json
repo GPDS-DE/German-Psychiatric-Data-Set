@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Orientierung",
+  "id": "orientierung",
+  "title": "Orientierung",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/orientierung",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b114",
+            "display": "Funktionen der Orientierung"
+          },
+          {
+            "code": "b1140",
+            "display": "Orientierung zur Zeit"
+          },
+          {
+            "code": "b1141",
+            "display": "Orientierung zum Ort"
+          },
+          {
+            "code": "b1148",
+            "display": "Funktionen der Orientierung, anders bezeichnet"
+          },
+          {
+            "code": "b11420",
+            "display": "Orientierung zum eigenen Selbst"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "311470005",
+            "display": "Finding related to orientation (finding)"
+          },
+          {
+            "code": "43173001",
+            "display": "Orientation, function (observable entity)"
+          },
+          {
+            "code": "19657006",
+            "display": "Disorientated in time (finding)"
+          },
+          {
+            "code": "427161009",
+            "display": "Oriented to place (finding)"
+          },
+          {
+            "code": "62476001",
+            "display": "Disorientated (finding)"
+          },
+          {
+            "code": "427645006",
+            "display": "Oriented to person (finding)"
+          },
+          {
+            "code": "18343006",
+            "display": "Circumstantiality (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Antwortenkodierung",
+  "id": "antwortenkodierung",
+  "title": "Standardisierte fragebogenübergreifende Kodierungsmöglichkeiten für Antworten auf Fragebögen und Scores",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/antwortenkodierung",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "162442009",
+            "display": "Time symptom lasts (observable entity)"
+          },
+          {
+            "code": "162447003",
+            "display": "Symptom lasts weeks (finding)"
+          },
+          {
+            "code": "260864003",
+            "display": "Frequency (attribute)"
+          },
+          {
+            "code": "385630006",
+            "display": "Maintained (qualifier value)"
+          },
+          {
+            "code": "442387004",
+            "display": "Increased relative to previous (qualifier value)"
+          },
+          {
+            "code": "442474009",
+            "display": "Decreased relative to previous (qualifier value)"
+          },
+          {
+            "code": "260379002",
+            "display": "Impaired (qualifier value)"
+          },
+          {
+            "code": "260388006",
+            "display": "No status change (qualifier value)"
+          },
+          {
+            "code": "260358002",
+            "display": "Very (qualifier value)"
+          },
+          {
+            "code": "1336219002",
+            "display": "Very bad (qualifier value)"
+          },
+          {
+            "code": "258262008",
+            "display": "Very large (qualifier value)"
+          },
+          {
+            "code": "260362008",
+            "display": "Very low (qualifier value)"
+          },
+          {
+            "code": "260360000",
+            "display": "Very high (qualifier value)"
+          },
+          {
+            "code": "2667000",
+            "display": "Absent (qualifier value)"
+          },
+          {
+            "code": "89292003",
+            "display": "Rare (qualifier value)"
+          },
+          {
+            "code": "27789000",
+            "display": "Infrequent (qualifier value)"
+          },
+          {
+            "code": "70232002",
+            "display": "Frequent (qualifier value)"
+          },
+          {
+            "code": "27732004",
+            "display": "High frequency (qualifier value)"
+          },
+          {
+            "code": "1157337001",
+            "display": "Grade 1 on a scale of 1 to 5 (qualifier value)"
+          },
+          {
+            "code": "1157338006",
+            "display": "Grade 2 on a scale of 1 to 5 (qualifier value)"
+          },
+          {
+            "code": "1157339003",
+            "display": "Grade 3 on a scale of 1 to 5 (qualifier value)"
+          },
+          {
+            "code": "1157340001",
+            "display": "Grade 4 on a scale of 1 to 5 (qualifier value)"
+          },
+          {
+            "code": "1157341002",
+            "display": "Grade 5 on a scale of 1 to 5 (qualifier value)"
+          },
+          {
+            "code": "84387000",
+            "display": "Asymptomatic (finding)"
+          },
+          {
+            "code": "162468002",
+            "display": "Symptom mild (finding)"
+          },
+          {
+            "code": "162469005",
+            "display": "Symptom moderate (finding)"
+          },
+          {
+            "code": "162470006",
+            "display": "Symptom severe (finding)"
+          },
+          {
+            "code": "162471005",
+            "display": "Symptom very severe (finding)"
+          },
+          {
+            "code": "307444008",
+            "display": "Frequency per week (qualifier value)"
+          },
+          {
+            "code": "258351006",
+            "display": "Grade 1 (qualifier value)"
+          },
+          {
+            "code": "258352004",
+            "display": "Grade 2 (qualifier value)"
+          },
+          {
+            "code": "258353009",
+            "display": "Grade 3 (qualifier value)"
+          },
+          {
+            "code": "258354003",
+            "display": "Grade 4 (qualifier value)"
+          },
+          {
+            "code": "258355002",
+            "display": "Grade 5 (qualifier value)"
+          },
+          {
+            "code": "1293100006",
+            "display": "Grade 6 (qualifier value)"
+          },
+          {
+            "code": "278111002",
+            "display": "Scale - rank (attribute)"
+          },
+          {
+            "code": "1157277007",
+            "display": "Grade 1 on a scale of 1 to 7 (qualifier value)"
+          },
+          {
+            "code": "1157278002",
+            "display": "Grade 2 on a scale of 1 to 7 (qualifier value)"
+          },
+          {
+            "code": "1157279005",
+            "display": "Grade 3 on a scale of 1 to 7 (qualifier value)"
+          },
+          {
+            "code": "1157280008",
+            "display": "Grade 4 on a scale of 1 to 7 (qualifier value)"
+          },
+          {
+            "code": "1157281007",
+            "display": "Grade 5 on a scale of 1 to 7 (qualifier value)"
+          },
+          {
+            "code": "1157282000",
+            "display": "Grade 6 on a scale of 1 to 7 (qualifier value)"
+          },
+          {
+            "code": "1157283005",
+            "display": "Grade 7 on a scale of 1 to 7 (qualifier value)"
+          },
+          {
+            "code": "17621005",
+            "display": "Normal (qualifier value)"
+          },
+          {
+            "code": "62482003",
+            "display": "Low (qualifier value)"
+          },
+          {
+            "code": "1255665007",
+            "display": "Moderate (qualifier value)"
+          },
+          {
+            "code": "75540009",
+            "display": "High (qualifier value)"
+          },
+          {
+            "code": "425405005",
+            "display": "Excellent (qualifier value)"
+          },
+          {
+            "code": "20572008",
+            "display": "Good (qualifier value)"
+          },
+          {
+            "code": "263796003",
+            "display": "Lesser (qualifier value)"
+          },
+          {
+            "code": "556001",
+            "display": "Bad (qualifier value)"
+          },
+          {
+            "code": "74964007",
+            "display": "Other (qualifier value)"
+          },
+          {
+            "code": "260404005",
+            "display": "Strong (qualifier value)"
+          },
+          {
+            "code": "386134007",
+            "display": "Significant (qualifier value)"
+          },
+          {
+            "code": "425404009",
+            "display": "Slightly (qualifier value)"
+          },
+          {
+            "code": "261665006",
+            "display": "Unknown (qualifier value)"
+          },
+          {
+            "code": "371925005",
+            "display": "Most significant (qualifier value)"
+          },
+          {
+            "code": "371927002",
+            "display": "Moderately significant (qualifier value)"
+          },
+          {
+            "code": "255604002",
+            "display": "Mild"
+          },
+          {
+            "code": "6736007",
+            "display": "Moderate"
+          },
+          {
+            "code": "24484000",
+            "display": "Severe"
+          },
+          {
+            "code": "763265004",
+            "display": "Montgomery-Asberg Depression Rating Scale score (observable entity)"
+          },
+          {
+            "code": "770539002",
+            "display": "Trauma Screening Questionnaire score (observable entity)"
+          },
+          {
+            "code": "718366000",
+            "display": "Beck Depression Inventory II score (observable entity)"
+          },
+          {
+            "code": "273884004",
+            "display": "Trauma score (assessment scale)"
+          },
+          {
+            "code": "281850001",
+            "display": "Item score (qualifier value)"
+          },
+          {
+            "code": "405162009",
+            "display": "Symptom severity level (observable entity)"
+          },
+          {
+            "code": "162465004",
+            "display": "Symptom severity (finding)"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA4489-6",
+            "display": "Unknown"
+          },
+          {
+            "code": "LA20384-6",
+            "display": "Asked but unknown"
+          },
+          {
+            "code": "LA31066-6",
+            "display": "Refused to answer"
+          }
+        ]
+      }
+    ]
+  }
+}

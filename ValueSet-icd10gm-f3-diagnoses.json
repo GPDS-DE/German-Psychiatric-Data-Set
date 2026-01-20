@@ -1,0 +1,162 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ICD10GM_F3_Diagnoses",
+  "id": "icd10gm-f3-diagnoses",
+  "title": "ICD-10-GM F3-Diagnosen",
+  "description": "A ValueSet containing all F3 diagnoses (affective disorders) from the ICD-10 German Modification (ICD-10-GM).",
+  "url": "http://charite.de/fhir/psycho/ValueSet/icd10gm-f3-diagnoses",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+        "concept": [
+          {
+            "code": "F30",
+            "display": "Manische Episode"
+          },
+          {
+            "code": "F30.0",
+            "display": "Hypomanie"
+          },
+          {
+            "code": "F30.1",
+            "display": "Manie ohne psychotische Symptome"
+          },
+          {
+            "code": "F30.2",
+            "display": "Manie mit psychotischen Symptomen"
+          },
+          {
+            "code": "F31",
+            "display": "Bipolare affektive Störung"
+          },
+          {
+            "code": "F31.0",
+            "display": "Bipolare affektive Störung, gegenwärtig hypomanische Episode"
+          },
+          {
+            "code": "F31.1",
+            "display": "Bipolare affektive Störung, gegenwärtig manische Episode ohne psychotische Symptome"
+          },
+          {
+            "code": "F31.2",
+            "display": "Bipolare affektive Störung, gegenwärtig manische Episode mit psychotischen Symptomen"
+          },
+          {
+            "code": "F31.3",
+            "display": "Bipolare affektive Störung, gegenwärtig leichte oder mittelgradige depressive Episode"
+          },
+          {
+            "code": "F31.4",
+            "display": "Bipolare affektive Störung, gegenwärtig schwere depressive Episode ohne psychotische Symptome"
+          },
+          {
+            "code": "F31.5",
+            "display": "Bipolare affektive Störung, gegenwärtig schwere depressive Episode mit psychotischen Symptomen"
+          },
+          {
+            "code": "F31.6",
+            "display": "Bipolare affektive Störung, gemischte Episode"
+          },
+          {
+            "code": "F31.7",
+            "display": "Bipolare affektive Störung, gegenwärtig remittiert"
+          },
+          {
+            "code": "F31.8",
+            "display": "Sonstige bipolare affektive Störungen"
+          },
+          {
+            "code": "F31.9",
+            "display": "Bipolare affektive Störung, nicht näher bezeichnet"
+          },
+          {
+            "code": "F32",
+            "display": "Depressive Episode"
+          },
+          {
+            "code": "F32.0",
+            "display": "Leichte depressive Episode"
+          },
+          {
+            "code": "F32.1",
+            "display": "Mittelgradige depressive Episode"
+          },
+          {
+            "code": "F32.2",
+            "display": "Schwere depressive Episode ohne psychotische Symptome"
+          },
+          {
+            "code": "F32.3",
+            "display": "Schwere depressive Episode mit psychotischen Symptomen"
+          },
+          {
+            "code": "F32.8",
+            "display": "Sonstige depressive Episoden"
+          },
+          {
+            "code": "F32.9",
+            "display": "Depressive Episode, nicht näher bezeichnet"
+          },
+          {
+            "code": "F33",
+            "display": "Rezidivierende depressive Störung"
+          },
+          {
+            "code": "F33.0",
+            "display": "Rezidivierende depressive Störung, gegenwärtig leichte Episode"
+          },
+          {
+            "code": "F33.1",
+            "display": "Rezidivierende depressive Störung, gegenwärtig mittelgradige Episode"
+          },
+          {
+            "code": "F33.2",
+            "display": "Rezidivierende depressive Störung, gegenwärtig schwere Episode ohne psychotische Symptome"
+          },
+          {
+            "code": "F33.3",
+            "display": "Rezidivierende depressive Störung, gegenwärtig schwere Episode mit psychotischen Symptomen"
+          },
+          {
+            "code": "F33.4",
+            "display": "Rezidivierende depressive Störung, gegenwärtig remittiert"
+          },
+          {
+            "code": "F33.8",
+            "display": "Sonstige rezidivierende depressive Störungen"
+          },
+          {
+            "code": "F33.9",
+            "display": "Rezidivierende depressive Störung, nicht näher bezeichnet"
+          },
+          {
+            "code": "F34",
+            "display": "Anhaltende affektive Störungen"
+          },
+          {
+            "code": "F34.0",
+            "display": "Zyklothymia"
+          },
+          {
+            "code": "F34.1",
+            "display": "Dysthymia"
+          },
+          {
+            "code": "F34.8",
+            "display": "Sonstige anhaltende affektive Störungen"
+          },
+          {
+            "code": "F38",
+            "display": "Sonstige affektive Störungen"
+          },
+          {
+            "code": "F39",
+            "display": "Nicht näher bezeichnete affektive Störung"
+          }
+        ]
+      }
+    ]
+  }
+}

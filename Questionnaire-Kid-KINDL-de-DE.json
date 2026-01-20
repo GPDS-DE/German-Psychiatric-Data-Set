@@ -1,0 +1,1351 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "Kid-KINDL-de-DE",
+  "language": "de-DE",
+  "title": "Kid-KINDL",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "code": [
+    {
+      "code": "273403004",
+      "system": "http://snomed.info/sct",
+      "display": "Depression self rating scale (assessment scale)"
+    },
+    {
+      "code": "443173002",
+      "system": "http://snomed.info/sct",
+      "display": "Childhood health assessment questionnaire (assessment scale)"
+    },
+    {
+      "code": "C95401",
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "display": "Patient Reported Outcome"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "Kid-KINDL-date",
+      "type": "date",
+      "text": "Bogen ausgefüllt am:",
+      "required": false,
+      "code": [
+        {
+          "code": "439272007",
+          "system": "http://snomed.info/sct",
+          "display": "Date of procedure (observable entity)"
+        }
+      ]
+    },
+    {
+      "linkId": "Kid-KINDL-Infobox",
+      "type": "display",
+      "text": "Hallo, wir möchten gerne wissen, wie es dir zur Zeit geht. Dazu haben wir uns einige Fragen ausgedacht und bitten dich um deine Antwort. Lies bitte jede Frage durch, überlege, wie es in der letzten Woche war, kreuze in jeder Zeile die Antwort an, die am besten zu dir passt. Es gibt keine richtigen oder falschen Antworten. Wichtig ist uns deine Meinung.",
+      "required": false
+    },
+    {
+      "linkId": "Kid-KINDL-Infobox2",
+      "type": "group",
+      "required": false,
+      "text": "Bitte sage mir zunächst etwas zu dir",
+      "item": [
+        {
+          "linkId": "Kid-KINDL-qwm",
+          "type": "choice",
+          "text": "Bist du ein Mädchen oder ein Junge?",
+          "code": [
+            {
+              "code": "734000001",
+              "system": "http://snomed.info/sct",
+              "display": "Biological sex (property) (qualifier value)"
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "Kid-KINDL-ansm",
+                "system": "http://snomed.info/sct",
+                "code": "248153007",
+                "display": "Mädchen"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "Kid-KINDL-answ",
+                "system": "http://snomed.info/sct",
+                "code": "248152002",
+                "display": "Junge"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "Kid-KINDL-qage",
+          "type": "integer",
+          "text": "Wie alt bist du?",
+          "code": [
+            {
+              "code": "397669002",
+              "system": "http://snomed.info/sct",
+              "display": "Age (qualifier value)"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 7
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 13
+            }
+          ],
+          "required": false
+        },
+        {
+          "linkId": "Kid-KINDL-qsiblings",
+          "type": "integer",
+          "text": "Wie viele Geschwister hast du?",
+          "code": [
+            {
+              "code": "224095004",
+              "system": "http://snomed.info/sct",
+              "display": "Number of siblings (observable entity)"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            }
+          ],
+          "required": false
+        },
+        {
+          "linkId": "Kid-KINDL-qschool",
+          "type": "choice",
+          "text": "Welche Schule besuchst du?",
+          "code": [
+            {
+              "code": "257698009",
+              "system": "http://snomed.info/sct",
+              "display": "School (environment)"
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "Kid-KINDL-ans1school",
+                "system": "http://snomed.info/sct",
+                "code": "161119008",
+                "display": "Grundschule"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "Kid-KINDL-ans2school",
+                "system": "http://snomed.info/sct",
+                "code": "224855002",
+                "display": "Hauptschule"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "Kid-KINDL-ans3school",
+                "system": "http://snomed.info/sct",
+                "code": "161120002",
+                "display": "Realschule"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "Kid-KINDL-ans4school",
+                "system": "http://snomed.info/sct",
+                "code": "161120002",
+                "display": "Gesamtschule"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "Kid-KINDL-ans5school",
+                "system": "http://snomed.info/sct",
+                "code": "224856001",
+                "display": "Gymnasium"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "Kid-KINDL-ans6school",
+                "system": "http://snomed.info/sct",
+                "code": "224863001",
+                "display": "Sonderschule"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "Kid-KINDL-ans7school",
+                "system": "http://snomed.info/sct",
+                "code": "302139001",
+                "display": "privater Unterricht"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Kid-KINDL-qexample",
+      "type": "display",
+      "text": "Als Beispiel: Hast du in der letzten Woche gerne Musik gehört? Als Antwortmöglichkeiten gibt es nie, selten, manchmal, oft und immer. Davon kannst du eine auswählen, die am besten passt.",
+      "required": false
+    },
+    {
+      "linkId": "Kid-KINDL-somatic",
+      "type": "group",
+      "text": "1. Zuerst möchten wir etwas über deinen Körper wissen, ...",
+      "code": [
+        {
+          "code": "397725003",
+          "system": "http://snomed.info/sct",
+          "display": "Somatic sensation, function (observable entity)"
+        }
+      ],
+      "required": true,
+      "item": [
+        {
+          "linkId": "Kid-KINDL-q1somatic",
+          "type": "choice",
+          "text": "In der letzten Woche...habe ich mich krank gefühlt",
+          "code": [
+            {
+              "code": "213257006",
+              "system": "http://snomed.info/sct",
+              "display": "Generally unwell (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Körperfunktionen"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-Kid-KINDL-q4somatic",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-Kid-KINDL-q4somatic",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-Kid-KINDL-q4somatic",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-Kid-KINDL-q4somatic",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-Kid-KINDL-q4somatic",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "Kid-KINDL-q2somatic",
+          "type": "choice",
+          "text": "In der letzten Woche...hatte ich Kopfweh oder Bauchweh",
+          "code": [
+            {
+              "code": "25064002",
+              "system": "http://snomed.info/sct",
+              "display": "Headache (finding)"
+            },
+            {
+              "code": "271681002",
+              "system": "http://snomed.info/sct",
+              "display": "Stomach ache (finding)"
+            },
+            {
+              "code": "279001004",
+              "system": "http://snomed.info/sct",
+              "display": "Pain finding at anatomical site (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b280",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Schmerz"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q3somatic",
+          "type": "choice",
+          "text": "In der letzten Woche...war ich müde und schlapp",
+          "code": [
+            {
+              "code": "224960004",
+              "system": "http://snomed.info/sct",
+              "display": "Tired (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b130",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Funktionen der psychischen Energie und des Antriebs"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q4somatic",
+          "type": "choice",
+          "text": "In der letzten Woche...hatte ich viel Kraft und Ausdauer",
+          "code": [
+            {
+              "code": "359752005",
+              "system": "http://snomed.info/sct",
+              "display": "Energy and stamina finding (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b130",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Funktionen der psychischen Energie und des Antriebs"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "KID-KINDL-emotion",
+      "type": "group",
+      "text": "2. ... dann etwas darüber, wie du dich fühlst ...",
+      "code": [
+        {
+          "code": "1193648005",
+          "system": "http://snomed.info/sct",
+          "display": "Type of emotion (observable entity)"
+        }
+      ],
+      "required": true,
+      "item": [
+        {
+          "linkId": "Kid-KINDL-q1emotion",
+          "type": "choice",
+          "text": "In der letzten Woche...habe ich viel gelacht und Spaß gehabt",
+          "code": [
+            {
+              "code": "359752005",
+              "system": "http://snomed.info/sct",
+              "display": "Finding of capacity for enjoyment (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-Kid-KINDL-q4emotion",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-Kid-KINDL-q4emotion",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-Kid-KINDL-q4emotion",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-Kid-KINDL-q4emotion",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-Kid-KINDL-q4emotion",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "Kid-KINDL-q2emotion",
+          "type": "choice",
+          "text": "In der letzten Woche...war mir langweilig",
+          "code": [
+            {
+              "code": "83765003",
+              "system": "http://snomed.info/sct",
+              "display": "Boredom (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q3emotion",
+          "type": "choice",
+          "text": "In der letzten Woche...habe ich mich allein gefühlt",
+          "code": [
+            {
+              "code": "267076002",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling lonely (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q4emotion",
+          "type": "choice",
+          "text": "In der letzten Woche...habe ich Angst gehabt",
+          "code": [
+            {
+              "code": "48694002",
+              "system": "http://snomed.info/sct",
+              "display": "Anxiety (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "Kid-KINDL-self-image",
+      "type": "group",
+      "code": [
+        {
+          "code": "225510008",
+          "system": "http://snomed.info/sct",
+          "display": "Self-image (observable entity)"
+        }
+      ],
+      "text": "3. ... und was du selbst von dir hältst.",
+      "required": true,
+      "item": [
+        {
+          "linkId": "Kid-KINDL-q1self-image",
+          "type": "choice",
+          "text": "In der letzten Woche...war ich stolz auf mich",
+          "code": [
+            {
+              "code": "1149081002",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling proud (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1266",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Selbstvertrauen"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-Kid-KINDL-q4self-image",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-Kid-KINDL-q4self-image",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-Kid-KINDL-q4self-image",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-Kid-KINDL-q4self-image",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-Kid-KINDL-q4self-image",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "Kid-KINDL-q2self-image",
+          "type": "choice",
+          "text": "In der letzten Woche...fand ich mich gut",
+          "code": [
+            {
+              "code": "716408006",
+              "system": "http://snomed.info/sct",
+              "display": "Able to feel confident (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1266",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Selbstvertrauen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q3self-image",
+          "type": "choice",
+          "text": "In der letzten Woche...mochte ich mich selbst leiden",
+          "code": [
+            {
+              "code": "225509003",
+              "system": "http://snomed.info/sct",
+              "display": "Good self-image (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1266",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Selbstvertrauen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q4self-image",
+          "type": "choice",
+          "text": "In der letzten Woche...hatte ich viele gute Ideen",
+          "code": [
+            {
+              "code": "716454002",
+              "system": "http://snomed.info/sct",
+              "display": "Able to think creatively (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1266",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Selbstvertrauen"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "Kid-KINDL-family",
+      "type": "group",
+      "text": "4. In den nächsten Fragen geht es um deine Familie ...",
+      "code": [
+        {
+          "code": "224093006",
+          "system": "http://snomed.info/sct",
+          "display": "Details of family (observable entity)"
+        }
+      ],
+      "required": true,
+      "item": [
+        {
+          "linkId": "Kid-KINDL-q1family",
+          "type": "choice",
+          "text": "In der letzten Woche... habe ich mich gut mit meinen Eltern verstanden",
+          "code": [
+            {
+              "code": "1148841003",
+              "system": "http://snomed.info/sct",
+              "display": "Adequate family support (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-Kid-KINDL-q4family",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-Kid-KINDL-q4family",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-Kid-KINDL-q4family",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-Kid-KINDL-q4family",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-Kid-KINDL-q4family",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "Kid-KINDL-q2family",
+          "type": "choice",
+          "text": "In der letzten Woche... habe ich mich zu Hause wohl gefühlt",
+          "code": [
+            {
+              "code": "1148841003",
+              "system": "http://snomed.info/sct",
+              "display": "Adequate family support (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d698",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Häusliches Leben, anders bezeichnet"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q3family",
+          "type": "choice",
+          "text": "In der letzten Woche... hatten wir schlimmen Streit zu Hause",
+          "code": [
+            {
+              "code": "105485001",
+              "system": "http://snomed.info/sct",
+              "display": "Family tension (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d698",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Häusliches Leben, anders bezeichnet"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q4family",
+          "type": "choice",
+          "text": "In der letzten Woche... haben mir meine Eltern Sachen verboten",
+          "code": [
+            {
+              "code": "52184009",
+              "system": "http://snomed.info/sct",
+              "display": "Parent-child problem (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "Kid-KINDL-friends",
+      "type": "group",
+      "text": "5. ... und danach um Freunde.",
+      "code": [
+        {
+          "code": "699089001",
+          "system": "http://snomed.info/sct",
+          "display": "Social wellbeing (observable entity)"
+        },
+        {
+          "code": "e320",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Freunde"
+        }
+      ],
+      "required": true,
+      "item": [
+        {
+          "linkId": "Kid-KINDL-q1friends",
+          "type": "choice",
+          "text": "In der letzten Woche... habe ich mit Freunden gespielt",
+          "code": [
+            {
+              "code": "300776002",
+              "system": "http://snomed.info/sct",
+              "display": "Does play (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d7",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Interpersonelle Interaktionen und Beziehungen"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-Kid-KINDL-q3friends",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-Kid-KINDL-q3friends",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-Kid-KINDL-q3friends",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-Kid-KINDL-q3friends",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-Kid-KINDL-q3friends",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "Kid-KINDL-q2friends",
+          "type": "choice",
+          "text": "In der letzten Woche... mochten mich die anderen Kinder",
+          "code": [
+            {
+              "code": "1186689004",
+              "system": "http://snomed.info/sct",
+              "display": "Friendly environment (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d7",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Interpersonelle Interaktionen und Beziehungen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q3friends",
+          "type": "choice",
+          "text": "In der letzten Woche... habe ich mich mit meinen Freunden gut verstanden",
+          "code": [
+            {
+              "code": "1066481000000100",
+              "system": "http://snomed.info/sct",
+              "display": "Able to maintain friendships (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1261",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Umgänglichkeit"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q4friends",
+          "type": "choice",
+          "text": "In der letzten Woche... hatte ich das Gefühl, dass ich anders bin als die anderen",
+          "code": [
+            {
+              "code": "307049007",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling alienated (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d7",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Interpersonelle Interaktionen und Beziehungen"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "Kid-KINDL-school",
+      "type": "group",
+      "code": [
+        {
+          "code": "266981003",
+          "system": "http://snomed.info/sct",
+          "display": "Schooling (observable entity)"
+        }
+      ],
+      "text": "6. Nun möchte ich noch etwas über die Schule wissen.",
+      "required": true,
+      "item": [
+        {
+          "linkId": "Kid-KINDL-q1school",
+          "type": "choice",
+          "text": "In der letzten Woche, in der ich in der Schule war, ...habe ich die Schulaufgaben gut geschafft",
+          "code": [
+            {
+              "code": "716404008",
+              "system": "http://snomed.info/sct",
+              "display": "Able to do homework (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d820",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Schulbildung"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-Kid-KINDL-q3school",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-Kid-KINDL-q3school",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-Kid-KINDL-q3school",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-Kid-KINDL-q3school",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-Kid-KINDL-q3school",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "Kid-KINDL-q2school",
+          "type": "choice",
+          "text": "In der letzten Woche, in der ich in der Schule war, ...hat mir der Unterricht Spaß gemacht",
+          "code": [
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Finding of capacity for enjoyment (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d820",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Schulbildung"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q3school",
+          "type": "choice",
+          "text": "In der letzten Woche, in der ich in der Schule war, ...habe ich mir Sorgen um meine Zukunft gemacht",
+          "code": [
+            {
+              "code": "79015004",
+              "system": "http://snomed.info/sct",
+              "display": "Worried (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d820",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Schulbildung"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q4school",
+          "type": "choice",
+          "text": "In der letzten Woche, in der ich in der Schule war, ...habe ich Angst vor schlechten Noten gehabt",
+          "code": [
+            {
+              "code": "247825008",
+              "system": "http://snomed.info/sct",
+              "display": "Anxiety about behavior or performance (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d820",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Schulbildung"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "Kid-KINDL-Infobox3",
+      "type": "display",
+      "text": "Vielen Dank für deine Mitarbeit!",
+      "required": false
+    },
+    {
+      "linkId": "Kid-KINDL-score",
+      "text": "Kid KINDL Fragebogen Gesamtpunktzahl",
+      "code": [
+        {
+          "code": "782487009",
+          "system": "http://snomed.info/sct",
+          "display": "Health assessment questionnaire score (observable entity)"
+        }
+      ],
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Gesamtpunktzahl des Fragebogens wird aufsummiert",
+            "name": "score",
+            "language": "text/fhirpath",
+            "expression": "%resource.answers().value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": true,
+      "readOnly": true
+    },
+    {
+      "linkId": "Kid-KINDL-school-score",
+      "text": "Kid KINDL Fragebogen Punktzahl Schule",
+      "code": [
+        {
+          "code": "782487009",
+          "system": "http://snomed.info/sct",
+          "display": "Health assessment questionnaire score (observable entity)"
+        }
+      ],
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Gesamtpunktzahl des Fragebogens wird aufsummiert",
+            "name": "score",
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId = 'Kid-KINDL-school').item.answer.value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": true,
+      "readOnly": true
+    }
+  ]
+}

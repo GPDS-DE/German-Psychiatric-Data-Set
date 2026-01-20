@@ -1,0 +1,1174 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "YMRS-de-DE",
+  "meta": {
+    "tag": [
+      {
+        "code": "de-DE",
+        "system": "urn:ietf:bcp:47",
+        "display": "Deutsch"
+      }
+    ]
+  },
+  "language": "en-US",
+  "title": "YMRS",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "code": [
+    {
+      "code": "C102124",
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "display": "Young Mania Rating Scale Questionnaire"
+    },
+    {
+      "code": "443173002",
+      "system": "http://snomed.info/sct",
+      "display": "Childhood health assessment questionnaire (assessment scale)"
+    },
+    {
+      "code": "C142453",
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "display": "Clinician-reported Outcome"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "YMRS-infobox",
+      "type": "display",
+      "text": "Beginnen Sie die Befragung bitte bei jedem Item mit Fragen des Scripts. Sind noch zusätzliche Informationen notwendig,um das Rating auszuführen, können Sie noch weitere Fragen stellen. Beurteilen Sie jedes Item vor allem nach Ihrem eigenenErmessen ausschließlich nach dem Bericht des Patienten.Das Ziel jedes Items ist es, die Schwere des jeweiligen Symptoms bei dem Patienten festzustellen. Um die Schwere eines Symptoms festzustellen, ist es ausreichend, wenn nur ein einziges Symptom eines jeweiligen Schweregrads vorhanden ist damit diese Punktezahl vergeben werden muss. Die Symptombeschreibungen neben der Punktzahl sind Hinweise. Falls nötig, kann man diese ignorieren, um die Schwere eines Symptoms zu bestimmen. Jedoch sollte dies eher die Ausnahme als die Regel darstellen. Benutzen Sie jedoch nur volle Punktzahlen. Entscheiden Sie sich bei jedem Item für die Kategorie, die den Patienten in den letzten 48 Stunden am besten beschreibt.",
+      "required": false
+    },
+    {
+      "linkId": "YMRS-q1",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-YMRS-q1",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 – nicht vorhanden"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-YMRS-q1",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 – auf Befragen, möglicherweise oder leicht erhöht, fröhlich"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-YMRS-q1",
+            "system": "http://snomed.info/sct",
+            "code": "162469005",
+            "display": "2 – subjektiv eindeutig gehoben, optimistisch, selbstbewusst, dem Inhalt angemessen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-YMRS-q1",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "3 – gehoben, dem Inhalt nicht angemessen, läppisch"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans5-YMRS-q1",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "4 – euphorisch, unangebrachtes Lachen und/oder Singen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "text": "1. Gehobene Stimmung. In den letzten 2 Tagen, wie war da Ihre Stimmung? Waren Sie optimistisch, wenn Sie an die Zukunft dachten? (Gab es Grund dazu?) Fühlten Sie sich besonders selbstbewusst? Gab es Zeiten, in denen Sie sich ein bisschen zu gut fühlten, oder sogar ein bisschen „high“? (Falls ja) Waren diese Zeiten wirklich „zu“ gut, oder nur besser als die schlechten Tage? Gab es Momente, in denen Sie über Sachen gelacht haben, die Sie normalerweise nicht lustig finden? Oder haben Sie Witze gemacht oder über Sachen gelacht, die andere Leute nicht lustig fanden?",
+      "code": [
+        {
+          "code": "81548002",
+          "system": "http://snomed.info/sct",
+          "display": "Elevated mood (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b152",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Emotionale Funktion"
+        },
+        {
+          "code": "C102233",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "YMRS - Elevated Mood"
+        }
+      ]
+    },
+    {
+      "linkId": "YMRS-q2",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-YMRS-q2",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 – nicht vorhanden"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-YMRS-q2",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 – subjektiv gesteigert"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-YMRS-q2",
+            "system": "http://snomed.info/sct",
+            "code": "162469005",
+            "display": "2 – lebhaft, vermehrte Gestik"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-YMRS-q2",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "3 – überschießende Energie, zeitweise hyperaktiv, rastlos (kann jedoch beruhigt werden)"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans5-YMRS-q2",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "4 – motorisch erregt, ständig hyperaktiv (kann nicht mehr beruhigt werden)"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "text": "2. Gesteigerte motorische Aktivität / Energie. In den letzten 2 Tagen: Wie war Ihre Energie? Gab es Momente, in denen Sie besonders viel Energie hatten? (Falls ja) War es schwierig, sich wieder zu beruhigen? Fühlten Sie sich rastlos, hatten Schwierigkeiten, still sitzen zu bleiben? Waren Sie aktiver als sonst, haben Sie viel mehr geschafft, als üblich?",
+      "code": [
+        {
+          "code": "28277004",
+          "system": "http://snomed.info/sct",
+          "display": "Behavior showing increased motor activity (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b147",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Psychomotorische Funktion"
+        },
+        {
+          "code": "C102234",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "YMRS - Increased Motor Activity-Energy"
+        }
+      ]
+    },
+    {
+      "linkId": "YMRS-q3",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-YMRS-q3",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 – normal, nicht gesteigert"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-YMRS-q3",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 – möglicherweise oder leicht gesteigert"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-YMRS-q3",
+            "system": "http://snomed.info/sct",
+            "code": "162469005",
+            "display": "2 – auf Befragung subjektiv eindeutig gesteigert"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-YMRS-q3",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "3 – spontan vorgebrachte sexuelle Inhalte, spricht ausführlich über sexuelle Themen, schätzt sich selbst als hypersexuell ein"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans5-YMRS-q3",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "4 – offene sexuelle Handlungen (gegenüber Patienten, Personal oder dem Interviewer)"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "text": "3. Sexuelles Interesse. War Sex wichtiger oder interessanter für Sie, als sonst? Haben Sie häufiger über Sex gesprochen, oder Witze gemacht, als Sie es normalerweise tun?",
+      "code": [
+        {
+          "code": "58436003",
+          "system": "http://snomed.info/sct",
+          "display": "Increased libido (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b640",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Sexuelle Funktionen"
+        },
+        {
+          "code": "C102235",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "YMRS - Sexual Interest"
+        }
+      ]
+    },
+    {
+      "linkId": "YMRS-q4",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-YMRS-q4",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 – berichtet über gewohnte oder erhöhte Schlafdauer"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-YMRS-q4",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 – gewohnte Schlafdauer um bis zu einer Stunde reduziert"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-YMRS-q4",
+            "system": "http://snomed.info/sct",
+            "code": "162469005",
+            "display": "2 – gewohnte Schlafdauer um mehr als eine Stunde reduziert"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-YMRS-q4",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "3 – berichtet reduziertes Schlafbedürfnis"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans5-YMRS-q4",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "4 – bestreitet, Schlaf zu benötigen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "text": "4. Schlaf. Wie viele Stunden schlafen Sie in den letzten 2 Tagen? Brauchen Sie weniger Schlaf als gewöhnlich? Sind sie trotzdem ausgeruht?",
+      "code": [
+        {
+          "code": "248256006",
+          "system": "http://snomed.info/sct",
+          "display": "Not getting enough sleep (disorder)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b134",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Funktionen des Schlafes"
+        },
+        {
+          "code": "C102236",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "YMRS - Sleep"
+        }
+      ]
+    },
+    {
+      "linkId": "YMRS-q5",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-YMRS-q5",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 – nicht vorhanden"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-YMRS-q5",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "2 – subjektiv erhöht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-YMRS-q5",
+            "system": "http://snomed.info/sct",
+            "code": "162469005",
+            "display": "4 – während des Interviews zeitweise reizbar, kürzliche Episoden von Zorn und Gereiztheit auf Station"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-YMRS-q5",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "6 – während des Interviews häufig gereizt, durchwegs kurz angebunden, barsch"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans5-YMRS-q5",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "8 – feindselig, unkooperativ, Interview nicht möglich"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ]
+        }
+      ],
+      "text": "5. Reizbarkeit. Waren Sie ärgerlich über Dinge die passiert sind, oder wie Leute Sie behandelt haben? Haben Sie Dinge mehr gestört als sonst? Waren Sie gereizt? Wie zeigten Sie Ihren Ärger?",
+      "code": [
+        {
+          "code": "55929007",
+          "system": "http://snomed.info/sct",
+          "display": "Feeling irritable (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b152",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Emotionale Funktionen"
+        },
+        {
+          "code": "C102237",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "YMRS - Irritability"
+        }
+      ]
+    },
+    {
+      "linkId": "YMRS-q6",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-YMRS-q6",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 – nicht vorhanden"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-YMRS-q6",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "2 – fühlt sich gesprächig"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-YMRS-q6",
+            "system": "http://snomed.info/sct",
+            "code": "162469005",
+            "display": "4 – zeitweise erhöhte Sprechgeschwindigkeit und -menge, zeitweise weitschweifig"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-YMRS-q6",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "6 – Rededrang, durchwegs erhöhte Sprechgeschwindigkeit und –quantität, schwer zu unterbrechen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans5-YMRS-q6",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "8 – getrieben, nicht zu unterbrechen, unaufhörlicher Redefluss"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ]
+        }
+      ],
+      "text": "6. Sprechweise (Geschwindigkeit und Qualität). Waren Sie gesprächiger als sonst? Haben sich manche beschwert, dass sie nicht zu Wort kommen? Fanden Sie es schwierig, wieder mit dem Reden aufzuhören, nachdem Sie begonnen hatten? Gab es Momente, in denen Sie so schnell gesprochen haben, dass die Leute sie kaum verstanden haben?",
+      "code": [
+        {
+          "code": "106132005",
+          "system": "http://snomed.info/sct",
+          "display": "Speech finding (finding)"
+        },
+        {
+          "code": "b330",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Funktionen des Redeflusses und Sprechrythmus"
+        },
+        {
+          "code": "C102238",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "YMRS - Speech (Rate and Amount)"
+        }
+      ]
+    },
+    {
+      "linkId": "YMRS-q7",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-YMRS-q7",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 – nicht vorhanden"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-YMRS-q7",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 – umständlich, geringfügige Ablenkbarkeit, schnelles Denken (flüchtige Gedanken?)"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-YMRS-q7",
+            "system": "http://snomed.info/sct",
+            "code": "162469005",
+            "display": "2 – ablenkbar, verliert den Faden, häufige Themenwechsel, Gedankenjagen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-YMRS-q7",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "3 – Ideenflucht, vorbeireden, Schwierigkeit, den Gedanken zu folgen, spricht in Reimen, Echolalie"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans5-YMRS-q7",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "4 – inkohärent, Kommunikation unmöglich"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "text": "7. Sprach-/Denkstörungen. Hatten Sie mehr Ideen als gewöhnlich, oder einige besonders gute? War Ihr Verstand besonders klar oder scharfsinnig? Wurden Sie häufig abgelenkt? Hatten Sie das Gefühl, Ihr Verstand arbeitet schneller als sonst? Hatten Sie manchmal so viele Ideen, dass sie den Faden verloren? Haben Sie sich in Details verloren?",
+      "code": [
+        {
+          "code": "28810003",
+          "system": "http://snomed.info/sct",
+          "display": "Flight of ideas (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b167",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Kognitiv-sprachliche Funktion"
+        },
+        {
+          "code": "C102239",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "YMRS - Language-Thought Disorder"
+        }
+      ]
+    },
+    {
+      "linkId": "YMRS-q8",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-YMRS-q8",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 – normal"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-YMRS-q8",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "2 – fragwürdige Pläne, neue Interessen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-YMRS-q8",
+            "system": "http://snomed.info/sct",
+            "code": "162469005",
+            "display": "4 – spezielle Projekte, Überreligiosität"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-YMRS-q8",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "6 – Größen- oder paranoide Inhalte, Beziehungsideen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans5-YMRS-q8",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "8 – Wahnvorstellungen, Halluzinationen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ]
+        }
+      ],
+      "text": "8. Inhalte. Haben Sie neue Pläne, oder mit neuen Projekten begonnen? Haben Sie etwas besonderes erreicht, oder neue Fähigkeiten an sich entdeckt? Hatten Sie das Gefühl, Sie hätten ein tieferes Verständnis für manche Dinge? Hatten Sie religiöse Einsichten? Gab es eine bestimmte Bedeutung für Dinge, die passiert sind, oder die Art, wie die Dinge arrangiert waren? Sind Ihnen Dinge aufgefallen, die anderen Menschen verborgen blieben, oder hatten Sie das Gefühl, dass Andere über Sie reden, oder Sie sogar verletzen wollten? Hatten sie Gedanken, die andere Menschen nicht verstehen konnten. Haben Sie Stimmen gehört, oder Dinge gesehen, die andere Menschen nicht wahrgenommen haben?",
+      "code": [
+        {
+          "code": "55956009",
+          "system": "http://snomed.info/sct",
+          "display": "Disturbance in content of thought (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b1602",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Inhalt des Denkens"
+        },
+        {
+          "code": "C102240",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "YMRS - Content"
+        }
+      ]
+    },
+    {
+      "linkId": "YMRS-q9",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-YMRS-q9",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 – fehlt, kooperativ"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-YMRS-q9",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "2 – sarkastisch, gelegentlich laut, misstrauisch"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-YMRS-q9",
+            "system": "http://snomed.info/sct",
+            "code": "162469005",
+            "display": "4 – fordernd, spricht Drohungen aus"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-YMRS-q9",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "6 – bedroht den Interviewer, schreit, Interview schwierig"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans5-YMRS-q9",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "8 – wird tätlich, destruktiv, Interview unmöglich"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ]
+        }
+      ],
+      "text": "9. Expansiv-aggressives Verhalten. Wie kamen Sie mit anderen Menschen zurecht? Gab es Momente, in denen Sie laut wurden, oder fordernd, oder sarkastisch? Hatten Sie Streitigkeiten mit anderen Menschen (was ist passiert)? Haben Sie geschrieen, Gegenstände geworfen oder etwas zerstört?",
+      "code": [
+        {
+          "code": "61372001",
+          "system": "http://snomed.info/sct",
+          "display": "Aggressive behavior (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b1261",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Umgänglichkeit"
+        },
+        {
+          "code": "C102241",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "YMRS - Disruptive-Aggressive Behaviour"
+        }
+      ]
+    },
+    {
+      "linkId": "YMRS-q10",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-YMRS-q10",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 – angemessene Kleidung und Körperpflege"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-YMRS-q10",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 – etwas vernachlässigt"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-YMRS-q10",
+            "system": "http://snomed.info/sct",
+            "code": "162469005",
+            "display": "2 – mäßig ungepflegt, unordentlich und übertrieben gekleidet"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-YMRS-q10",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "3 – unordentlich und unvollständig bekleidet, auffallend geschminkt"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans5-YMRS-q10",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "4 – völlig vernachlässigt, geschmückt, bizarre Kleidung"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "text": "10. äußere Erscheinung. Wie viel Zeit verbrachten Sie mit Körperpflege? Gab es Momente, wo andere dachten, Sie seien over- oder underdressed? Haben Sie andere Farben als sonst getragen? Trugen Sie mehr Schmuck oder Make up?",
+      "code": [
+        {
+          "code": "704442007",
+          "system": "http://snomed.info/sct",
+          "display": "Self-dressing/personal grooming deficit (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "d520",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Seine Körperteile pflegen"
+        },
+        {
+          "code": "C102242",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "YMRS - Appearance"
+        }
+      ]
+    },
+    {
+      "linkId": "YMRS-q11",
+      "type": "choice",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-YMRS-q11",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 – ist vorhanden, räumt Krankheit ein, bejaht die Notwendigkeit einer Therapie"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-YMRS-q11",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 – möglicherweise krank"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-YMRS-q11",
+            "system": "http://snomed.info/sct",
+            "code": "162469005",
+            "display": "2 – erkennt Verhaltensänderung, verneint jedoch Krankheit"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-YMRS-q11",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "3 – räumt mögliche Verhaltensänderung ein, verneint jedoch Krankheit"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans5-YMRS-q11",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "4 – verneint jegliche Verhaltensänderung"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "text": "11. Krankheitseinsicht. Wenn Sie zurückschauen, gab es Dinge, die Sie getan haben, die ungewöhnlich sind für Sie? (Falls ja) War das so, weil Ihre Stimmung eher zu gut ist? Wie erklären Sie sich (Beispiel für Symptom)?",
+      "code": [
+        {
+          "code": "713460009",
+          "system": "http://snomed.info/sct",
+          "display": "Denial about illness severity (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b1644",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Das Einsichtsvermögen betreffende Funktionen"
+        },
+        {
+          "code": "C102243",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "YMRS - Insight"
+        }
+      ]
+    },
+    {
+      "linkId": "YMRS-score",
+      "text": "YMRS Fragebogen Gesamtpunktzahl",
+      "type": "quantity",
+      "code": [
+        {
+          "code": "782487009",
+          "system": "http://snomed.info/sct",
+          "display": "Health assessment questionnaire score (observable entity)"
+        },
+        {
+          "code": "C95401",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "Patient Reported Outcome"
+        },
+        {
+          "code": "C102124",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "Young Mania Rating Scale Questionnaire"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Gesamtpunktzahl des Fragebogens wird aufsummiert",
+            "name": "score",
+            "language": "text/fhirpath",
+            "expression": "%resource.answers().value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": true,
+      "readOnly": true
+    }
+  ]
+}

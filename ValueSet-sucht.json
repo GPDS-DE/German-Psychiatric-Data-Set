@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Sucht",
+  "id": "sucht",
+  "title": "Sucht",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/sucht",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b1303",
+            "display": "Drang nach Suchtmitteln"
+          },
+          {
+            "code": "b1602",
+            "display": "Inhalt des Denkens"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "26416006",
+            "display": "Drug abuse (disorder)"
+          },
+          {
+            "code": "1254977008",
+            "display": "Family history of substance dependency (situation)"
+          },
+          {
+            "code": "439138006",
+            "display": "Both parents misuse drugs (situation)"
+          },
+          {
+            "code": "878804008",
+            "display": "Alcoholic parent (situation)"
+          },
+          {
+            "code": "15167005",
+            "display": "Alcohol abuse (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

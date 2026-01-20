@@ -1,0 +1,163 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Angst_und_Tics",
+  "id": "angst-und-tics",
+  "title": "Angst, Zwänge und Tics",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/angst-und-tics",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b152",
+            "display": "Emotionale Funktionen"
+          },
+          {
+            "code": "b1304",
+            "display": "Impulskontrolle"
+          },
+          {
+            "code": "b1521",
+            "display": "Affektkontrolle"
+          },
+          {
+            "code": "b1602",
+            "display": "Inhalt des Denkens"
+          },
+          {
+            "code": "b1470",
+            "display": "Psychomotorische Kontrolle"
+          },
+          {
+            "code": "b7652",
+            "display": "Tics und Manierismen"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1402001",
+            "display": "Fear (finding)"
+          },
+          {
+            "code": "18193002",
+            "display": "Hypochondriasis (disorder)"
+          },
+          {
+            "code": "12479006",
+            "display": "Compulsive behavior (finding)"
+          },
+          {
+            "code": "386808001",
+            "display": "Phobia (finding)"
+          },
+          {
+            "code": "247887003",
+            "display": "Unable to resist obsessional thoughts (finding)"
+          },
+          {
+            "code": "67698009",
+            "display": "Obsessional thoughts (finding)"
+          },
+          {
+            "code": "285286004",
+            "display": "Compulsion to act on thoughts (finding)"
+          },
+          {
+            "code": "274647009",
+            "display": "Restlessness and agitation (finding)"
+          },
+          {
+            "code": "24199005",
+            "display": "Feeling agitated (finding)"
+          },
+          {
+            "code": "28277004",
+            "display": "Behavior showing increased motor activity (finding)"
+          },
+          {
+            "code": "162221009",
+            "display": "Restlessness (finding)"
+          },
+          {
+            "code": "284514000",
+            "display": "Continuously shifting in seat (finding)"
+          },
+          {
+            "code": "247672006",
+            "display": "Delusional mood (finding)"
+          },
+          {
+            "code": "247688006",
+            "display": "Hypochondriacal delusion (finding)"
+          },
+          {
+            "code": "47295007",
+            "display": "Psychomotor agitation (finding)"
+          },
+          {
+            "code": "248026005",
+            "display": "Complex mannerisms - behavior (finding)"
+          },
+          {
+            "code": "230337001",
+            "display": "Motor tic disorder (disorder)"
+          },
+          {
+            "code": "230336005",
+            "display": "Vocal tic disorder (disorder)"
+          },
+          {
+            "code": "5090003",
+            "display": "Mannerism (finding)"
+          },
+          {
+            "code": "402732001",
+            "display": "Habit tic (disorder)"
+          },
+          {
+            "code": "197480006",
+            "display": "Anxiety disorder (disorder)"
+          },
+          {
+            "code": "126943008",
+            "display": "Separation anxiety (disorder)"
+          },
+          {
+            "code": "386810004",
+            "display": "Phobic disorder (disorder)"
+          },
+          {
+            "code": "279622009",
+            "display": "Performance anxiety (finding)"
+          },
+          {
+            "code": "247832004",
+            "display": "Social fear (finding)"
+          },
+          {
+            "code": "70691001",
+            "display": "Agoraphobia (disorder)"
+          },
+          {
+            "code": "225624000",
+            "display": "Panic attack (finding)"
+          },
+          {
+            "code": "21897009",
+            "display": "Generalized anxiety disorder (disorder)"
+          },
+          {
+            "code": "191736004",
+            "display": "Obsessive-compulsive disorder (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

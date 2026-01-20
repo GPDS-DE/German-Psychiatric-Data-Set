@@ -1,0 +1,91 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CDRS_R_Codes",
+  "id": "cdrs-r-codes",
+  "title": "CDRS-R Codes",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/cdrs-r-codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C155363",
+            "display": "CDRS-R - Subtotal 1"
+          },
+          {
+            "code": "C155364",
+            "display": "CDRS-R - Subtotal 2"
+          },
+          {
+            "code": "C155365",
+            "display": "CDRS-R - Subtotal 3"
+          },
+          {
+            "code": "C155366",
+            "display": "CDRS-R - CDRS-R Raw Summary Score"
+          },
+          {
+            "code": "C155367",
+            "display": "CDRS-R - CDRS-R T-Score"
+          },
+          {
+            "code": "C155368",
+            "display": "CDRS-R - CDRS-R Percentile"
+          },
+          {
+            "code": "C155369",
+            "display": "CDRS-R - CDRS-R T-Score Range"
+          },
+          {
+            "code": "C155329",
+            "display": "CDRS-R - Impaired Schoolwork"
+          },
+          {
+            "code": "C155330",
+            "display": "CDRS-R - Impaired Schoolwork Comment"
+          },
+          {
+            "code": "C155331",
+            "display": "CDRS-R - Difficulty Having Fun"
+          },
+          {
+            "code": "C155332",
+            "display": "CDRS-R - Difficulty Having Fun Comment"
+          },
+          {
+            "code": "C155333",
+            "display": "CDRS-R - Social Withdrawal"
+          },
+          {
+            "code": "C155334",
+            "display": "CDRS-R - Social Withdrawal Comment"
+          },
+          {
+            "code": "C155335",
+            "display": "CDRS-R - Sleep Disturbance"
+          },
+          {
+            "code": "C155336",
+            "display": "CDRS-R - Sleep Disturbance Comment"
+          },
+          {
+            "code": "C154458",
+            "display": "CDRS-R - Clinical Classification Question"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "273362008",
+            "display": "Child depression scale (assessment scale)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Sprache",
+  "id": "sprache",
+  "title": "Sprache",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/sprache",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b3302",
+            "display": "Sprechtempo"
+          },
+          {
+            "code": "b330",
+            "display": "Funktionen des Redeflusses und Sprechrythmus"
+          },
+          {
+            "code": "b167",
+            "display": "Kognitiv-sprachliche Funktion"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "162252005",
+            "display": "Speech limited (finding)"
+          },
+          {
+            "code": "288598006",
+            "display": "Ability to use verbal communication (observable entity)"
+          },
+          {
+            "code": "288636002",
+            "display": "Does make conversation (finding)"
+          },
+          {
+            "code": "286397009",
+            "display": "Difficulty using speech appropriately (finding)"
+          },
+          {
+            "code": "286396000",
+            "display": "Does not use speech appropriately (finding)"
+          },
+          {
+            "code": "286394002",
+            "display": "Unable to use speech appropriately (finding)"
+          },
+          {
+            "code": "289201000",
+            "display": "Lack of direction in speech (finding)"
+          },
+          {
+            "code": "289202007",
+            "display": "Talking past the point (finding)"
+          },
+          {
+            "code": "284596004",
+            "display": "Incoherent speech (finding)"
+          },
+          {
+            "code": "28810003",
+            "display": "Flight of ideas (finding)"
+          },
+          {
+            "code": "247648001",
+            "display": "Loss of direction of thought (finding)"
+          },
+          {
+            "code": "88052002",
+            "display": "Mutism (finding)"
+          },
+          {
+            "code": "449191001",
+            "display": "Logorrhea (finding)"
+          },
+          {
+            "code": "386701004",
+            "display": "Developmental articulation disorder (disorder)"
+          },
+          {
+            "code": "268734000",
+            "display": "Developmental expressive language disorder (disorder)"
+          },
+          {
+            "code": "187921002",
+            "display": "Developmental receptive language disorder (disorder)"
+          },
+          {
+            "code": "39423001",
+            "display": "Stuttering (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

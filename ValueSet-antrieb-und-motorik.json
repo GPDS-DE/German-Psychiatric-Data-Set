@@ -1,0 +1,323 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Antrieb_und_Motorik",
+  "id": "antrieb-und-motorik",
+  "title": "Psychische Energie, innerer Antrieb, Bewegung, Motorik, Zwänge und Tics",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/antrieb-und-motorik",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b130",
+            "display": "Funktionen der psychischen Energie und des Antriebs"
+          },
+          {
+            "code": "b1265",
+            "display": "Optimismus"
+          },
+          {
+            "code": "b1602",
+            "display": "Inhalt des Denkens"
+          },
+          {
+            "code": "b1300",
+            "display": "Ausmaß der psychischen Energie"
+          },
+          {
+            "code": "b1304",
+            "display": "Impulskontrolle"
+          },
+          {
+            "code": "b1521",
+            "display": "Affektkontrolle"
+          },
+          {
+            "code": "b1301",
+            "display": "Motivation"
+          },
+          {
+            "code": "b1470",
+            "display": "Psychomotorische Kontrolle"
+          },
+          {
+            "code": "b7652",
+            "display": "Tics und Manierismen"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "247752005",
+            "display": "Level of interest (observable entity)"
+          },
+          {
+            "code": "440398005",
+            "display": "Level of fatigue (observable entity)"
+          },
+          {
+            "code": "84229001",
+            "display": "Fatigue (finding)"
+          },
+          {
+            "code": "301325005",
+            "display": "Finding of general energy (finding)"
+          },
+          {
+            "code": "224960004",
+            "display": "Tired (finding)"
+          },
+          {
+            "code": "247753000",
+            "display": "Loss of interest (finding)"
+          },
+          {
+            "code": "365462008",
+            "display": "Finding of level of interest (finding)"
+          },
+          {
+            "code": "134418002",
+            "display": "Level of interest - normal (finding)"
+          },
+          {
+            "code": "713566001",
+            "display": "Lack of interest (finding)"
+          },
+          {
+            "code": "248274002",
+            "display": "Lack of energy (finding)"
+          },
+          {
+            "code": "712890000",
+            "display": "Normal energy level (finding)"
+          },
+          {
+            "code": "214264003",
+            "display": "Lethargy (finding)"
+          },
+          {
+            "code": "1144523008",
+            "display": "Normal activity tolerance (finding)"
+          },
+          {
+            "code": "248268002",
+            "display": "Tires quickly (finding)"
+          },
+          {
+            "code": "248270006",
+            "display": "Quickly exhausted (finding)"
+          },
+          {
+            "code": "248269005",
+            "display": "Tired on least exertion (finding)"
+          },
+          {
+            "code": "248271005",
+            "display": "Exhausted on least exertion (finding)"
+          },
+          {
+            "code": "26413003",
+            "display": "Low motivation (finding)"
+          },
+          {
+            "code": "64423005",
+            "display": "Normal motivation (finding)"
+          },
+          {
+            "code": "365136007",
+            "display": "Finding related to ability to perform general purpose physical activities (finding)"
+          },
+          {
+            "code": "274647009",
+            "display": "Restlessness and agitation (finding)"
+          },
+          {
+            "code": "24199005",
+            "display": "Feeling agitated (finding)"
+          },
+          {
+            "code": "28277004",
+            "display": "Behavior showing increased motor activity (finding)"
+          },
+          {
+            "code": "162221009",
+            "display": "Restlessness (finding)"
+          },
+          {
+            "code": "284514000",
+            "display": "Continuously shifting in seat (finding)"
+          },
+          {
+            "code": "263897001",
+            "display": "Feeling tense (finding)"
+          },
+          {
+            "code": "736330000",
+            "display": "Avolition (finding)"
+          },
+          {
+            "code": "365441007",
+            "display": "Finding of mental state: drive (finding)"
+          },
+          {
+            "code": "160245001",
+            "display": "No current problems or disability (situation)"
+          },
+          {
+            "code": "282474007",
+            "display": "Able to run (finding)"
+          },
+          {
+            "code": "68130003",
+            "display": "Physical activity (observable entity)"
+          },
+          {
+            "code": "302000008",
+            "display": "Does move (finding)"
+          },
+          {
+            "code": "282476009",
+            "display": "Does run (finding)"
+          },
+          {
+            "code": "79915001",
+            "display": "Fatigability (finding)"
+          },
+          {
+            "code": "359752005",
+            "display": "Energy and stamina finding (finding)"
+          },
+          {
+            "code": "44548000",
+            "display": "Hyperactive behavior (finding)"
+          },
+          {
+            "code": "405052004",
+            "display": "Level of stress (observable entity)"
+          },
+          {
+            "code": "276301007",
+            "display": "Increased energy (finding)"
+          },
+          {
+            "code": "716411007",
+            "display": "Able to have functional level of stamina (finding)"
+          },
+          {
+            "code": "247799003",
+            "display": "Pessimistic (finding)"
+          },
+          {
+            "code": "28669007",
+            "display": "Anhedonia (finding)"
+          },
+          {
+            "code": "248054003",
+            "display": "Self-neglect (finding)"
+          },
+          {
+            "code": "247755007",
+            "display": "Withdrawn (finding)"
+          },
+          {
+            "code": "102894008",
+            "display": "Feeling calm (finding)"
+          },
+          {
+            "code": "18193002",
+            "display": "Hypochondriasis (disorder)"
+          },
+          {
+            "code": "12479006",
+            "display": "Compulsive behavior (finding)"
+          },
+          {
+            "code": "386808001",
+            "display": "Phobia (finding)"
+          },
+          {
+            "code": "247887003",
+            "display": "Unable to resist obsessional thoughts (finding)"
+          },
+          {
+            "code": "67698009",
+            "display": "Obsessional thoughts (finding)"
+          },
+          {
+            "code": "285286004",
+            "display": "Compulsion to act on thoughts (finding)"
+          },
+          {
+            "code": "106121005",
+            "display": "Motivation finding (finding)"
+          },
+          {
+            "code": "247750002",
+            "display": "Drive (observable entity)"
+          },
+          {
+            "code": "86808004",
+            "display": "Increased motivation (finding)"
+          },
+          {
+            "code": "47295007",
+            "display": "Psychomotor agitation (finding)"
+          },
+          {
+            "code": "276306002",
+            "display": "Loss of initiative (finding)"
+          },
+          {
+            "code": "248026005",
+            "display": "Complex mannerisms - behavior (finding)"
+          },
+          {
+            "code": "88052002",
+            "display": "Mutism (finding)"
+          },
+          {
+            "code": "449191001",
+            "display": "Logorrhea (finding)"
+          },
+          {
+            "code": "416909000",
+            "display": "Impaired psychomotor performance (finding)"
+          },
+          {
+            "code": "5158005",
+            "display": "Gilles de la Tourette's syndrome (disorder)"
+          },
+          {
+            "code": "40979000",
+            "display": "Lack of exercise (finding)"
+          },
+          {
+            "code": "268674003",
+            "display": "Developmental disorder of motor function (disorder)"
+          },
+          {
+            "code": "257733005",
+            "display": "Activity (observable entity)"
+          },
+          {
+            "code": "43994002",
+            "display": "Behavior showing reduced motor activity (finding)"
+          },
+          {
+            "code": "1171000175109",
+            "display": "Increased physical activity (finding)"
+          },
+          {
+            "code": "65401001",
+            "display": "Psychomotor development, function (observable entity)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1921 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "BDI-II-de-DE",
+  "language": "de-DE",
+  "title": "BDI II",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "code": [
+    {
+      "code": "C95401",
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "display": "Patient Reported Outcome"
+    },
+    {
+      "code": "C40438",
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "display": "Beck Depression Inventory"
+    },
+    {
+      "code": "273306008",
+      "system": "http://snomed.info/sct",
+      "display": "Beck depression inventory (assessment scale)"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "BDI-name",
+      "type": "string",
+      "text": "Name",
+      "required": false
+    },
+    {
+      "linkId": "BDI-age",
+      "type": "integer",
+      "text": "Alter",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 1
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 122
+        }
+      ],
+      "required": false
+    },
+    {
+      "linkId": "BDI-qwm",
+      "type": "choice",
+      "text": "Geschlecht",
+      "required": false,
+      "code": [
+        {
+          "code": "734000001",
+          "system": "http://snomed.info/sct",
+          "display": "Biological sex (property) (qualifier value)"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "BDI-ansm",
+            "system": "http://snomed.info/sct",
+            "code": "248153007",
+            "display": "weiblich"
+          }
+        },
+        {
+          "valueCoding": {
+            "id": "BDI-answ",
+            "system": "http://snomed.info/sct",
+            "code": "248152002",
+            "display": "männlich"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-qdate",
+      "type": "date",
+      "text": "Datum",
+      "required": false,
+      "code": [
+        {
+          "code": "439272007",
+          "system": "http://snomed.info/sct",
+          "display": "Date of procedure (observable entity)"
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-infobox",
+      "type": "display",
+      "required": false,
+      "text": "Anleitung: Dieser Fragebogen enthält 21 Gruppen von Aussagen. Bitte lesen Sie jede dieser Gruppen von Aussagen sorgfältig durch und suchen Sie sich dann in jeder Gruppe eine Aussage heraus, die am besten beschreibt, wie Sie sich in den letzten zwei Wochen, einschließlich heute, gefühlt haben. Kreuzen Sie die Zahl neben der Aussage an, die Sie sich herausgesucht haben (0, 1, 2 oder 3). Falls in einer Gruppe mehrere Aussagen gleichermaßen auf Sie zutreffen, kreuzen Sie die Aussage mit der höheren Zahl an. Achten Sie bitte darauf, dass Sie in jeder Gruppe nicht mehr als eine Aussage ankreuzen, das gilt auch für Gruppe 16 (Veränderung der Schlafgewohnheiten) oder Gruppe 18 (Veränderung des Appetits)."
+    },
+    {
+      "linkId": "BDI-q1",
+      "type": "choice",
+      "text": "1. Traurigkeit",
+      "required": true,
+      "code": [
+        {
+          "code": "81548002",
+          "system": "http://snomed.info/sct",
+          "display": "Elevated mood (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b152",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Emotionale Funktion"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q1",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich bin nicht traurig"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q1",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich bin oft traurig"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q1",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich bin ständig traurig"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q1",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich bin so traurig oder unglücklich, dass ich es nicht aushalte"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q2",
+      "type": "choice",
+      "text": "2. Pessimismus",
+      "required": true,
+      "code": [
+        {
+          "code": "247799003",
+          "system": "http://snomed.info/sct",
+          "display": "Pessimistic (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b1265",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Optimismus"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q2",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich sehe nicht mutlos in die Zukunft"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q2",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich sehe mutloser in die Zukunft als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q2",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich bin mutlos und erwarte nicht, dass meine Situation besser wird"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q2",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich glaube, dass meine Zukunft hoffnungslos ist und nur noch schlechter wird"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q3",
+      "type": "choice",
+      "text": "3. Versagensgefühle",
+      "code": [
+        {
+          "code": "225010003",
+          "system": "http://snomed.info/sct",
+          "display": "Feeling a failure (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b152",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Emotionale Funktion"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q3",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich fühle mich nicht als Versager"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q3",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich habe häufiger Versagensgefühle"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q3",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Wenn ich zurückblicke, sehe ich eine Menge Fehlschläge"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q3",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich habe das Gefühl, als Mensch ein völliger Versager zu sein"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q4",
+      "type": "choice",
+      "text": "4. Verlust von Freude",
+      "code": [
+        {
+          "code": "28669007",
+          "system": "http://snomed.info/sct",
+          "display": "Anhedonia (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b152",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Emotionale Funktion"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q4",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich kann die Dinge genauso gut genießen wie früher"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q4",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich kann die Dinge nicht mehr so genießen wie früher"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q4",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Dinge, die mir früher Freude gemacht haben, kann ich kaum mehr genießen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q4",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Dinge, die mir früher Freude gemacht haben, kann ich überhaupt nicht mehr genießen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q5",
+      "type": "choice",
+      "text": "5. Schuldgefühle",
+      "code": [
+        {
+          "code": "7571003",
+          "system": "http://snomed.info/sct",
+          "display": "Feeling guilt (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b152",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Emotionale Funktion"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q5",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich habe keine besonderen Schuldgefühle"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q5",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich habe oft Schuldgefühle wegen Dingen, die ich getan habe oder hätte tun sollen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q5",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich habe die meiste Zeit Schuldgefühle"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q5",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich habe ständig Schuldgefühle"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q6",
+      "type": "choice",
+      "text": "6. Bestrafungsgefühle",
+      "code": [
+        {
+          "code": "53108004",
+          "system": "http://snomed.info/sct",
+          "display": "Delusion of guilt (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b152",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Emotionale Funktion"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q6",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich habe nicht das Gefühl, für etwas bestraft zu sein"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q6",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich habe das Gefühl, vielleicht bestraft zu werden"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q6",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich erwarte, bestraft zu werden"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q6",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich habe das Gefühl, bestraft zu sein"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q7",
+      "type": "choice",
+      "text": "7. Selbstablehnung",
+      "required": true,
+      "code": [
+        {
+          "code": "247892001",
+          "system": "http://snomed.info/sct",
+          "display": "Self-depreciation (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b1602",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Inhalt des Denkens"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q7",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich halte von mir genauso viel wie immer"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q7",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich habe Vertrauen in mich verloren"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q7",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich bin von mir enttäuscht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q7",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich lehne mich völlig ab"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q8",
+      "type": "choice",
+      "text": "8. Selbstvorwürfe",
+      "required": true,
+      "code": [
+        {
+          "code": "247892001",
+          "system": "http://snomed.info/sct",
+          "display": "Self-depreciation (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b152",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Emotionale Funktion"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q8",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich kritisiere oder tadle mich nicht mehr als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q8",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich bin mir gegenüber kritischer als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q8",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich kritisiere mich für all meine Mängel"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q8",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich gebe mir die Schuld für alles Schlimme, was passiert"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q9",
+      "type": "choice",
+      "text": "9. Selbstmordgedanken",
+      "required": true,
+      "code": [
+        {
+          "code": "6471006",
+          "system": "http://snomed.info/sct",
+          "display": "Suicidal thoughts (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b1602",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Inhalt des Denkens"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q9",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich denke nicht daran, mir etwas anzutun"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q9",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich denke manchmal an Selbstmord, aber ich würde es nicht tun"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q9",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich möchte mich am liebsten umbringen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q9",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich würde mich umbringen, wenn ich die Gelegenheit dazu hätte"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q10",
+      "type": "choice",
+      "text": "10. Weinen",
+      "required": true,
+      "code": [
+        {
+          "code": "304534000",
+          "system": "http://snomed.info/sct",
+          "display": "Crying (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b152",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Emotionale Funktion"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q10",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich weine nicht öfter als früher"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q10",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich weine jetzt mehr als früher"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q10",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich weine beim geringsten Anlass"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q10",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich möchte gern weinen, aber ich kann nicht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q11",
+      "type": "choice",
+      "text": "11. Unruhe",
+      "required": true,
+      "code": [
+        {
+          "code": "274647009",
+          "system": "http://snomed.info/sct",
+          "display": "Restlessness and agitation (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b147",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Psychomotorische Funktion"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q11",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich bin nicht unruhiger als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q11",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich bin unruhiger als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q11",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich bin so unruhig, dass es mir schwer fällt, stillzusitzen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q11",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich bin so unruhig, dass ich mich ständig bewegen oder etwas tun muss"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q12",
+      "type": "choice",
+      "text": "12. Interessenverlust",
+      "required": true,
+      "code": [
+        {
+          "code": "247753000",
+          "system": "http://snomed.info/sct",
+          "display": "Loss of interest (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b130",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Funktionen der psychischen Energie und des Antriebs"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q12",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich habe das Interesse an anderen Menschen oder an Tätigkeiten nicht verloren"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q12",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich habe weniger Interesse an anderen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q12",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich habe das Interesse an anderen Menschen oder an Dingen zum größten Teil verloren"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q12",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Es fällt mir schwer, mich überhaupt für irgend etwas zu interessieren"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q13",
+      "type": "choice",
+      "text": "13. Entschlussunfähigkeit",
+      "required": true,
+      "code": [
+        {
+          "code": "304688001",
+          "system": "http://snomed.info/sct",
+          "display": "Unable to make considered choices (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b1645",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Das Urteilsvermögen betreffende Funktionen"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q13",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich bin so entschlussfreudig wie immer"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q13",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Es fällt mir schwerer als sonst, Entscheidungen zu treffen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q13",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Es fällt mir viel schwerer als sonst, Entscheidungen zu treffen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q13",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich habe Mühe, überhaupt Entscheidungen zu treffen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q14",
+      "type": "choice",
+      "text": "14. Wertlosigkeit",
+      "required": true,
+      "code": [
+        {
+          "code": "247892001",
+          "system": "http://snomed.info/sct",
+          "display": "Self-depreciation (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b1602",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Inhalt des Denkens"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q14",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich fühle mich nicht wertlos"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q14",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich halte mich für weniger wertvoll und nützlich als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q14",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Verglichen mit anderen Menschen fühle ich mich viel weniger wert"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q14",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich fühle mich völlig wertlos"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q15",
+      "type": "choice",
+      "text": "15. Energieverlust",
+      "required": true,
+      "code": [
+        {
+          "code": "248274002",
+          "system": "http://snomed.info/sct",
+          "display": "Lack of energy (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b130",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Funktionen der psychischen Energie und des Antriebs"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q15",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich habe so viel Energie wie immer"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q15",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich habe weniger Energie als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q15",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich habe so wenig Energie, dass ich kaum noch etwas schaffe"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q15",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich habe keine Energie mehr, um überhaupt noch etwas zu tun"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q16",
+      "type": "choice",
+      "text": "16. Veränderungen der Schlafgewohnheiten",
+      "required": true,
+      "code": [
+        {
+          "code": "26677001",
+          "system": "http://snomed.info/sct",
+          "display": "Sleep pattern disturbance (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b134",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Funktionen des Schlafes"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q16",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Meine Schlafgewohnheiten haben sich nicht verändert"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2a-BDI-q16",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1a - Ich schlafe etwas mehr als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2b-BDI-q16",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1b - Ich schlafe etwas weniger als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3a-BDI-q16",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2a - Ich schlafe viel mehr als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3b-BDI-q16",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2b - Ich schlafe viel weniger als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4a-BDI-q16",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3a - Ich schlafe fast den ganzen Tag"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4b-BDI-q16",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3b - Ich wache 1-2 Stunden früher auf als gewöhnlich und kann nicht mehr einschlafen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q17",
+      "type": "choice",
+      "text": "17. Reizbarkeit",
+      "required": true,
+      "code": [
+        {
+          "code": "55929007",
+          "system": "http://snomed.info/sct",
+          "display": "Feeling irritable (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b152",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Emotionale Funktion"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q17",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich bin nicht reizbarer als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q17",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich bin reizbarer als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q17",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich bin viel reizbarer als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q17",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich fühle mich dauernd gereizt"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q18",
+      "type": "choice",
+      "text": "18. Veränderungen des Appetits",
+      "required": true,
+      "code": [
+        {
+          "code": "249473004",
+          "system": "http://snomed.info/sct",
+          "display": "Altered appetite (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b1302",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Appetit"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q18",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Mein Appetit hat sich nicht verändert"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2a-BDI-q18",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1a - Mein Appetit ist etwas schlechter als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2b-BDI-q18",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1b - Mein Appetit ist etwas größer als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3a-BDI-q18",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2a - Mein Appetit ist viel schlechter als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3b-BDI-q18",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2b - Mein Appetit ist viel größer als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4a-BDI-q18",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3a - Ich habe überhaupt kein Appetit"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4b-BDI-q18",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3b - Ich habe ständig Heißhunger"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q19",
+      "type": "choice",
+      "text": "19. Konzentrationsschwierigkeiten",
+      "required": true,
+      "code": [
+        {
+          "code": "60032008",
+          "system": "http://snomed.info/sct",
+          "display": "Unable to concentrate (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b140",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Funktionen der Aufmerksamkeit"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q19",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich kann mich so gut konzentrieren wie immer"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q19",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich kann mich nicht mehr so gut konzentrieren wie sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q19",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Es fällt mir schwer, mich längere Zeit auf irgendetwas zu konzentrieren"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q19",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich kann mich überhaupt nicht mehr konzentrieren"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q20",
+      "type": "choice",
+      "text": "20. Ermüdung oder Erschöpfung",
+      "required": true,
+      "code": [
+        {
+          "code": "84229001",
+          "system": "http://snomed.info/sct",
+          "display": "Fatigue (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b130",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Funktionen der psychischen Energie und des Antriebs"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q20",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Ich fühle mich nicht müder oder erschöpfter als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q20",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich werde schneller müde oder erschöpft als sonst"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q20",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Für viele Dinge, die ich üblicherweise tue, bin ich zu müde oder erschöpft"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q20",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich bin so müde oder erschöpft, dass ich fast nichts mehr tun kann"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-q21",
+      "type": "choice",
+      "text": " 21. Verlust an sexuellem Interesse",
+      "required": true,
+      "code": [
+        {
+          "code": "248096004",
+          "system": "http://snomed.info/sct",
+          "display": "Lack of libido (finding)"
+        },
+        {
+          "code": "162465004",
+          "system": "http://snomed.info/sct",
+          "display": "Symptom severity (finding)"
+        },
+        {
+          "code": "b640",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Sexuelle Funktionen"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ans1-BDI-q21",
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "0 - Mein Interesse an Sexualität hat sich in letzter Zeit nicht verändert"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans2-BDI-q21",
+            "system": "http://snomed.info/sct",
+            "code": "162468002",
+            "display": "1 - Ich interessiere mich weniger für Sexualität als früher"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans3-BDI-q21",
+            "system": "http://snomed.info/sct",
+            "code": "162470006",
+            "display": "2 - Ich interessiere mich jetzt viel weniger für Sexualität"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "id": "ans4-BDI-q21",
+            "system": "http://snomed.info/sct",
+            "code": "162471005",
+            "display": "3 - Ich habe das Interesse an Sexualität völlig verloren"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "BDI-score",
+      "text": "BDI Fragebogen Gesamtpunktzahl",
+      "type": "quantity",
+      "code": [
+        {
+          "code": "782487009",
+          "system": "http://snomed.info/sct",
+          "display": "Health assessment questionnaire score (observable entity)"
+        },
+        {
+          "code": "718366000",
+          "system": "http://snomed.info/sct",
+          "display": "Beck Depression Inventory II score (observable entity)"
+        },
+        {
+          "code": "C95401",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "Patient Reported Outcome"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Gesamtpunktzahl des Fragebogens wird aufsummiert",
+            "name": "score",
+            "language": "text/fhirpath",
+            "expression": "%resource.answers().value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": true,
+      "readOnly": true
+    }
+  ]
+}

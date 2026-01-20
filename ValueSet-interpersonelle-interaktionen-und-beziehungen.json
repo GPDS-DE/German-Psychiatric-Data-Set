@@ -1,0 +1,279 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Interaktionen_und_Beziehungen",
+  "id": "interpersonelle-interaktionen-und-beziehungen",
+  "title": "(Interpersonelle) Interaktionen und Beziehungen",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/interpersonelle-interaktionen-und-beziehungen",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "d7",
+            "display": "Interpersonelle Interaktionen und Beziehungen"
+          },
+          {
+            "code": "e320",
+            "display": "Freunde"
+          },
+          {
+            "code": "b1261",
+            "display": "Umgänglichkeit"
+          },
+          {
+            "code": "e3",
+            "display": "Unterstützung und Beziehungen"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "300776002",
+            "display": "Does play (finding)"
+          },
+          {
+            "code": "300782004",
+            "display": "Does participate in games for play (finding)"
+          },
+          {
+            "code": "300777006",
+            "display": "Does not play (finding)"
+          },
+          {
+            "code": "1186689004",
+            "display": "Friendly environment (finding)"
+          },
+          {
+            "code": "1066481000000100",
+            "display": "Able to maintain friendships (finding)"
+          },
+          {
+            "code": "26291000146108",
+            "display": "Able to make friends (finding)"
+          },
+          {
+            "code": "699089001",
+            "display": "Social wellbeing (observable entity)"
+          },
+          {
+            "code": "307049007",
+            "display": "Feeling alienated (finding)"
+          },
+          {
+            "code": "423049000",
+            "display": "Social outcast (finding)"
+          },
+          {
+            "code": "1145306007",
+            "display": "Good social support (finding)"
+          },
+          {
+            "code": "1300103006",
+            "display": "Feels social relationships are satisfying and sufficient (finding)"
+          },
+          {
+            "code": "1230391007",
+            "display": "Adequate social connection (finding)"
+          },
+          {
+            "code": "247755007",
+            "display": "Withdrawn (finding)"
+          },
+          {
+            "code": "225018005",
+            "display": "Feeling unloved (finding)"
+          },
+          {
+            "code": "225017000",
+            "display": "Feeling unwanted (finding)"
+          },
+          {
+            "code": "247997008",
+            "display": "Bullying (finding)"
+          },
+          {
+            "code": "113163005",
+            "display": "Friend (person)"
+          },
+          {
+            "code": "79351003",
+            "display": "Hostile behavior (finding)"
+          },
+          {
+            "code": "288636002",
+            "display": "Does make conversation (finding)"
+          },
+          {
+            "code": "61372001",
+            "display": "Aggressive behavior (finding)"
+          },
+          {
+            "code": "1290290008",
+            "display": "Cooperative attitude (finding)"
+          },
+          {
+            "code": "704373005",
+            "display": "Lack of trust (finding)"
+          },
+          {
+            "code": "284616006",
+            "display": "Verbally threatening behavior (finding)"
+          },
+          {
+            "code": "80422002",
+            "display": "Destructive behavior (finding)"
+          },
+          {
+            "code": "284615005",
+            "display": "Physically threatening behavior (finding)"
+          },
+          {
+            "code": "224479009",
+            "display": "Receives help from friend (finding)"
+          },
+          {
+            "code": "300738008",
+            "display": "Able to participate in leisure activities (finding)"
+          },
+          {
+            "code": "1186692000",
+            "display": "Happy environment (finding)"
+          },
+          {
+            "code": "248020004",
+            "display": "Bizarre behavior (finding)"
+          },
+          {
+            "code": "422650009",
+            "display": "Social isolation (finding)"
+          },
+          {
+            "code": "247977003",
+            "display": "Social disinhibition (finding)"
+          },
+          {
+            "code": "225598002",
+            "display": "Interaction with others (observable entity)"
+          },
+          {
+            "code": "105411000",
+            "display": "Social withdrawal (finding)"
+          },
+          {
+            "code": "88052002",
+            "display": "Mutism (finding)"
+          },
+          {
+            "code": "272151006",
+            "display": "Relationships (qualifier value)"
+          },
+          {
+            "code": "268667008",
+            "display": "Childhood and adolescent disturbance with shyness (finding)"
+          },
+          {
+            "code": "268668003",
+            "display": "Childhood and adolescent disturbance with introversion (finding)"
+          },
+          {
+            "code": "224952000",
+            "display": "Introvert (finding)"
+          },
+          {
+            "code": "248023002",
+            "display": "Histrionic behavior (finding)"
+          },
+          {
+            "code": "247973004",
+            "display": "Disinhibited behaviour (finding)"
+          },
+          {
+            "code": "286734003",
+            "display": "Callous character (finding)"
+          },
+          {
+            "code": "113164004",
+            "display": "Childhood or adolescent antisocial behavior (finding)"
+          },
+          {
+            "code": "304868003",
+            "display": "Insecure attachment (finding)"
+          },
+          {
+            "code": "248043008",
+            "display": "Non-compliant behavior (finding)"
+          },
+          {
+            "code": "248039009",
+            "display": "Defiant behaviour (finding)"
+          },
+          {
+            "code": "225478005",
+            "display": "Verbally abusive behavior (finding)"
+          },
+          {
+            "code": "225480004",
+            "display": "Physically abusive behaviour (finding)"
+          },
+          {
+            "code": "255576009",
+            "display": "Telling untruths (finding)"
+          },
+          {
+            "code": "248046000",
+            "display": "Running away (finding)"
+          },
+          {
+            "code": "169937006",
+            "display": "Bonding problems (finding)"
+          },
+          {
+            "code": "424573006",
+            "display": "Difficulty maintaining relationships (finding)"
+          },
+          {
+            "code": "39833003",
+            "display": "Dissocial character (finding)"
+          },
+          {
+            "code": "60814007",
+            "display": "Antisocial behavior (finding)"
+          },
+          {
+            "code": "370566007",
+            "display": "Dominance aggression (finding)"
+          },
+          {
+            "code": "248003003",
+            "display": "Verbal aggression (finding)"
+          },
+          {
+            "code": "248004009",
+            "display": "Physical aggression (finding)"
+          },
+          {
+            "code": "248016003",
+            "display": "Vandalism (finding)"
+          },
+          {
+            "code": "300778001",
+            "display": "Difficulty playing (finding)"
+          },
+          {
+            "code": "247832004",
+            "display": "Social fear (finding)"
+          },
+          {
+            "code": "126943008",
+            "display": "Separation anxiety (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

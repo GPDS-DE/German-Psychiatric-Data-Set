@@ -1,0 +1,107 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Aufmerksamkeit_und_Gedaechtnis",
+  "id": "aufmerksamkeit-und-gedaechtnis",
+  "title": "Aufmerksamkeit und Gedächtnis",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/aufmerksamkeit-und-gedaechtnis",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b140",
+            "display": "Funktionen der Aufmerksamkeit"
+          },
+          {
+            "code": "b1400",
+            "display": "Daueraufmerksamkeit"
+          },
+          {
+            "code": "b144",
+            "display": "Funktionen des Gedächtnisses"
+          },
+          {
+            "code": "b1448",
+            "display": "Funktionen des Gedächtnisses, anders bezeichnet"
+          },
+          {
+            "code": "b160",
+            "display": "Funktionen des Denkens"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "60032008",
+            "display": "Unable to concentrate (finding)"
+          },
+          {
+            "code": "289161009",
+            "display": "Poor concentration (finding)"
+          },
+          {
+            "code": "365759009",
+            "display": "Finding related to ability to concentrate (finding)"
+          },
+          {
+            "code": "134419005",
+            "display": "Normal concentration (finding)"
+          },
+          {
+            "code": "247762003",
+            "display": "Reduced concentration span (finding)"
+          },
+          {
+            "code": "838500001",
+            "display": "Able to concentrate (finding)"
+          },
+          {
+            "code": "247760006",
+            "display": "Ability to concentrate (observable entity)"
+          },
+          {
+            "code": "286847000",
+            "display": "Ability to sustain concentration (observable entity)"
+          },
+          {
+            "code": "1144748009",
+            "display": "Impaired concentration (finding)"
+          },
+          {
+            "code": "363887009",
+            "display": "Memory observable (observable entity)"
+          },
+          {
+            "code": "365933000",
+            "display": "Finding of mental alertness (finding)"
+          },
+          {
+            "code": "82742001",
+            "display": "Concentration, function (observable entity)"
+          },
+          {
+            "code": "386807006",
+            "display": "Memory impairment (finding)"
+          },
+          {
+            "code": "17842005",
+            "display": "Confabulation (finding)"
+          },
+          {
+            "code": "32541007",
+            "display": "Paramnesia (finding)"
+          },
+          {
+            "code": "28102002",
+            "display": "Distractibility (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

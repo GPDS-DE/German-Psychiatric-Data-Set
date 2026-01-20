@@ -1,0 +1,91 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Sexualfunktion",
+  "id": "sexualfunktion",
+  "title": "Sexualfunktion",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/sexualfunktion",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b640",
+            "display": "Sexuelle Funktionen"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "248096004",
+            "display": "Lack of libido (finding)"
+          },
+          {
+            "code": "8357008",
+            "display": "Reduced libido (finding)"
+          },
+          {
+            "code": "248095000",
+            "display": "Libido (observable entity)"
+          },
+          {
+            "code": "248093007",
+            "display": "Erotic interest (observable entity)"
+          },
+          {
+            "code": "304569003",
+            "display": "Normal level of erotic interest (finding)"
+          },
+          {
+            "code": "472997005",
+            "display": "Diminished erotic interest (finding)"
+          },
+          {
+            "code": "270903007",
+            "display": "Lack or loss of sexual desire (disorder)"
+          },
+          {
+            "code": "23682002",
+            "display": "Love (finding)"
+          },
+          {
+            "code": "213017001",
+            "display": "Sexual abuse (event)"
+          },
+          {
+            "code": "58436003",
+            "display": "Increased libido (finding)"
+          },
+          {
+            "code": "73744004",
+            "display": "Hypersexuality state (finding)"
+          },
+          {
+            "code": "225538000",
+            "display": "Uncontrollable sexual urge (finding)"
+          },
+          {
+            "code": "118199002",
+            "display": "Finding relating to sexuality and sexual activity (finding)"
+          },
+          {
+            "code": "365964003",
+            "display": "Finding of erotic interest (finding)"
+          },
+          {
+            "code": "231532002",
+            "display": "Sexual disorder (disorder)"
+          },
+          {
+            "code": "248100003",
+            "display": "Sexualized behavior (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

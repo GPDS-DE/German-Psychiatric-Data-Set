@@ -1,0 +1,110 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ICD11_Affective_Disorders",
+  "id": "icd11-affective-disorders",
+  "title": "ICD-11 Affective Disorders (Disorders of Mood)",
+  "description": "A ValueSet containing all affective disorders (disorders of mood) from the ICD-11.",
+  "url": "http://charite.de/fhir/psycho/ValueSet/icd11-affective-disorders",
+  "compose": {
+    "include": [
+      {
+        "system": "http://id.who.int/icd/release/11/mms",
+        "concept": [
+          {
+            "code": "6A7",
+            "display": "Disorders of mood"
+          },
+          {
+            "code": "6A70",
+            "display": "Manic episode"
+          },
+          {
+            "code": "6A71",
+            "display": "Bipolar type I disorder"
+          },
+          {
+            "code": "6A71.0",
+            "display": "Current manic episode without psychotic symptoms"
+          },
+          {
+            "code": "6A71.1",
+            "display": "Current manic episode with psychotic symptoms"
+          },
+          {
+            "code": "6A71.2",
+            "display": "Current depressive episode without psychotic symptoms"
+          },
+          {
+            "code": "6A71.3",
+            "display": "Current depressive episode with psychotic symptoms"
+          },
+          {
+            "code": "6A71.4",
+            "display": "Mixed episode"
+          },
+          {
+            "code": "6A72",
+            "display": "Bipolar type II disorder"
+          },
+          {
+            "code": "6A73",
+            "display": "Depressive episode"
+          },
+          {
+            "code": "6A73.0",
+            "display": "Mild depressive episode"
+          },
+          {
+            "code": "6A73.1",
+            "display": "Moderate depressive episode"
+          },
+          {
+            "code": "6A73.2",
+            "display": "Severe depressive episode without psychotic symptoms"
+          },
+          {
+            "code": "6A73.3",
+            "display": "Severe depressive episode with psychotic symptoms"
+          },
+          {
+            "code": "6A74",
+            "display": "Recurrent depressive disorder"
+          },
+          {
+            "code": "6A74.0",
+            "display": "Current mild depressive episode"
+          },
+          {
+            "code": "6A74.1",
+            "display": "Current moderate depressive episode"
+          },
+          {
+            "code": "6A74.2",
+            "display": "Current severe depressive episode without psychotic symptoms"
+          },
+          {
+            "code": "6A74.3",
+            "display": "Current severe depressive episode with psychotic symptoms"
+          },
+          {
+            "code": "6A75",
+            "display": "Dysthymic disorder"
+          },
+          {
+            "code": "6A76",
+            "display": "Cyclothymic disorder"
+          },
+          {
+            "code": "6A77",
+            "display": "Mixed depressive and anxiety disorder"
+          },
+          {
+            "code": "6A7Z",
+            "display": "Disorders of mood, unspecified"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Familienbeziehungen_und_Zuhause",
+  "id": "familienbeziehungen-und-zuhause",
+  "title": "Familienbeziehungen und Zuhause",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/familienbeziehungen-und-zuhause",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "d760",
+            "display": "Familienbeziehungen"
+          },
+          {
+            "code": "d6",
+            "display": "Häusliches Leben"
+          },
+          {
+            "code": "d698",
+            "display": "Häusliches Leben, anders bezeichnet"
+          },
+          {
+            "code": "e3",
+            "display": "Unterstützung und Beziehungen"
+          },
+          {
+            "code": "b1302",
+            "display": "Appetit"
+          },
+          {
+            "code": "d540",
+            "display": "Sich kleiden"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "224093006",
+            "display": "Details of family (observable entity)"
+          },
+          {
+            "code": "1148841003",
+            "display": "Adequate family support (finding)"
+          },
+          {
+            "code": "105485001",
+            "display": "Family tension (finding)"
+          },
+          {
+            "code": "52184009",
+            "display": "Parent-child problem (finding)"
+          },
+          {
+            "code": "276103000",
+            "display": "Unhappy home (finding)"
+          },
+          {
+            "code": "225825002",
+            "display": "Victim of verbal abuse (finding)"
+          },
+          {
+            "code": "704489009",
+            "display": "Lack of family support (finding)"
+          },
+          {
+            "code": "225018005",
+            "display": "Feeling unloved (finding)"
+          },
+          {
+            "code": "225017000",
+            "display": "Feeling unwanted (finding)"
+          },
+          {
+            "code": "1186608005",
+            "display": "Inadequate family support (finding)"
+          },
+          {
+            "code": "160825002",
+            "display": "Poor family relationship (finding)"
+          },
+          {
+            "code": "1141649007",
+            "display": "Family functions effectively (finding)"
+          },
+          {
+            "code": "430139008",
+            "display": "Abuse by relative of victim (event)"
+          },
+          {
+            "code": "1279539008",
+            "display": "Victim of domestic violence (finding)"
+          },
+          {
+            "code": "161062006",
+            "display": "Child abuse in family (situation)"
+          },
+          {
+            "code": "161064007",
+            "display": "Child/parent violence (finding)"
+          },
+          {
+            "code": "394854006",
+            "display": "Immediate family member (person)"
+          },
+          {
+            "code": "1078229009",
+            "display": "Food security (finding)"
+          },
+          {
+            "code": "248164005",
+            "display": "Clothing dirty (finding)"
+          },
+          {
+            "code": "1254977008",
+            "display": "Family history of substance dependency (situation)"
+          },
+          {
+            "code": "439138006",
+            "display": "Both parents misuse drugs (situation)"
+          },
+          {
+            "code": "443317002",
+            "display": "Parent provides full-time care (finding)"
+          },
+          {
+            "code": "1144530002",
+            "display": "Able to parent effectively (finding)"
+          },
+          {
+            "code": "1186692000",
+            "display": "Happy environment (finding)"
+          },
+          {
+            "code": "224165005",
+            "display": "Financially secure (finding)"
+          },
+          {
+            "code": "449892005",
+            "display": "Feeling safe (finding)"
+          },
+          {
+            "code": "365550006",
+            "display": "Finding of financial circumstances (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

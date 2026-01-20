@@ -1,0 +1,127 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Bildung",
+  "id": "bildung",
+  "title": "Bildung",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/bildung",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "d820",
+            "display": "Schulbildung"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "410602000",
+            "display": "Preschool child (person)"
+          },
+          {
+            "code": "716404008",
+            "display": "Able to do homework (finding)"
+          },
+          {
+            "code": "247825008",
+            "display": "Anxiety about behavior or performance (finding)"
+          },
+          {
+            "code": "266981003",
+            "display": "Schooling (observable entity)"
+          },
+          {
+            "code": "161114003",
+            "display": "Education unsatisfactory (finding)"
+          },
+          {
+            "code": "105423006",
+            "display": "Good education (finding)"
+          },
+          {
+            "code": "224285004",
+            "display": "Education and schooling detail (observable entity)"
+          },
+          {
+            "code": "315245004",
+            "display": "Deterioration in school performance (finding)"
+          },
+          {
+            "code": "161128009",
+            "display": "Behavioral problems at school (finding)"
+          },
+          {
+            "code": "26329005",
+            "display": "Poor concentration (finding)"
+          },
+          {
+            "code": "224306002",
+            "display": "Attending primary school (finding)"
+          },
+          {
+            "code": "224308001",
+            "display": "Attending secondary school (finding)"
+          },
+          {
+            "code": "257698009",
+            "display": "School (environment)"
+          },
+          {
+            "code": "161119008",
+            "display": "Primary school (environment)"
+          },
+          {
+            "code": "224855002",
+            "display": "Middle school (environment)"
+          },
+          {
+            "code": "161120002",
+            "display": "Secondary school (environment)"
+          },
+          {
+            "code": "224856001",
+            "display": "Upper school (environment)"
+          },
+          {
+            "code": "224863001",
+            "display": "Special needs school (environment)"
+          },
+          {
+            "code": "302139001",
+            "display": "Receiving home tuition (finding)"
+          },
+          {
+            "code": "224854003",
+            "display": "Comprehensive school (environment)"
+          },
+          {
+            "code": "105516008",
+            "display": "Discord with teachers (finding)"
+          },
+          {
+            "code": "719382006",
+            "display": "Able to comprehend written material (finding)"
+          },
+          {
+            "code": "69998004",
+            "display": "Learning, function (observable entity)"
+          },
+          {
+            "code": "1279518001",
+            "display": "Absenteeism from school (finding)"
+          },
+          {
+            "code": "279622009",
+            "display": "Performance anxiety (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

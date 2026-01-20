@@ -1,0 +1,139 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Schlaf",
+  "id": "schlaf",
+  "title": "Schlaf",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/schlaf",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b134",
+            "display": "Funktionen des Schlafes"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "26677001",
+            "display": "Sleep pattern disturbance (finding)"
+          },
+          {
+            "code": "271794005",
+            "display": "Disorder of sleep-wake cycle (disorder)"
+          },
+          {
+            "code": "106168000",
+            "display": "Finding related to sleep (finding)"
+          },
+          {
+            "code": "713567005",
+            "display": "Sleeps during day (finding)"
+          },
+          {
+            "code": "230490003",
+            "display": "Excessive day and night-time sleepiness (disorder)"
+          },
+          {
+            "code": "230489007",
+            "display": "Excessive daytime sleepiness - normal night sleep (disorder)"
+          },
+          {
+            "code": "243884009",
+            "display": "Abnormally early (qualifier value)"
+          },
+          {
+            "code": "301345002",
+            "display": "Difficulty sleeping (finding)"
+          },
+          {
+            "code": "433206003",
+            "display": "Able to sleep (finding)"
+          },
+          {
+            "code": "248256006",
+            "display": "Not getting enough sleep (disorder)"
+          },
+          {
+            "code": "67233009",
+            "display": "Middle insomnia (disorder)"
+          },
+          {
+            "code": "193462001",
+            "display": "Insomnia (disorder)"
+          },
+          {
+            "code": "44186003",
+            "display": "Dyssomnia (disorder)"
+          },
+          {
+            "code": "309609009",
+            "display": "Temporal periods relating to sleep (qualifier value)"
+          },
+          {
+            "code": "2546009",
+            "display": "Night time (qualifier value)"
+          },
+          {
+            "code": "73775008",
+            "display": "Morning (qualifier value)"
+          },
+          {
+            "code": "258158006",
+            "display": "Sleep, function (observable entity)"
+          },
+          {
+            "code": "366033007",
+            "display": "Finding related to ability to sleep (finding)"
+          },
+          {
+            "code": "421355008",
+            "display": "Awakening (qualifier value)"
+          },
+          {
+            "code": "224960004",
+            "display": "Tired (finding)"
+          },
+          {
+            "code": "79915001",
+            "display": "Fatigability (finding)"
+          },
+          {
+            "code": "84229001",
+            "display": "Fatigue (finding)"
+          },
+          {
+            "code": "15976004",
+            "display": "Abnormal circadian rhythm (finding)"
+          },
+          {
+            "code": "30920001",
+            "display": "Circadian rhythm, function (observable entity)"
+          },
+          {
+            "code": "3157002",
+            "display": "Evening (qualifier value)"
+          },
+          {
+            "code": "268654005",
+            "display": "Repetitive intrusions of sleep (disorder)"
+          },
+          {
+            "code": "53888004",
+            "display": "Disturbance in sleep behavior (finding)"
+          },
+          {
+            "code": "8009008",
+            "display": "Nocturnal enuresis (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

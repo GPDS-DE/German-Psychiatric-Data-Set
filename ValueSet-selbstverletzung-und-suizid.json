@@ -1,0 +1,115 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Selbstverletzung_und_Suizid",
+  "id": "selbstverletzung-und-suizid",
+  "title": "Selbstverletzung und Suizid",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/selbstverletzung-und-suizid",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b130",
+            "display": "Funktionen der psychischen Energie und des Antriebs"
+          },
+          {
+            "code": "b1602",
+            "display": "Inhalt des Denkens"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "3161000175102",
+            "display": "Suicide risk (observable entity)"
+          },
+          {
+            "code": "6471006",
+            "display": "Suicidal thoughts (finding)"
+          },
+          {
+            "code": "44301001",
+            "display": "Suicide (event)"
+          },
+          {
+            "code": "82313006",
+            "display": "Suicide attempt (event)"
+          },
+          {
+            "code": "87521009",
+            "display": "Dispiritment (finding)"
+          },
+          {
+            "code": "161474000",
+            "display": "History of attempted suicide (situation)"
+          },
+          {
+            "code": "247795009",
+            "display": "Tedium vitae (finding)"
+          },
+          {
+            "code": "269725004",
+            "display": "Suicide and self-inflicted injury (navigational concept)"
+          },
+          {
+            "code": "401228008",
+            "display": "No thoughts of deliberate self harm (situation)"
+          },
+          {
+            "code": "134420004",
+            "display": "No suicidal thoughts (situation)"
+          },
+          {
+            "code": "394685004",
+            "display": "High suicide risk (finding)"
+          },
+          {
+            "code": "225457007",
+            "display": "Feeling suicidal (finding)"
+          },
+          {
+            "code": "55956009",
+            "display": "Disturbance in content of thought (finding)"
+          },
+          {
+            "code": "267073005",
+            "display": "Suicidal (finding)"
+          },
+          {
+            "code": "247650009",
+            "display": "Planning suicide (finding)"
+          },
+          {
+            "code": "8521000175109",
+            "display": "Suicide plan (observable entity)"
+          },
+          {
+            "code": "711561004",
+            "display": "Has access to planned means of suicide (finding)"
+          },
+          {
+            "code": "41501003",
+            "display": "Threatening suicide (finding)"
+          },
+          {
+            "code": "225444004",
+            "display": "At increased risk for suicide (finding)"
+          },
+          {
+            "code": "248062006",
+            "display": "Self-injurious behavior (finding)"
+          },
+          {
+            "code": "425104003",
+            "display": "Suicidal behavior (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

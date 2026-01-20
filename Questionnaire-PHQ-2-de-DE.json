@@ -1,0 +1,178 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "PHQ-2-de-DE",
+  "language": "de-DE",
+  "title": "Patient Health Questionnaire - 2-Item Short-form",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "code": [
+    {
+      "code": "55757-9",
+      "system": "http://loinc.org",
+      "display": "Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "q1-PHQ-2-de",
+      "type": "choice",
+      "text": "Wenig Interesse oder Freude an Ihren Tätigkeiten",
+      "code": [
+        {
+          "code": "44250-9",
+          "system": "http://loinc.org",
+          "display": "Little interest or pleasure in doing things"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "0 - Überhaupt nicht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "1 - An einzelnen Tagen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6570-1",
+            "display": "2 - An mehr als der Hälfte der Tage"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6571-9",
+            "display": "3 - Beinahe jeden Tag"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "q2-PHQ-2-de",
+      "type": "choice",
+      "text": "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit",
+      "code": [
+        {
+          "code": "44255-8",
+          "system": "http://loinc.org",
+          "display": "Feeling down, depressed, or hopeless"
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "0 - Überhaupt nicht"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "1 - An einzelnen Tagen"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6570-1",
+            "display": "2 - An mehr als der Hälfte der Tage"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6571-9",
+            "display": "3 - Beinahe jeden Tag"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "PHQ-2-de-score",
+      "type": "quantity",
+      "text": "PHQ-2-de-Score",
+      "code": [
+        {
+          "code": "55758-7",
+          "system": "http://loinc.org",
+          "display": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Gesamtpunktzahl des Fragebogens wird aufsummiert",
+            "name": "score",
+            "language": "text/fhirpath",
+            "expression": "%resource.answers().value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": true,
+      "readOnly": true
+    }
+  ]
+}

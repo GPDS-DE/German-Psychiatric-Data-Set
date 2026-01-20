@@ -1,0 +1,1943 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "KINDL-de-DE-Elternversion",
+  "language": "de-DE",
+  "title": "KINDL-Elternversion",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "code": [
+    {
+      "code": "273403004",
+      "system": "http://snomed.info/sct",
+      "display": "Depression self rating scale (assessment scale)"
+    },
+    {
+      "code": "443173002",
+      "system": "http://snomed.info/sct",
+      "display": "Childhood health assessment questionnaire (assessment scale)"
+    },
+    {
+      "code": "40683002",
+      "system": "http://snomed.info/sct",
+      "display": "Parent (person)"
+    },
+    {
+      "code": "C135742",
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "display": "Pediatric Outcomes Data Collection Instrument, Pediatric Parent-Reported Version Questionnaire"
+    },
+    {
+      "code": "C135743",
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "display": "Pediatric Outcomes Data Collection Instrument, Adolescent Parent-Reported Version Questionnaire"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "pKINDL-date-Elternversion",
+      "type": "date",
+      "text": "Bogen ausgefüllt am:",
+      "required": false,
+      "code": [
+        {
+          "code": "439272007",
+          "system": "http://snomed.info/sct",
+          "display": "Date of procedure (observable entity)"
+        }
+      ]
+    },
+    {
+      "linkId": "KINDL-Infobox-Elternversion",
+      "type": "display",
+      "text": "Sehr geehrte Mutter, sehr geehrter Vater, Vielen Dank, dass Sie sich bereit erklärt haben, diesen Bogen zum Wohlbefinden und zur gesundheitsbezogenen Lebensqualität Ihres Kindes auszufüllen. Bei den nun folgenden Fragen möchten wir Sie bitten, folgende Instruktionen zu beachten. Lesen Sie bitte jede Frage genau durch, überlegen Sie, wie Ihr Kind sich in der letzten Woche gefühlt hat, kreuzen Sie die Antwort an, die für Ihr Kind am besten zutrifft.",
+      "required": false
+    },
+    {
+      "linkId": "KINDL-Infobox2-Elternversion",
+      "type": "group",
+      "required": false,
+      "text": "Bitte sagen Sie zunächst etwas zu Ihrem Kind. Kreuzen Sie an oder trage Sie ein!",
+      "item": [
+        {
+          "linkId": "KINDL-qwm-Elternversion",
+          "type": "choice",
+          "text": "Ist Ihr Kind ein Mädchen oder ein Junge?",
+          "code": [
+            {
+              "code": "734000001",
+              "system": "http://snomed.info/sct",
+              "display": "Biological sex (property) (qualifier value)"
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "KINDL-ansm-Elternversion",
+                "system": "http://snomed.info/sct",
+                "code": "248153007",
+                "display": "Mädchen-Elternversion"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "KINDL-answ",
+                "system": "http://snomed.info/sct",
+                "code": "248152002",
+                "display": "Junge-Elternversion"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "KINDL-qage-Elternversion",
+          "type": "integer",
+          "text": "Alter des Kindes in Jahren:",
+          "code": [
+            {
+              "code": "397669002",
+              "system": "http://snomed.info/sct",
+              "display": "Age (qualifier value)"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 3
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 6
+            }
+          ],
+          "required": false
+        },
+        {
+          "linkId": "KINDL-qEltern-Elternversion",
+          "type": "choice",
+          "text": "Sie sind:",
+          "code": [
+            {
+              "code": "40683002",
+              "system": "http://snomed.info/sct",
+              "display": "Parent (person)"
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "KINDL-ans1Eltern",
+                "system": "http://snomed.info/sct",
+                "code": "72705000",
+                "display": "Mutter"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "KINDL-ans2Eltern",
+                "system": "http://snomed.info/sct",
+                "code": "66839005",
+                "display": "Vater"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "KINDL-ans3Eltern",
+                "system": "http://snomed.info/sct",
+                "code": "74964007",
+                "display": "Sonstiges"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "KINDL-qexample-Elternversion",
+      "type": "display",
+      "text": "Als Beispiel: Hat sich Ihr Kind in der letzten Woche wohl gefühlt? Als Antwortmöglichkeiten gibt es nie, selten, manchmal, oft und immer. Davon können Sie eine auswählen, die am besten passt.",
+      "required": false
+    },
+    {
+      "linkId": "pKINDL-somatic",
+      "type": "group",
+      "text": "1. Körperliches Wohlbefinden",
+      "code": [
+        {
+          "code": "397725003",
+          "system": "http://snomed.info/sct",
+          "display": "Somatic sensation, function (observable entity)"
+        }
+      ],
+      "required": true,
+      "item": [
+        {
+          "linkId": "pKINDL-q1somatic",
+          "type": "choice",
+          "text": "In der letzten Woche...hat mein Kind sich krank gefühlt",
+          "code": [
+            {
+              "code": "213257006",
+              "system": "http://snomed.info/sct",
+              "display": "Generally unwell (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Körperfunktionen"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-Kid-KINDL-q4somatic",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-Kid-KINDL-q4somatic",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-Kid-KINDL-q4somatic",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-Kid-KINDL-q4somatic",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-Kid-KINDL-q4somatic",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "pKINDL-q2somatic",
+          "type": "choice",
+          "text": "In der letzten Woche...hatte mein Kind Kopfschmerzen oder Bauchschmerzen",
+          "code": [
+            {
+              "code": "25064002",
+              "system": "http://snomed.info/sct",
+              "display": "Headache (finding)"
+            },
+            {
+              "code": "271681002",
+              "system": "http://snomed.info/sct",
+              "display": "Stomach ache (finding)"
+            },
+            {
+              "code": "279001004",
+              "system": "http://snomed.info/sct",
+              "display": "Pain finding at anatomical site (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b280",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Schmerz"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q3somatic",
+          "type": "choice",
+          "text": "In der letzten Woche...war mein Kind müde und schlapp",
+          "code": [
+            {
+              "code": "224960004",
+              "system": "http://snomed.info/sct",
+              "display": "Tired (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b130",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Funktionen der psychischen Energie und des Antriebs"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "Kid-KINDL-q4somatic",
+          "type": "choice",
+          "text": "In der letzten Woche...hatte mein Kind viel Kraft und Ausdauer",
+          "code": [
+            {
+              "code": "359752005",
+              "system": "http://snomed.info/sct",
+              "display": "Energy and stamina finding (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b130",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Funktionen der psychischen Energie und des Antriebs"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "pKINDL-emotion",
+      "type": "group",
+      "text": "2. Seelisches Wohlbefinden",
+      "code": [
+        {
+          "code": "1193648005",
+          "system": "http://snomed.info/sct",
+          "display": "Type of emotion (observable entity)"
+        }
+      ],
+      "required": true,
+      "item": [
+        {
+          "linkId": "pKINDL-q1emotion",
+          "type": "choice",
+          "text": "In der letzten Woche...hat mein Kind viel gelacht und Spaß gehabt",
+          "code": [
+            {
+              "code": "359752005",
+              "system": "http://snomed.info/sct",
+              "display": "Finding of capacity for enjoyment (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-pKINDL-q4emotion",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-pKINDL-q4emotion",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-pKINDL-q4emotion",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-pKINDL-q4emotion",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-pKINDL-q4emotion",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q2emotion",
+          "type": "choice",
+          "text": "In der letzten Woche...hatte mein Kind zu nichts Lust",
+          "code": [
+            {
+              "code": "83765003",
+              "system": "http://snomed.info/sct",
+              "display": "Boredom (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q3emotion",
+          "type": "choice",
+          "text": "In der letzten Woche...hat mein Kind sich allein gefühlt",
+          "code": [
+            {
+              "code": "267076002",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling lonely (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q4emotion",
+          "type": "choice",
+          "text": "In der letzten Woche...hat mein Kind sich ängstlich oder unsicher gefühlt",
+          "code": [
+            {
+              "code": "48694002",
+              "system": "http://snomed.info/sct",
+              "display": "Anxiety (finding)"
+            },
+            {
+              "code": "54038000",
+              "system": "http://snomed.info/sct",
+              "display": "Insecurity (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "pKINDL-self-image",
+      "type": "group",
+      "code": [
+        {
+          "code": "225510008",
+          "system": "http://snomed.info/sct",
+          "display": "Self-image (observable entity)"
+        }
+      ],
+      "text": "3. Selbstwert",
+      "required": true,
+      "item": [
+        {
+          "linkId": "pKINDL-q1self-image",
+          "type": "choice",
+          "text": "In der letzten Woche...war mein Kind stolz auf sich",
+          "code": [
+            {
+              "code": "1149081002",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling proud (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1266",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Selbstvertrauen"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-pKINDL-q4self-image",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-pKINDL-q4self-image",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-pKINDL-q4self-image",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-pKINDL-q4self-image",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-pKINDL-q4self-image",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "pKINDL-q2self-image",
+          "type": "choice",
+          "text": "In der letzten Woche...fühlte mein Kind sich wohl in seiner Haut",
+          "code": [
+            {
+              "code": "716408006",
+              "system": "http://snomed.info/sct",
+              "display": "Able to feel confident (finding)"
+            },
+            {
+              "code": "118192006",
+              "system": "http://snomed.info/sct",
+              "display": "Finding relating to self-concept (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1266",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Selbstvertrauen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q3self-image",
+          "type": "choice",
+          "text": "In der letzten Woche...mochte mein Kind sich selbst leiden",
+          "code": [
+            {
+              "code": "225509003",
+              "system": "http://snomed.info/sct",
+              "display": "Good self-image (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1266",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Selbstvertrauen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q4self-image",
+          "type": "choice",
+          "text": "In der letzten Woche...hatte mein Kind viele gute Ideen",
+          "code": [
+            {
+              "code": "716454002",
+              "system": "http://snomed.info/sct",
+              "display": "Able to think creatively (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1266",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Selbstvertrauen"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "pKINDL-family",
+      "type": "group",
+      "text": "4. Familie",
+      "code": [
+        {
+          "code": "224093006",
+          "system": "http://snomed.info/sct",
+          "display": "Details of family (observable entity)"
+        }
+      ],
+      "required": true,
+      "item": [
+        {
+          "linkId": "pKINDL-q1family",
+          "type": "choice",
+          "text": "In der letzten Woche... hat mein Kind sich gut mit uns als Eltern verstanden",
+          "code": [
+            {
+              "code": "1148841003",
+              "system": "http://snomed.info/sct",
+              "display": "Adequate family support (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-pKINDL-q4family",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-pKINDL-q4family",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-pKINDL-q4family",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-pKINDL-q4family",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-pKINDL-q4family",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "pKINDL-q2family",
+          "type": "choice",
+          "text": "In der letzten Woche... hat mein Kind sich zu Hause wohl gefühlt",
+          "code": [
+            {
+              "code": "1148841003",
+              "system": "http://snomed.info/sct",
+              "display": "Adequate family support (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d698",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Häusliches Leben, anders bezeichnet"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q3family",
+          "type": "choice",
+          "text": "In der letzten Woche... hatten wir schlimmen Streit zu Hause",
+          "code": [
+            {
+              "code": "105485001",
+              "system": "http://snomed.info/sct",
+              "display": "Family tension (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d698",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Häusliches Leben, anders bezeichnet"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q4family",
+          "type": "choice",
+          "text": "In der letzten Woche... fühlte mein Kind sich durch mich bevormundet",
+          "code": [
+            {
+              "code": "52184009",
+              "system": "http://snomed.info/sct",
+              "display": "Parent-child problem (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "pKINDL-friends",
+      "type": "group",
+      "text": "5. Freunde",
+      "code": [
+        {
+          "code": "699089001",
+          "system": "http://snomed.info/sct",
+          "display": "Social wellbeing (observable entity)"
+        },
+        {
+          "code": "e320",
+          "system": "http://hl7.org/fhir/sid/icf",
+          "display": "Freunde"
+        }
+      ],
+      "required": true,
+      "item": [
+        {
+          "linkId": "pKINDL-q1friends",
+          "type": "choice",
+          "text": "In der letzten Woche... hat mein Kind mit Freunden gespielt",
+          "code": [
+            {
+              "code": "300776002",
+              "system": "http://snomed.info/sct",
+              "display": "Does play (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d7",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Interpersonelle Interaktionen und Beziehungen"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-pKINDL-q3friends",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-pKINDL-q3friends",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-pKINDL-q3friends",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-pKINDL-q3friends",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-pKINDL-q3friends",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "pKINDL-q2friends",
+          "type": "choice",
+          "text": "In der letzten Woche... ist mein Kind bei anderen „gut angekommen“",
+          "code": [
+            {
+              "code": "1186689004",
+              "system": "http://snomed.info/sct",
+              "display": "Friendly environment (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d7",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Interpersonelle Interaktionen und Beziehungen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q3friends",
+          "type": "choice",
+          "text": "In der letzten Woche... hat mein Kind sich gut mit seinen Freunden verstanden",
+          "code": [
+            {
+              "code": "1066481000000100",
+              "system": "http://snomed.info/sct",
+              "display": "Able to maintain friendships (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1261",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Umgänglichkeit"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q4friends",
+          "type": "choice",
+          "text": "In der letzten Woche... hatte mein Kind das Gefühl, dass es anders ist als die anderen",
+          "code": [
+            {
+              "code": "307049007",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling alienated (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d7",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Interpersonelle Interaktionen und Beziehungen"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "pKINDL-school",
+      "type": "group",
+      "code": [
+        {
+          "code": "266981003",
+          "system": "http://snomed.info/sct",
+          "display": "Schooling (observable entity)"
+        },
+        {
+          "code": "276031006",
+          "system": "http://snomed.info/sct",
+          "display": "Details of education (observable entity)"
+        }
+      ],
+      "text": "6. Vorschule / Kindergarten",
+      "required": true,
+      "item": [
+        {
+          "linkId": "pKINDL-q1school",
+          "type": "choice",
+          "text": "In der letzten Woche... hat mein Kind die Aufgaben in der Vorschule/ im Kindergarten gut geschafft",
+          "code": [
+            {
+              "code": "716404008",
+              "system": "http://snomed.info/sct",
+              "display": "Able to do homework (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d820",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Schulbildung"
+            },
+            {
+              "code": "d1",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Lernen und Wissensanwendung"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-pKINDL-q4school",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-pKINDL-q4school",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-pKINDL-q4school",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-pKINDL-q4school",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-pKINDL-q4sschool",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "pKINDL-q2school",
+          "type": "choice",
+          "text": "In der letzten Woche... hat meinem Kind die Vorschule/ der Kindergarten Spaß gemacht",
+          "code": [
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Finding of capacity for enjoyment (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d820",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Schulbildung"
+            },
+            {
+              "code": "d1",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Lernen und Wissensanwendung"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q3school",
+          "type": "choice",
+          "text": "In der letzten Woche... hat mein Kind sich auf die Vorschule/ den Kindergarten gefreut",
+          "code": [
+            {
+              "code": "79015004",
+              "system": "http://snomed.info/sct",
+              "display": "Worried (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d820",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Schulbildung"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q4school",
+          "type": "choice",
+          "text": "In der letzten Woche... hat mein Kind bei kleineren Aufgaben oder Hausaufgaben viele Fehler gemacht",
+          "code": [
+            {
+              "code": "247825008",
+              "system": "http://snomed.info/sct",
+              "display": "Anxiety about behavior or performance (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d820",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Schulbildung"
+            },
+            {
+              "code": "d1",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Lernen und Wissensanwendung"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "pKINDL-weiteres",
+      "type": "group",
+      "code": [
+        {
+          "code": "74964007",
+          "system": "http://snomed.info/sct",
+          "display": "Other (qualifier value)"
+        }
+      ],
+      "text": "7. Weitere wichtige Fragen:",
+      "required": true,
+      "item": [
+        {
+          "linkId": "pKINDL-q1weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... war mein Kind schlecht gelaunt und quengelig",
+          "code": [
+            {
+              "code": "420038007",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling unhappy (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-pKINDL-q22weiteres",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "nie"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-pKINDL-q22weiteres",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "selten"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-pKINDL-q22weiteres",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "manchmal"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-pKINDL-q22weiteres",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "oft"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-pKINDL-q22weiteres",
+                "system": "http://snomed.info/sct",
+                "code": "255238004",
+                "display": "immer"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "pKINDL-q2weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... hat mein Kind mit Appetit gegessen",
+          "code": [
+            {
+              "code": "33911006",
+              "system": "http://snomed.info/sct",
+              "display": "Food appetite, function (observable entity)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1302",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Appetit"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q3weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... konnte ich geduldig und verständnisvoll mit meinem Kind umgehen",
+          "code": [
+            {
+              "code": "405218005",
+              "system": "http://snomed.info/sct",
+              "display": "Parenting behavior: early/middle childhood safety (observable entity)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1261",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Umgänglichkeit"
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q4weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... war mein Kind angestrengt",
+          "code": [
+            {
+              "code": "23085004",
+              "system": "http://snomed.info/sct",
+              "display": "Increased stress (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b130",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Funktionen der psychischen Energie und des Antriebs"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q5weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... konnte mein Kind gut schlafen",
+          "code": [
+            {
+              "code": "258158006",
+              "system": "http://snomed.info/sct",
+              "display": "Sleep, function (observable entity)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b134",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Funktionen des Schlafes"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q6weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... ist mein Kind viel herumgetobt und hat sich bewegt",
+          "code": [
+            {
+              "code": "228447005",
+              "system": "http://snomed.info/sct",
+              "display": "Physically active (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b130",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Funktionen der psychischen Energie und des Antriebs"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q7weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... hat mein Kind schnell geweint",
+          "code": [
+            {
+              "code": "162213003",
+              "system": "http://snomed.info/sct",
+              "display": "Crying, excessive (finding)"
+            },
+            {
+              "code": "275925003",
+              "system": "http://snomed.info/sct",
+              "display": "Excessive crying of child (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q8weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... war mein Kind fröhlich und gut gelaunt",
+          "code": [
+            {
+              "code": "247825008",
+              "system": "http://snomed.info/sct",
+              "display": "Cheerful mood (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q9weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... konnte sich mein Kind gut konzentrieren und war aufmerksam",
+          "code": [
+            {
+              "code": "838500001",
+              "system": "http://snomed.info/sct",
+              "display": "Able to concentrate (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b140",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Funktionen der Aufmerksamkeit"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q10weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... ließ sich mein Kind leicht ablenken und war zerstreut",
+          "code": [
+            {
+              "code": "838500001",
+              "system": "http://snomed.info/sct",
+              "display": "Able to concentrate (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b140",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Funktionen der Aufmerksamkeit"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q11weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... war mein Kind gern mit anderen Kindern zusammen",
+          "code": [
+            {
+              "code": "1186689004",
+              "system": "http://snomed.info/sct",
+              "display": "Friendly environment (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d7",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Interpersonelle Interaktionen und Beziehungen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q12weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... habe ich mit meinem Kind geschimpft",
+          "code": [
+            {
+              "code": "405218005",
+              "system": "http://snomed.info/sct",
+              "display": "Parenting behavior: early/middle childhood safety (observable entity)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1261",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Umgänglichkeit"
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q13weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... habe ich mein Kind gelobt",
+          "code": [
+            {
+              "code": "405218005",
+              "system": "http://snomed.info/sct",
+              "display": "Parenting behavior: early/middle childhood safety (observable entity)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b1261",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Umgänglichkeit"
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q14weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... hatte mein Kind Schwierigkeiten mit Lehrern, Kindergärtnerinnen oder anderen Betreuungspersonen",
+          "code": [
+            {
+              "code": "161128009",
+              "system": "http://snomed.info/sct",
+              "display": "Behavioral problems at school (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d820",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Schulbildung"
+            },
+            {
+              "code": "d1",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Lernen und Wissensanwendung"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q15weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... war mein Kind nervös und zappelig",
+          "code": [
+            {
+              "code": "424196004",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling nervous (finding)"
+            },
+            {
+              "code": "247910009",
+              "system": "http://snomed.info/sct",
+              "display": "Fidgeting (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b147",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Psychomotorische Funktionen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q16weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... war mein Kind frisch und munter",
+          "code": [
+            {
+              "code": "102499006",
+              "system": "http://snomed.info/sct",
+              "display": "Fit and well (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b147",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Psychomotorische Funktionen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q17weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... hat mein Kind wegen Schmerzen gejammert",
+          "code": [
+            {
+              "code": "22253000",
+              "system": "http://snomed.info/sct",
+              "display": "Pain (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b280",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Schmerz"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q18weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... war mein Kind kontaktfreudig",
+          "code": [
+            {
+              "code": "26291000146108",
+              "system": "http://snomed.info/sct",
+              "display": "Able to make friends (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d7",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Interpersonelle Interaktionen und Beziehungen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q19weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... klappte alles, was mein Kind anfing",
+          "code": [
+            {
+              "code": "54407007",
+              "system": "http://snomed.info/sct",
+              "display": "Fast learner (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "d1",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Lernen und Wissensanwendung"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q20weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... war mein Kind schnell unzufrieden",
+          "code": [
+            {
+              "code": "420038007",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling unhappy (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q21weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... hat mein Kind heftig geweint",
+          "code": [
+            {
+              "code": "162213003",
+              "system": "http://snomed.info/sct",
+              "display": "Crying, excessive (finding)"
+            },
+            {
+              "code": "275925003",
+              "system": "http://snomed.info/sct",
+              "display": "Excessive crying of child (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "pKINDL-q22weiteres",
+          "type": "choice",
+          "text": "In der letzten Woche... wurde mein Kind leicht wütend",
+          "code": [
+            {
+              "code": "75408008",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling angry (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "pKINDL-Infobox3",
+      "type": "display",
+      "text": "Vielen Dank für Ihre Mitarbeit!",
+      "required": false
+    },
+    {
+      "linkId": "pKINDL-score",
+      "text": "Kiddo Fragebogen Gesamtpunktzahl",
+      "code": [
+        {
+          "code": "782487009",
+          "system": "http://snomed.info/sct",
+          "display": "Health assessment questionnaire score (observable entity)"
+        }
+      ],
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Gesamtpunktzahl des Fragebogens wird aufsummiert",
+            "name": "score",
+            "language": "text/fhirpath",
+            "expression": "%resource.answers().value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": true,
+      "readOnly": true
+    }
+  ]
+}

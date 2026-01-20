@@ -1,0 +1,2947 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CTQ-de-DE",
+  "language": "de-DE",
+  "title": "Childhood Trauma Questionnaire",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "code": [
+    {
+      "code": "770540000",
+      "system": "http://snomed.info/sct",
+      "display": "Trauma Screening Questionnaire (assessment scale)"
+    },
+    {
+      "code": "443173002",
+      "system": "http://snomed.info/sct",
+      "display": "Childhood health assessment questionnaire (assessment scale)"
+    },
+    {
+      "code": "C95401",
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "display": "Patient Reported Outcome"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "CTQ-date",
+      "type": "date",
+      "text": "Bogen ausgefüllt am:",
+      "required": false,
+      "code": [
+        {
+          "code": "439272007",
+          "system": "http://snomed.info/sct",
+          "display": "Date of procedure (observable entity)"
+        }
+      ]
+    },
+    {
+      "linkId": "CTQ-infobox",
+      "type": "display",
+      "required": false,
+      "text": "Anleitung: Diese Fragen befassen sich mit einigen Ihrer Erfahrungen während Ihrer Kindheit und Jugend. Auch wenn die Fragen sehr persönlich sind, versuchen Sie bitte, sie so ehrlich wie möglich zu beantworten. Kreisen Sie dazu bitte für jede Frage die Zahl ein, die am besten beschreibt, wie Sie rückblickend die Situation einschätzen."
+    },
+    {
+      "linkId": "CTQ-growing-up",
+      "type": "group",
+      "text": "Als ich aufwuchs...",
+      "code": [
+        {
+          "code": "307294006",
+          "system": "http://snomed.info/sct",
+          "display": "Personal history finding (finding)"
+        }
+      ],
+      "required": true,
+      "item": [
+        {
+          "linkId": "CTQ-q1",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q1",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q1",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q1",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q1",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q1",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...hatte ich nicht genug zu essen.",
+          "code": [
+            {
+              "code": "1078229009",
+              "system": "http://snomed.info/sct",
+              "display": "Food security (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "b1302",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Appetit"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q2",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q2",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q2",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q2",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q2",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q2",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "text": "...wußte ich, daß sich jemand um mich sorgte und mich beschützte.",
+          "code": [
+            {
+              "code": "449892005",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling safe (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q3",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q3",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q3",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q3",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q3",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q3",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "..bezeichneten mich Personen aus meiner Familie als „dumm“, „faul“ oder „häßlich“.",
+          "code": [
+            {
+              "code": "225825002",
+              "system": "http://snomed.info/sct",
+              "display": "Victim of verbal abuse (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q4",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q4",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q4",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q4",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q4",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q4",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...waren meine Eltern zu betrunken oder von anderen Drogen „high“, um für die Familie zu sorgen.",
+          "code": [
+            {
+              "code": "1254977008",
+              "system": "http://snomed.info/sct",
+              "display": "Family history of substance dependency (situation)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q5",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q5",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q5",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q5",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q5",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q5",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "text": "...gab es jemand in der Familie, der mir das Gefühl gab, wichtig und jemand Besonderes zu sein.",
+          "code": [
+            {
+              "code": "1148841003",
+              "system": "http://snomed.info/sct",
+              "display": "Adequate family support (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q6",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q6",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q6",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q6",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q6",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q6",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...mußte ich dreckige Kleidung tragen.",
+          "code": [
+            {
+              "code": "248164005",
+              "system": "http://snomed.info/sct",
+              "display": "Clothing dirty (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "d540",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Sich kleiden"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q7",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q7",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q7",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q7",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q7",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q7",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "text": "...hatte ich das Gefühl, geliebt zu werden.",
+          "code": [
+            {
+              "code": "23682002",
+              "system": "http://snomed.info/sct",
+              "display": "Love (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q8",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q8",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q8",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q8",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q8",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q8",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...glaubte ich, daß meine Eltern wünschten, ich wäre nie geboren.",
+          "code": [
+            {
+              "code": "225017000",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling unwanted (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q9",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q9",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q9",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q9",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q9",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q9",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...wurde ich von jemandem aus meiner Familie so stark geschlagen, daß ich zum Arzt oder ins Krankenhaus mußte.",
+          "code": [
+            {
+              "code": "237461000119103",
+              "system": "http://snomed.info/sct",
+              "display": "Child victim of physical abuse (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q10",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q10",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q10",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q10",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q10",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q10",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "text": "...gab es nichts, was ich an meiner Familie ändern wollte.",
+          "code": [
+            {
+              "code": "1148841003",
+              "system": "http://snomed.info/sct",
+              "display": "Adequate family support (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q11",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q11",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q11",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q11",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q11",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q11",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...schlugen mich Personen aus meiner Familie so stark, daß ich blaue Flecken oder Schrammen davontrug.",
+          "code": [
+            {
+              "code": "237461000119103",
+              "system": "http://snomed.info/sct",
+              "display": "Child victim of physical abuse (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q12",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q12",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q12",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q12",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q12",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q12",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...wurde ich mit einem Gürtel, einem Stock, einem Riemen oder mit einem harten Gegenstand bestraft.",
+          "code": [
+            {
+              "code": "237461000119103",
+              "system": "http://snomed.info/sct",
+              "display": "Child victim of physical abuse (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q13",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q13",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q13",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q13",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q13",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q13",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "text": "...gaben meine Familienangehörigen aufeinander acht.",
+          "code": [
+            {
+              "code": "1148841003",
+              "system": "http://snomed.info/sct",
+              "display": "Adequate family support (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q14",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q14",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q14",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q14",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q14",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q14",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...sagten Personen aus meiner Familie verletzende oder beleidigende Dinge zu mir.",
+          "code": [
+            {
+              "code": "225825002",
+              "system": "http://snomed.info/sct",
+              "display": "Victim of verbal abuse (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q15",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q15",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q15",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q15",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q15",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q15",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "Ich glaube, ich bin körperlich mißhandelt worden, als ich aufwuchs.",
+          "code": [
+            {
+              "code": "237461000119103",
+              "system": "http://snomed.info/sct",
+              "display": "Child victim of physical abuse (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q16",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q16",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q16",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q16",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q16",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q16",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "code": [
+            {
+              "code": "1148841003",
+              "system": "http://snomed.info/sct",
+              "display": "Adequate family support (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q17",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q17",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q17",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q17",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q17",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q17",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...wurde ich so stark geschlagen oder verprügelt, daß es jemandem (z.B. Lehrer, Nachbar oder Arzt) auffiel.",
+          "code": [
+            {
+              "code": "237461000119103",
+              "system": "http://snomed.info/sct",
+              "display": "Child victim of physical abuse (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q18",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q18",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q18",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q18",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q18",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q18",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...hatte ich das Gefühl, es haßte mich jemand in meiner Familie.",
+          "code": [
+            {
+              "code": "160825002",
+              "system": "http://snomed.info/sct",
+              "display": "Poor family relationship (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation)"
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q19",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q19",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q19",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q19",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q19",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q19",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "text": "...fühlten sich meine Familienangehörigen einander nah.",
+          "code": [
+            {
+              "code": "1148841003",
+              "system": "http://snomed.info/sct",
+              "display": "Adequate family support (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q20",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q20",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q20",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q20",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q20",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q20",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...versuchte jemand, mich sexuell zu berühren oder mich dazu zu bringen, sie oder ihn sexuell zu berühren.",
+          "code": [
+            {
+              "code": "90352007",
+              "system": "http://snomed.info/sct",
+              "display": "Sexual molestation (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            },
+            {
+              "code": "b640",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Sexuelle Funktionen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q21",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q21",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q21",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q21",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q21",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q21",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...drohte mir jemand, mir weh zu tun oder Lügen über mich zu erzählen, wenn ich keine sexuellen Handlungen mit ihm oder ihr ausführen würde.",
+          "code": [
+            {
+              "code": "90352007",
+              "system": "http://snomed.info/sct",
+              "display": "Sexual molestation (finding)"
+            },
+            {
+              "code": "90352007",
+              "system": "http://snomed.info/sct",
+              "display": "Victim of blackmail (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            },
+            {
+              "code": "b640",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Sexuelle Funktionen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q22",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q22",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q22",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q22",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q22",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q22",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "text": "...hatte ich die beste Familie der Welt.",
+          "code": [
+            {
+              "code": "1141649007",
+              "system": "http://snomed.info/sct",
+              "display": "Family functions effectively (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q23",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q23",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q23",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q23",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q23",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q23",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...versuchte jemand, mich dazu zu bringen, sexuelle Dinge zu tun oder bei sexuellen Dingen zuzusehen.",
+          "code": [
+            {
+              "code": "8441000175102",
+              "system": "http://snomed.info/sct",
+              "display": "Victim of forced sexual activity (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            },
+            {
+              "code": "b640",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Sexuelle Funktionen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q24",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q24",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q24",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q24",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q24",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q24",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "...belästigte mich jemand sexuell.",
+          "code": [
+            {
+              "code": "90352007",
+              "system": "http://snomed.info/sct",
+              "display": "Sexual molestation (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            },
+            {
+              "code": "b640",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Sexuelle Funktionen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q25",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q25",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q25",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q25",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q25",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q25",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "Ich glaube, ich bin emotional (gefühlsmäßig) mißbraucht worden, als ich aufwuchs.",
+          "code": [
+            {
+              "code": "419916003",
+              "system": "http://snomed.info/sct",
+              "display": "Victim of emotional abuse (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q26",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q26",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q26",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q26",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q26",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q26",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "text": "...gab es jemanden, der mich zum Arzt brachte, wenn ich es brauchte.",
+          "code": [
+            {
+              "code": "1148841003",
+              "system": "http://snomed.info/sct",
+              "display": "Adequate family support (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q27",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q27",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q27",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q27",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q27",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q27",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "text": "Ich glaube, ich bin sexuell mißbraucht worden, als ich aufwuchs.",
+          "code": [
+            {
+              "code": "225826001",
+              "system": "http://snomed.info/sct",
+              "display": "Victim of sexual abuse (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            },
+            {
+              "code": "b640",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Sexuelle Funktionen"
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q28",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans1-CTQ-q28",
+                "system": "http://snomed.info/sct",
+                "code": "2667000",
+                "display": "Trifft überhaupt nicht auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-CTQ-q28",
+                "system": "http://snomed.info/sct",
+                "code": "89292003",
+                "display": "Trifft sehr selten auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-CTQ-q28",
+                "system": "http://snomed.info/sct",
+                "code": "27789000",
+                "display": "Trifft überhaupt einige Male auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-CTQ-q28",
+                "system": "http://snomed.info/sct",
+                "code": "70232002",
+                "display": "Trifft häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans5-CTQ-q28",
+                "system": "http://snomed.info/sct",
+                "code": "27732004",
+                "display": "Trifft sehr häufig auf mich zu."
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "text": "...war meine Familie mir eine Quelle der Unterstützung.",
+          "code": [
+            {
+              "code": "1148841003",
+              "system": "http://snomed.info/sct",
+              "display": "Adequate family support (finding)"
+            },
+            {
+              "code": "161472001",
+              "system": "http://snomed.info/sct",
+              "display": "History of psychological trauma (situation) "
+            },
+            {
+              "code": "e3",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Unterstützung und Beziehungen"
+            },
+            {
+              "code": "d760",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Familienbeziehungen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "CTQ-score",
+      "text": "CTQ Fragebogen Gesamtpunktzahl",
+      "code": [
+        {
+          "code": "770539002",
+          "system": "http://snomed.info/sct",
+          "display": "Trauma Screening Questionnaire score (observable entity)"
+        },
+        {
+          "code": "782487009",
+          "system": "http://snomed.info/sct",
+          "display": "Health assessment questionnaire score (observable entity)"
+        }
+      ],
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Gesamtpunktzahl des Fragebogens wird aufsummiert",
+            "name": "score",
+            "language": "text/fhirpath",
+            "expression": "%resource.answers().value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": true,
+      "readOnly": true
+    },
+    {
+      "linkId": "CTQ-score-selected1",
+      "text": "CTQ Fragebogen Punktzahl für ausgewählte Fragen",
+      "code": [
+        {
+          "code": "281850001",
+          "system": "http://snomed.info/sct",
+          "display": "Item score (qualifier value)"
+        },
+        {
+          "code": "273884004",
+          "system": "http://snomed.info/sct",
+          "display": "Trauma score (assessment scale)"
+        }
+      ],
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Summe der Antworten für ausgewählte Fragen",
+            "name": "selectedScore",
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId in ('CTQ-q3', 'CTQ-q8', 'CTQ-q14, CTQ-q18, CTQ-q25')).answer.value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": false,
+      "readOnly": true
+    },
+    {
+      "linkId": "CTQ-score-selected2",
+      "text": "CTQ Fragebogen Punktzahl für ausgewählte Fragen",
+      "code": [
+        {
+          "code": "281850001",
+          "system": "http://snomed.info/sct",
+          "display": "Item score (qualifier value)"
+        },
+        {
+          "code": "273884004",
+          "system": "http://snomed.info/sct",
+          "display": "Trauma score (assessment scale)"
+        }
+      ],
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Summe der Antworten für ausgewählte Fragen",
+            "name": "selectedScore",
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId in ('CTQ-q9', 'CTQ-q11', 'CTQ-q12, CTQ-q15, CTQ-q17')).answer.value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": false,
+      "readOnly": true
+    },
+    {
+      "linkId": "CTQ-score-selected3",
+      "text": "CTQ Fragebogen Punktzahl für ausgewählte Fragen",
+      "code": [
+        {
+          "code": "281850001",
+          "system": "http://snomed.info/sct",
+          "display": "Item score (qualifier value)"
+        },
+        {
+          "code": "273884004",
+          "system": "http://snomed.info/sct",
+          "display": "Trauma score (assessment scale)"
+        }
+      ],
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Summe der Antworten für ausgewählte Fragen",
+            "name": "selectedScore",
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId in ('CTQ-q20', 'CTQ-q21', 'CTQ-q23, CTQ-q24, CTQ-q27')).answer.value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": false,
+      "readOnly": true
+    },
+    {
+      "linkId": "CTQ-score-selected4",
+      "text": "CTQ Fragebogen Punktzahl für ausgewählte Fragen",
+      "code": [
+        {
+          "code": "281850001",
+          "system": "http://snomed.info/sct",
+          "display": "Item score (qualifier value)"
+        },
+        {
+          "code": "273884004",
+          "system": "http://snomed.info/sct",
+          "display": "Trauma score (assessment scale)"
+        }
+      ],
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Summe der Antworten für ausgewählte Fragen",
+            "name": "selectedScore",
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId in ('CTQ-q5', 'CTQ-q7', 'CTQ-q13, CTQ-q19, CTQ-q28')).answer.value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": false,
+      "readOnly": true
+    },
+    {
+      "linkId": "CTQ-score-selected5",
+      "text": "CTQ Fragebogen Punktzahl für ausgewählte Fragen",
+      "code": [
+        {
+          "code": "281850001",
+          "system": "http://snomed.info/sct",
+          "display": "Item score (qualifier value)"
+        },
+        {
+          "code": "273884004",
+          "system": "http://snomed.info/sct",
+          "display": "Trauma score (assessment scale)"
+        }
+      ],
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Summe der Antworten für ausgewählte Fragen",
+            "name": "selectedScore",
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId in ('CTQ-q1', 'CTQ-q2', 'CTQ-q4, CTQ-q6, CTQ-q26')).answer.value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": false,
+      "readOnly": true
+    }
+  ]
+}

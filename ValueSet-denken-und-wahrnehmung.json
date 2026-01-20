@@ -1,0 +1,311 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Denken_und_Wahrnehmung",
+  "id": "denken-und-wahrnehmung",
+  "title": "Denken und Wahrnehmung",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/denken-und-wahrnehmung",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b1602",
+            "display": "Inhalt des Denkens"
+          },
+          {
+            "code": "b110",
+            "display": "Funktion des Bewusstseins"
+          },
+          {
+            "code": "b1100",
+            "display": "Bewusstseinszustand"
+          },
+          {
+            "code": "b1101",
+            "display": "Kontinuität des Bewusstseins"
+          },
+          {
+            "code": "b1102",
+            "display": "Qualität des Bewusstseins"
+          },
+          {
+            "code": "b1600",
+            "display": "Denktempo"
+          },
+          {
+            "code": "b160",
+            "display": "Funktionen des Denkens"
+          },
+          {
+            "code": "b1603",
+            "display": "Kontrolle des Denkens"
+          },
+          {
+            "code": "b1601",
+            "display": "Form des Denkens"
+          },
+          {
+            "code": "b156",
+            "display": "Funktionen der Wahrnehmung"
+          },
+          {
+            "code": "b1568",
+            "display": "Funktionen der Wahrnehmung, anders bezeichnet"
+          },
+          {
+            "code": "b1561",
+            "display": "Auditive Wahrnehmung"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "247642000",
+            "display": "Thought process (observable entity)"
+          },
+          {
+            "code": "363877005",
+            "display": "Thought content (observable entity)"
+          },
+          {
+            "code": "55956009",
+            "display": "Disturbance in content of thought (finding)"
+          },
+          {
+            "code": "225445003",
+            "display": "Intrusive thoughts (finding)"
+          },
+          {
+            "code": "83507006",
+            "display": "Finding of thought content (finding)"
+          },
+          {
+            "code": "247640008",
+            "display": "Unable to think clearly (finding)"
+          },
+          {
+            "code": "41591006",
+            "display": "Disorder of form of thought (finding)"
+          },
+          {
+            "code": "365252004",
+            "display": "Finding of thought process (finding)"
+          },
+          {
+            "code": "28810003",
+            "display": "Flight of ideas (finding)"
+          },
+          {
+            "code": "285303006",
+            "display": "Racing thoughts (finding)"
+          },
+          {
+            "code": "78205008",
+            "display": "Irrational thoughts (finding)"
+          },
+          {
+            "code": "225452001",
+            "display": "Paranoid delusion (finding)"
+          },
+          {
+            "code": "7011001",
+            "display": "Hallucinations (finding)"
+          },
+          {
+            "code": "40917007",
+            "display": "Clouded consciousness (finding)"
+          },
+          {
+            "code": "443371007",
+            "display": "Decreased level of consciousness (finding)"
+          },
+          {
+            "code": "247888008",
+            "display": "Awareness of self (observable entity)"
+          },
+          {
+            "code": "81742003",
+            "display": "Perception function (observable entity)"
+          },
+          {
+            "code": "247627003",
+            "display": "Slow flow of thought (finding)"
+          },
+          {
+            "code": "247626007",
+            "display": "Speed of thought (observable entity)"
+          },
+          {
+            "code": "56435009",
+            "display": "Poverty of thought (finding)"
+          },
+          {
+            "code": "2899008",
+            "display": "Thought block (finding)"
+          },
+          {
+            "code": "247619007",
+            "display": "Thought finding (finding)"
+          },
+          {
+            "code": "44515000",
+            "display": "Perseveration (finding)"
+          },
+          {
+            "code": "86110000",
+            "display": "Rumination - thoughts (finding)"
+          },
+          {
+            "code": "247648001",
+            "display": "Loss of direction of thought (finding)"
+          },
+          {
+            "code": "2073000",
+            "display": "Delusion (finding)"
+          },
+          {
+            "code": "64514005",
+            "display": "Delusional perception (finding)"
+          },
+          {
+            "code": "247672006",
+            "display": "Delusional mood (finding)"
+          },
+          {
+            "code": "41189006",
+            "display": "Ideas of reference (finding)"
+          },
+          {
+            "code": "8330006",
+            "display": "Delusion of infidelity (finding)"
+          },
+          {
+            "code": "53108004",
+            "display": "Delusion of guilt (finding)"
+          },
+          {
+            "code": "77303001",
+            "display": "Delusion of poverty (finding)"
+          },
+          {
+            "code": "247688006",
+            "display": "Hypochondriacal delusion (finding)"
+          },
+          {
+            "code": "18193002",
+            "display": "Hypochondriasis (disorder)"
+          },
+          {
+            "code": "1157237004",
+            "display": "Altered perception (finding)"
+          },
+          {
+            "code": "5152006",
+            "display": "Illusion (finding)"
+          },
+          {
+            "code": "247730001",
+            "display": "Verbal auditory hallucinations (finding)"
+          },
+          {
+            "code": "45150006",
+            "display": "Auditory hallucinations (finding)"
+          },
+          {
+            "code": "64269007",
+            "display": "Visual hallucinations (finding)"
+          },
+          {
+            "code": "762620006",
+            "display": "Somatic hallucination (finding)"
+          },
+          {
+            "code": "57095008",
+            "display": "Pseudohallucinations (finding)"
+          },
+          {
+            "code": "192041001",
+            "display": "Acute situational disturbance (disorder)"
+          },
+          {
+            "code": "36480000",
+            "display": "Disturbance of perception associated with conversion and dissociative phenomenon (finding)"
+          },
+          {
+            "code": "40806005",
+            "display": "Derealization (finding)"
+          },
+          {
+            "code": "281770004",
+            "display": "Ego strength finding (finding)"
+          },
+          {
+            "code": "86917003",
+            "display": "Thought broadcast (finding)"
+          },
+          {
+            "code": "87076008",
+            "display": "Thought withdrawal (finding)"
+          },
+          {
+            "code": "50543005",
+            "display": "Thought insertion (finding)"
+          },
+          {
+            "code": "365320002",
+            "display": "Finding of independence of thought (finding)"
+          },
+          {
+            "code": "444714004",
+            "display": "Assessment of consciousness level (procedure)"
+          },
+          {
+            "code": "5294002",
+            "display": "Developmental disorder (disorder)"
+          },
+          {
+            "code": "110359009",
+            "display": "Intellectual disability (disorder)"
+          },
+          {
+            "code": "1855002",
+            "display": "Developmental academic disorder (disorder)"
+          },
+          {
+            "code": "88952004",
+            "display": "Thinking, function (observable entity)"
+          },
+          {
+            "code": "3006004",
+            "display": "Disturbance of consciousness (finding)"
+          },
+          {
+            "code": "365933000",
+            "display": "Finding of mental alertness (finding)"
+          },
+          {
+            "code": "64336009",
+            "display": "Incoherent thinking (finding)"
+          },
+          {
+            "code": "224988005",
+            "display": "Repressing thoughts (finding)"
+          },
+          {
+            "code": "247643005",
+            "display": "Loud thoughts (finding)"
+          },
+          {
+            "code": "44376007",
+            "display": "Dissociative disorder (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}
