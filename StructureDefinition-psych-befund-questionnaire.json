@@ -1,0 +1,367 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "psych-befund-questionnaire",
+  "url": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire",
+  "name": "PsychQuestionnaire",
+  "title": "Profil für Psychiatrische Instrumente und Befunde",
+  "status": "draft",
+  "description": "Ein allgemeines Profil für psychiatrische Instrumente und Befunde, basierend auf strukturierten Fragebögen zur Erhebung von Symptomen und Diagnosen.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Questionnaire",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Questionnaire.language",
+        "path": "Questionnaire.language",
+        "patternCode": "de-DE"
+      },
+      {
+        "id": "Questionnaire.extension.extension",
+        "path": "Questionnaire.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.extension.url",
+        "path": "Questionnaire.extension.url",
+        "patternUri": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+      },
+      {
+        "id": "Questionnaire.extension.value[x]",
+        "path": "Questionnaire.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.extension.value[x]:valueExpression",
+        "path": "Questionnaire.extension.value[x]",
+        "sliceName": "valueExpression",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Expression"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.extension.value[x]:valueExpression.description",
+        "path": "Questionnaire.extension.value[x].description",
+        "patternString": "Summierte Punktzahl der Antworten"
+      },
+      {
+        "id": "Questionnaire.extension.value[x]:valueExpression.language",
+        "path": "Questionnaire.extension.value[x].language",
+        "patternCode": "text/fhirpath"
+      },
+      {
+        "id": "Questionnaire.extension.value[x]:valueExpression.expression",
+        "path": "Questionnaire.extension.value[x].expression",
+        "patternString": "%resource.item.where(linkId!='total-score').answer.value.ordinal().sum()"
+      },
+      {
+        "id": "Questionnaire.status",
+        "path": "Questionnaire.status",
+        "patternCode": "active"
+      },
+      {
+        "id": "Questionnaire.subjectType",
+        "path": "Questionnaire.subjectType",
+        "patternCode": "Patient"
+      },
+      {
+        "id": "Questionnaire.code",
+        "path": "Questionnaire.code",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 3
+      },
+      {
+        "id": "Questionnaire.code:snomed",
+        "path": "Questionnaire.code",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "443173002",
+          "system": "http://snomed.info/sct",
+          "display": "Health assessment questionnaire (assessment scale)"
+        }
+      },
+      {
+        "id": "Questionnaire.code:loinc",
+        "path": "Questionnaire.code",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "93029-9",
+          "system": "http://loinc.org",
+          "display": "Mental health assessment panel"
+        }
+      },
+      {
+        "id": "Questionnaire.code:nci",
+        "path": "Questionnaire.code",
+        "sliceName": "nci",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "C95401",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "Patient Reported Outcome"
+        }
+      },
+      {
+        "id": "Questionnaire.item",
+        "path": "Questionnaire.item",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "item.linkId"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.linkId",
+        "path": "Questionnaire.item.linkId",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.code",
+        "path": "Questionnaire.item.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.text",
+        "path": "Questionnaire.item.text",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.type",
+        "path": "Questionnaire.item.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://charite.de/fhir/psycho/ValueSet/ItemType"
+        }
+      },
+      {
+        "id": "Questionnaire.item.answerOption.extension",
+        "path": "Questionnaire.item.answerOption.extension",
+        "max": "1"
+      },
+      {
+        "id": "Questionnaire.item.answerOption.extension.extension",
+        "path": "Questionnaire.item.answerOption.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.item.answerOption.extension.url",
+        "path": "Questionnaire.item.answerOption.extension.url",
+        "patternUri": "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+      },
+      {
+        "id": "Questionnaire.item.answerOption.extension.value[x]",
+        "path": "Questionnaire.item.answerOption.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.item.answerOption.extension.value[x]:valueDecimal",
+        "path": "Questionnaire.item.answerOption.extension.value[x]",
+        "sliceName": "valueDecimal",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.item.answerOption.value[x]",
+        "path": "Questionnaire.item.answerOption.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Questionnaire.item.answerOption.value[x]:valueCoding",
+        "path": "Questionnaire.item.answerOption.value[x]",
+        "sliceName": "valueCoding",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.answerOption.value[x]:valueCoding.system",
+        "path": "Questionnaire.item.answerOption.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.item.answerOption.value[x]:valueCoding.code",
+        "path": "Questionnaire.item.answerOption.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.item.answerOption.value[x]:valueCoding.display",
+        "path": "Questionnaire.item.answerOption.value[x].display",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.item:assessment-summary",
+        "path": "Questionnaire.item",
+        "sliceName": "assessment-summary",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Questionnaire.item:assessment-summary.extension",
+        "path": "Questionnaire.item.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.item:assessment-summary.extension:calculatedExpression",
+        "path": "Questionnaire.item.extension",
+        "sliceName": "calculatedExpression",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.item:assessment-summary.extension:calculatedExpression.extension",
+        "path": "Questionnaire.item.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.item:assessment-summary.extension:calculatedExpression.value[x].description",
+        "path": "Questionnaire.item.extension.value[x].description",
+        "patternString": "Berechnung der Gesamtpunktzahl"
+      },
+      {
+        "id": "Questionnaire.item:assessment-summary.extension:calculatedExpression.value[x].expression",
+        "path": "Questionnaire.item.extension.value[x].expression",
+        "patternString": "%resource.item.answer.value.ordinal().sum()"
+      },
+      {
+        "id": "Questionnaire.item:assessment-summary.linkId",
+        "path": "Questionnaire.item.linkId",
+        "patternString": "assessment-summary"
+      },
+      {
+        "id": "Questionnaire.item:assessment-summary.code",
+        "path": "Questionnaire.item.code",
+        "patternCoding": {
+          "code": "782487009",
+          "system": "http://snomed.info/sct",
+          "display": "Health assessment questionnaire score"
+        }
+      },
+      {
+        "id": "Questionnaire.item:assessment-summary.text",
+        "path": "Questionnaire.item.text",
+        "patternString": "Gesamtpunktzahl des Fragebogens"
+      },
+      {
+        "id": "Questionnaire.item:assessment-summary.type",
+        "path": "Questionnaire.item.type",
+        "patternCode": "quantity"
+      },
+      {
+        "id": "Questionnaire.item:assessment-summary.answerOption.extension.extension",
+        "path": "Questionnaire.item.answerOption.extension.extension",
+        "max": "0"
+      }
+    ]
+  }
+}

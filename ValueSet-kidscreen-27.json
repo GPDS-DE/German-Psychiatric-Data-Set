@@ -1,0 +1,219 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Kidscreen",
+  "id": "kidscreen-27",
+  "title": "Körperfunktionen",
+  "description": "A Value Set for bodily functions, emotional functions, and related concepts.",
+  "url": "http://charite.de/fhir/psycho/ValueSet/kidscreen-27",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b",
+            "display": "Körperfunktionen"
+          },
+          {
+            "code": "b7",
+            "display": "Neuromuskuloskeletale und bewegungsbezogene Funktionen"
+          },
+          {
+            "code": "d4552",
+            "display": "Rennen"
+          },
+          {
+            "code": "b130",
+            "display": "Funktionen der psychischen Energie und des Antriebs"
+          },
+          {
+            "code": "b152",
+            "display": "Emotionale Funktionen"
+          },
+          {
+            "code": "b1266",
+            "display": "Selbstvertrauen"
+          },
+          {
+            "code": "d920",
+            "display": "Erholung und Freizeit"
+          },
+          {
+            "code": "e310",
+            "display": "Engster Familienkreis"
+          },
+          {
+            "code": "d870",
+            "display": "Wirtschaftliche Eigenständigkeit"
+          },
+          {
+            "code": "e320",
+            "display": "Freunde"
+          },
+          {
+            "code": "d820",
+            "display": "Schulbildung"
+          },
+          {
+            "code": "b140",
+            "display": "Funktion der Aufmerksamkeit"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "363800008",
+            "display": "General wellbeing (observable entity)"
+          },
+          {
+            "code": "82832008",
+            "display": "General body state finding (finding)"
+          },
+          {
+            "code": "135816001",
+            "display": "General health excellent (finding)"
+          },
+          {
+            "code": "135817005",
+            "display": "General health fair (finding)"
+          },
+          {
+            "code": "135815002",
+            "display": "General health good (finding)"
+          },
+          {
+            "code": "135818000",
+            "display": "General health poor (finding)"
+          },
+          {
+            "code": "135819008",
+            "display": "General health very poor (finding)"
+          },
+          {
+            "code": "102499006",
+            "display": "Fit and well (finding)"
+          },
+          {
+            "code": "2667000",
+            "display": "Absent (qualifier value)"
+          },
+          {
+            "code": "62482003",
+            "display": "Low (qualifier value)"
+          },
+          {
+            "code": "1255665007",
+            "display": "Moderate (qualifier value)"
+          },
+          {
+            "code": "75540009",
+            "display": "High (qualifier value)"
+          },
+          {
+            "code": "260358002",
+            "display": "Very (qualifier value)"
+          },
+          {
+            "code": "68130003",
+            "display": "Physical activity (observable entity)"
+          },
+          {
+            "code": "282474007",
+            "display": "Able to run (finding)"
+          },
+          {
+            "code": "716411007",
+            "display": "Able to have functional level of stamina (finding)"
+          },
+          {
+            "code": "1155968006",
+            "display": "Mood (observable entity)"
+          },
+          {
+            "code": "247794008",
+            "display": "Enjoyment of life (observable entity)"
+          },
+          {
+            "code": "81548002",
+            "display": "Elevated mood (finding)"
+          },
+          {
+            "code": "112080002",
+            "display": "Cheerful mood (finding)"
+          },
+          {
+            "code": "420038007",
+            "display": "Feeling unhappy (finding)"
+          },
+          {
+            "code": "366979004",
+            "display": "Depressed mood (finding)"
+          },
+          {
+            "code": "267076002",
+            "display": "Feeling lonely (finding)"
+          },
+          {
+            "code": "225504008",
+            "display": "High self-esteem (finding)"
+          },
+          {
+            "code": "35359004",
+            "display": "Family (social concept)"
+          },
+          {
+            "code": "290043008",
+            "display": "Self-care practice (regime/therapy)"
+          },
+          {
+            "code": "300738008",
+            "display": "Able to participate in leisure activities (finding)"
+          },
+          {
+            "code": "1148841003",
+            "display": "Adequate family support (finding)"
+          },
+          {
+            "code": "224165005",
+            "display": "Financially secure (finding)"
+          },
+          {
+            "code": "113163005",
+            "display": "Friend (person)"
+          },
+          {
+            "code": "1186689004",
+            "display": "Friendly environment (finding)"
+          },
+          {
+            "code": "224479009",
+            "display": "Receives help from friend (finding)"
+          },
+          {
+            "code": "224285004",
+            "display": "Education and schooling detail (observable entity)"
+          },
+          {
+            "code": "1186692000",
+            "display": "Happy environment (finding)"
+          },
+          {
+            "code": "105423006",
+            "display": "Good education (finding)"
+          },
+          {
+            "code": "838500001",
+            "display": "Able to concentrate (finding)"
+          },
+          {
+            "code": "105516008",
+            "display": "Discord with teachers (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

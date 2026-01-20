@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ItemType",
+  "id": "itemtype",
+  "title": "Item Type Instrument Profile",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/itemtype",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/item-type",
+        "concept": [
+          {
+            "code": "group",
+            "display": "Group"
+          },
+          {
+            "code": "display",
+            "display": "Display"
+          },
+          {
+            "code": "date",
+            "display": "Date"
+          },
+          {
+            "code": "question",
+            "display": "Question"
+          },
+          {
+            "code": "coding",
+            "display": "Coding"
+          }
+        ]
+      }
+    ]
+  }
+}

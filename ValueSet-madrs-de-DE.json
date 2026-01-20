@@ -1,0 +1,115 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Madrs",
+  "id": "madrs-de-DE",
+  "title": "Emotionale Funktionen",
+  "description": "A Value Set for MADRS.",
+  "url": "http://charite.de/fhir/psycho/ValueSet/madrs-de-DE",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b152",
+            "display": "Emotionale Funktion"
+          },
+          {
+            "code": "b134",
+            "display": "Funktionen des Schlafes"
+          },
+          {
+            "code": "b1302",
+            "display": "Appetit"
+          },
+          {
+            "code": "b140",
+            "display": "Funktionen der Aufmerksamkeit"
+          },
+          {
+            "code": "b130",
+            "display": "Funktionen der psychischen Energie und des Antriebs"
+          },
+          {
+            "code": "b1265",
+            "display": "Optimismus"
+          },
+          {
+            "code": "b1602",
+            "display": "Inhalt des Denkens"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "420038007",
+            "display": "Feeling unhappy (finding)"
+          },
+          {
+            "code": "84387000",
+            "display": "Asymptomatic (finding)"
+          },
+          {
+            "code": "258351006",
+            "display": "Grade 1 (qualifier value)"
+          },
+          {
+            "code": "258352004",
+            "display": "Grade 2 (qualifier value)"
+          },
+          {
+            "code": "258353009",
+            "display": "Grade 3 (qualifier value)"
+          },
+          {
+            "code": "258354003",
+            "display": "Grade 4 (qualifier value)"
+          },
+          {
+            "code": "258355002",
+            "display": "Grade 5 (qualifier value)"
+          },
+          {
+            "code": "1293100006",
+            "display": "Grade 6 (qualifier value)"
+          },
+          {
+            "code": "263897001",
+            "display": "Feeling tense (finding)"
+          },
+          {
+            "code": "248256006",
+            "display": "Not getting enough sleep (disorder)"
+          },
+          {
+            "code": "64379006",
+            "display": "Decrease in appetite (finding)"
+          },
+          {
+            "code": "60032008",
+            "display": "Unable to concentrate (finding)"
+          },
+          {
+            "code": "26413003",
+            "display": "Low motivation (finding)"
+          },
+          {
+            "code": "20602000",
+            "display": "Indifference (finding)"
+          },
+          {
+            "code": "247799003",
+            "display": "Pessimistic (finding)"
+          },
+          {
+            "code": "6471006",
+            "display": "Suicidal thoughts (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}
