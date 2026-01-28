@@ -1,0 +1,160 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BDI_II_Codes",
+  "id": "bdi-ii-codes",
+  "title": "BDI-II Codes",
+  "description": "A Value Set for example codes for BDI-II items",
+  "url": "http://charite.de/fhir/psycho/ValueSet/bdi-ii-codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "81548002",
+            "display": "Elevated mood (finding)"
+          },
+          {
+            "code": "162465004",
+            "display": "Symptom severity (finding)"
+          },
+          {
+            "code": "247799003",
+            "display": "Pessimistic (finding)"
+          },
+          {
+            "code": "225010003",
+            "display": "Feeling a failure (finding)"
+          },
+          {
+            "code": "28669007",
+            "display": "Anhedonia (finding)"
+          },
+          {
+            "code": "7571003",
+            "display": "Feeling guilt (finding)"
+          },
+          {
+            "code": "53108004",
+            "display": "Delusion of guilt (finding)"
+          },
+          {
+            "code": "247892001",
+            "display": "Self-depreciation (finding)"
+          },
+          {
+            "code": "6471006",
+            "display": "Suicidal thoughts (finding)"
+          },
+          {
+            "code": "304534000",
+            "display": "Crying (finding)"
+          },
+          {
+            "code": "274647009",
+            "display": "Restlessness and agitation (finding)"
+          },
+          {
+            "code": "247753000",
+            "display": "Loss of interest (finding)"
+          },
+          {
+            "code": "304688001",
+            "display": "Unable to make considered choices (finding)"
+          },
+          {
+            "code": "248274002",
+            "display": "Lack of energy (finding)"
+          },
+          {
+            "code": "26677001",
+            "display": "Sleep pattern disturbance (finding)"
+          },
+          {
+            "code": "55929007",
+            "display": "Feeling irritable (finding)"
+          },
+          {
+            "code": "249473004",
+            "display": "Altered appetite (finding)"
+          },
+          {
+            "code": "60032008",
+            "display": "Unable to concentrate (finding)"
+          },
+          {
+            "code": "84229001",
+            "display": "Fatigue (finding)"
+          },
+          {
+            "code": "248096004",
+            "display": "Lack of libido (finding)"
+          },
+          {
+            "code": "782487009",
+            "display": "Health assessment questionnaire score (observable entity)"
+          },
+          {
+            "code": "718366000",
+            "display": "Beck Depression Inventory II score (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b152",
+            "display": "Emotionale Funktion"
+          },
+          {
+            "code": "b1265",
+            "display": "Optimismus"
+          },
+          {
+            "code": "b1602",
+            "display": "Inhalt des Denkens"
+          },
+          {
+            "code": "b147",
+            "display": "Psychomotorische Funktion"
+          },
+          {
+            "code": "b130",
+            "display": "Funktionen der psychischen Energie und des Antriebs"
+          },
+          {
+            "code": "b1645",
+            "display": "Das Urteilsvermögen betreffende Funktionen"
+          },
+          {
+            "code": "b134",
+            "display": "Funktionen des Schlafes"
+          },
+          {
+            "code": "b1302",
+            "display": "Appetit"
+          },
+          {
+            "code": "b140",
+            "display": "Funktionen der Aufmerksamkeit"
+          },
+          {
+            "code": "b640",
+            "display": "Sexuelle Funktionen"
+          }
+        ]
+      },
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C95401",
+            "display": "Patient Reported Outcome"
+          }
+        ]
+      }
+    ]
+  }
+}

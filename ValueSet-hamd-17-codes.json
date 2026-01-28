@@ -1,0 +1,188 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HAMD_17_Codes",
+  "id": "hamd-17-codes",
+  "title": "HAMD-17 Codes",
+  "description": "A Value Set for example codes",
+  "url": "http://charite.de/fhir/psycho/ValueSet/hamd-17-codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "307444008",
+            "display": "Frequency per week (qualifier value)"
+          },
+          {
+            "code": "59050008",
+            "display": "Initial insomnia (disorder)"
+          },
+          {
+            "code": "29373008",
+            "display": "Middle insomnia (disorder)"
+          },
+          {
+            "code": "162204000",
+            "display": "Late insomnia (disorder)"
+          },
+          {
+            "code": "247752005",
+            "display": "Level of interest (observable entity)"
+          },
+          {
+            "code": "1144814003",
+            "display": "Psychomotor retardation (finding)"
+          },
+          {
+            "code": "47295007",
+            "display": "Psychomotor agitation (finding)"
+          },
+          {
+            "code": "405051006",
+            "display": "Level of anxiety (observable entity)"
+          },
+          {
+            "code": "79890006",
+            "display": "Loss of appetite (finding)"
+          },
+          {
+            "code": "440398005",
+            "display": "Level of fatigue (observable entity)"
+          },
+          {
+            "code": "162428001",
+            "display": "Symptom: genital area (finding)"
+          },
+          {
+            "code": "18193002",
+            "display": "Hypochondriasis (disorder)"
+          },
+          {
+            "code": "784399000",
+            "display": "Self reported body weight (observable entity)"
+          },
+          {
+            "code": "262285001",
+            "display": "Weight decreased (finding)"
+          },
+          {
+            "code": "363808001",
+            "display": "Measured body weight (observable entity)"
+          },
+          {
+            "code": "84387000",
+            "display": "Asymptomatic"
+          },
+          {
+            "code": "162468002",
+            "display": "Symptom mild"
+          },
+          {
+            "code": "162469005",
+            "display": "Symptom moderate"
+          },
+          {
+            "code": "162470006",
+            "display": "Symptom severe"
+          },
+          {
+            "code": "162471005",
+            "display": "Symptom very severe"
+          },
+          {
+            "code": "782487009",
+            "display": "Health assessment questionnaire score (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b152",
+            "display": "Emotionale Funktionen"
+          },
+          {
+            "code": "b134",
+            "display": "Funktionen des Schlafes"
+          },
+          {
+            "code": "b130",
+            "display": "Funktionen der psychischen Energie und des Antriebs"
+          },
+          {
+            "code": "b147",
+            "display": "Psychomotorische Funktion"
+          },
+          {
+            "code": "b510",
+            "display": "Funktionen der Nahrungsaufnahme"
+          },
+          {
+            "code": "b640",
+            "display": "Sexuelle Funktionen"
+          },
+          {
+            "code": "b1800",
+            "display": "Selbstwahrnehmung"
+          },
+          {
+            "code": "b530",
+            "display": "Funktionen der Aufrechterhaltung des Körpergewichts"
+          }
+        ]
+      },
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C100401",
+            "display": "GRID-HAMD-17 - Insomnia - Early Night"
+          },
+          {
+            "code": "C100402",
+            "display": "GRID-HAMD-17 - Insomnia - Middle Night"
+          },
+          {
+            "code": "C102092",
+            "display": "HAMD-21 - Insomnia Late"
+          },
+          {
+            "code": "C100404",
+            "display": "HAMD-17 - Work and Activities"
+          },
+          {
+            "code": "C100405",
+            "display": "GRID-HAMD-17 - Retardation"
+          },
+          {
+            "code": "C100406",
+            "display": "GRID-HAMD-17 - Agitation"
+          },
+          {
+            "code": "C100409",
+            "display": "GRID-HAMD-17 - Somatic Symptoms Gastrointestinal"
+          },
+          {
+            "code": "C130343",
+            "display": "HAMD 24 - Psychomotor Agitation"
+          },
+          {
+            "code": "C100412",
+            "display": "GRID-HAMD-17 - Hypochondriasis"
+          },
+          {
+            "code": "C100413",
+            "display": "GRID-HAMD-17 - Loss of Weight According to Patient"
+          },
+          {
+            "code": "C100414",
+            "display": "GRID-HAMD-17 - Loss of Weight According to Weekly Measurements"
+          }
+        ]
+      }
+    ]
+  }
+}

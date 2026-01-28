@@ -1,0 +1,196 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "YMRS_Codes",
+  "id": "ymrs-codes",
+  "title": "YMRS Codes",
+  "description": "A Value Set for the Young Mania Rating Scale (YMRS) questionnaire and items",
+  "url": "http://charite.de/fhir/psycho/ValueSet/ymrs-codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C102124",
+            "display": "Young Mania Rating Scale Questionnaire"
+          },
+          {
+            "code": "C142453",
+            "display": "Clinician-reported Outcome"
+          },
+          {
+            "code": "C102233",
+            "display": "YMRS - Elevated Mood"
+          },
+          {
+            "code": "C102234",
+            "display": "YMRS - Increased Motor Activity-Energy"
+          },
+          {
+            "code": "C102235",
+            "display": "YMRS - Sexual Interest"
+          },
+          {
+            "code": "C102236",
+            "display": "YMRS - Sleep"
+          },
+          {
+            "code": "C102237",
+            "display": "YMRS - Irritability"
+          },
+          {
+            "code": "C102238",
+            "display": "YMRS - Speech (Rate and Amount)"
+          },
+          {
+            "code": "C102239",
+            "display": "YMRS - Language-Thought Disorder"
+          },
+          {
+            "code": "C102240",
+            "display": "YMRS - Content"
+          },
+          {
+            "code": "C102241",
+            "display": "YMRS - Disruptive-Aggressive Behaviour"
+          },
+          {
+            "code": "C102242",
+            "display": "YMRS - Appearance"
+          },
+          {
+            "code": "C102243",
+            "display": "YMRS - Insight"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "443173002",
+            "display": "Childhood health assessment questionnaire (assessment scale)"
+          },
+          {
+            "code": "81548002",
+            "display": "Elevated mood (finding)"
+          },
+          {
+            "code": "28277004",
+            "display": "Behavior showing increased motor activity (finding)"
+          },
+          {
+            "code": "58436003",
+            "display": "Increased libido (finding)"
+          },
+          {
+            "code": "248256006",
+            "display": "Not getting enough sleep (disorder)"
+          },
+          {
+            "code": "55929007",
+            "display": "Feeling irritable (finding)"
+          },
+          {
+            "code": "106132005",
+            "display": "Speech finding (finding)"
+          },
+          {
+            "code": "28810003",
+            "display": "Flight of ideas (finding)"
+          },
+          {
+            "code": "55956009",
+            "display": "Disturbance in content of thought (finding)"
+          },
+          {
+            "code": "61372001",
+            "display": "Aggressive behavior (finding)"
+          },
+          {
+            "code": "704442007",
+            "display": "Self-dressing/personal grooming deficit (finding)"
+          },
+          {
+            "code": "713460009",
+            "display": "Denial about illness severity (finding)"
+          },
+          {
+            "code": "782487009",
+            "display": "Health assessment questionnaire score (observable entity)"
+          },
+          {
+            "code": "162465004",
+            "display": "Symptom severity (finding)"
+          },
+          {
+            "code": "84387000",
+            "display": "Asymptomatic (finding)"
+          },
+          {
+            "code": "162468002",
+            "display": "Symptom mild (finding)"
+          },
+          {
+            "code": "162469005",
+            "display": "Symptom moderate (finding)"
+          },
+          {
+            "code": "162470006",
+            "display": "Symptom severe (finding)"
+          },
+          {
+            "code": "162471005",
+            "display": "Symptom very severe (finding)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b152",
+            "display": "Emotionale Funktion"
+          },
+          {
+            "code": "b147",
+            "display": "Psychomotorische Funktion"
+          },
+          {
+            "code": "b640",
+            "display": "Sexuelle Funktionen"
+          },
+          {
+            "code": "b134",
+            "display": "Funktionen des Schlafes"
+          },
+          {
+            "code": "b330",
+            "display": "Funktionen des Redeflusses und Sprechrythmus"
+          },
+          {
+            "code": "b167",
+            "display": "Kognitiv-sprachliche Funktion"
+          },
+          {
+            "code": "b1602",
+            "display": "Inhalt des Denkens"
+          },
+          {
+            "code": "b1261",
+            "display": "Umgänglichkeit"
+          },
+          {
+            "code": "d520",
+            "display": "Seine Körperteile pflegen"
+          },
+          {
+            "code": "b1644",
+            "display": "Das Einsichtsvermögen betreffende Funktionen"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CTQ_Codes",
+  "id": "ctq-codes",
+  "title": "CTQ Codes",
+  "description": "A Value Set for example codes for the Childhood Trauma Questionnaire (CTQ)",
+  "url": "http://charite.de/fhir/psycho/ValueSet/ctq-codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "770540000",
+            "display": "Trauma Screening Questionnaire (assessment scale)"
+          },
+          {
+            "code": "443173002",
+            "display": "Childhood health assessment questionnaire (assessment scale)"
+          },
+          {
+            "code": "439272007",
+            "display": "Date of procedure (observable entity)"
+          },
+          {
+            "code": "105726004",
+            "display": "Age AND/OR growth finding (finding)"
+          },
+          {
+            "code": "438950009",
+            "display": "Environment observable (observable entity)"
+          },
+          {
+            "code": "307294006",
+            "display": "Personal history finding (finding)"
+          },
+          {
+            "code": "2667000",
+            "display": "Absent (qualifier value)"
+          },
+          {
+            "code": "89292003",
+            "display": "Rare (qualifier value)"
+          },
+          {
+            "code": "27789000",
+            "display": "Infrequent (qualifier value)"
+          },
+          {
+            "code": "70232002",
+            "display": "Frequent (qualifier value)"
+          },
+          {
+            "code": "27732004",
+            "display": "High frequency (qualifier value)"
+          },
+          {
+            "code": "1078229009",
+            "display": "Food security (finding)"
+          },
+          {
+            "code": "161472001",
+            "display": "History of psychological trauma (situation)"
+          },
+          {
+            "code": "449892005",
+            "display": "Feeling safe (finding)"
+          },
+          {
+            "code": "225825002",
+            "display": "Victim of verbal abuse (finding)"
+          },
+          {
+            "code": "1254977008",
+            "display": "Family history of substance dependency (situation)"
+          },
+          {
+            "code": "1148841003",
+            "display": "Adequate family support (finding)"
+          },
+          {
+            "code": "248164005",
+            "display": "Clothing dirty (finding)"
+          },
+          {
+            "code": "23682002",
+            "display": "Love (finding)"
+          },
+          {
+            "code": "225017000",
+            "display": "Feeling unwanted (finding)"
+          },
+          {
+            "code": "237461000119103",
+            "display": "Child victim of physical abuse (finding)"
+          },
+          {
+            "code": "160825002",
+            "display": "Poor family relationship (finding)"
+          },
+          {
+            "code": "90352007",
+            "display": "Sexual molestation (finding)"
+          },
+          {
+            "code": "1141649007",
+            "display": "Family functions effectively (finding)"
+          },
+          {
+            "code": "8441000175102",
+            "display": "Victim of forced sexual activity (finding)"
+          },
+          {
+            "code": "281850001",
+            "display": "Item score (qualifier value)"
+          },
+          {
+            "code": "273884004",
+            "display": "Trauma score (assessment scale)"
+          }
+        ]
+      },
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C95401",
+            "display": "Patient Reported Outcome"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icf",
+        "concept": [
+          {
+            "code": "b1302",
+            "display": "Appetit"
+          },
+          {
+            "code": "e3",
+            "display": "Unterstützung und Beziehungen"
+          },
+          {
+            "code": "d760",
+            "display": "Familienbeziehungen"
+          },
+          {
+            "code": "d540",
+            "display": "Sich kleiden"
+          },
+          {
+            "code": "b640",
+            "display": "Sexuelle Funktionen"
+          }
+        ]
+      }
+    ]
+  }
+}
