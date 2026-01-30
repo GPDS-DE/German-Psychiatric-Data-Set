@@ -1,0 +1,991 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "HAMD-7-de-DE",
+  "language": "de-DE",
+  "title": "Hamilton Depression Rating Scale (7-item Kurzform)",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "code": [
+    {
+      "code": "1231454007",
+      "system": "http://snomed.info/sct",
+      "display": "Hamilton Anxiety Rating Scale (assessment scale)"
+    },
+    {
+      "code": "C142453",
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "display": "Clinician-reported Outcome"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "HAMD-7-depression",
+      "type": "group",
+      "text": "1.) Depressive Verstimmung (Traurigkeit, Trübsal blasen, melancholisch sein, weinerlich sein) ",
+      "required": true,
+      "item": [
+        {
+          "linkId": "q1-HAMD-7-depression",
+          "type": "choice",
+          "text": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786",
+          "code": [
+            {
+              "code": "405049007",
+              "system": "http://snomed.info/sct",
+              "display": "Level of depression (observable entity)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            },
+            {
+              "code": "C130335",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "HAMD 24 - Depressed Mood"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans0-HAMD-7-depression",
+                "system": "http://snomed.info/sct",
+                "code": "84387000",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans1-HAMD-7-depression",
+                "system": "http://snomed.info/sct",
+                "code": "162468002",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-HAMD-7-depression",
+                "system": "http://snomed.info/sct",
+                "code": "162469005",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-HAMD-7-depression",
+                "system": "http://snomed.info/sct",
+                "code": "162470006",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-HAMD-7-depression",
+                "system": "http://snomed.info/sct",
+                "code": "162471005",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "HAMD-7-shame",
+      "type": "group",
+      "text": "2.) Schuldgefühle (Kritik an sich selbst und Selbstvorwürfe) ",
+      "required": true,
+      "item": [
+        {
+          "linkId": "q2-HAMD-7-shame",
+          "type": "choice",
+          "text": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786",
+          "code": [
+            {
+              "code": "7571003",
+              "system": "http://snomed.info/sct",
+              "display": "Feeling guilt (finding)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            },
+            {
+              "code": "C130336",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "HAMD 24 - Low Self-esteem, Guilt"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ans0-HAMD-7-shame",
+                "system": "http://snomed.info/sct",
+                "code": "84387000",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans1-HAMD-7-shame",
+                "system": "http://snomed.info/sct",
+                "code": "162468002",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans2-HAMD-7-shame",
+                "system": "http://snomed.info/sct",
+                "code": "162469005",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans3-HAMD-7-shame",
+                "system": "http://snomed.info/sct",
+                "code": "162470006",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "id": "ans4-HAMD-7-shame",
+                "system": "http://snomed.info/sct",
+                "code": "162471005",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "HAMD-7-interest",
+      "type": "group",
+      "text": "3.) Interesse, Freude, Aktivitätslevel, (Arbeit und Aktivitäten des täglichen Lebens) ",
+      "required": true,
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "q3-HAMD-7-interest",
+          "text": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786",
+          "code": [
+            {
+              "code": "247752005",
+              "system": "http://snomed.info/sct",
+              "display": "Level of interest (observable entity)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b130",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Funktionen der psychischen Energie und des Antriebs"
+            },
+            {
+              "code": "C130341",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "HAMD 24 - Work and Interests"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "84387000",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162468002",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162469005",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162470006",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162471005",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "HAMD-7-cognitive-anxiety",
+      "type": "group",
+      "text": "4.) Anspannung und Nervosität (psychische Angst)",
+      "required": true,
+      "item": [
+        {
+          "code": [
+            {
+              "code": "405051006",
+              "system": "http://snomed.info/sct",
+              "display": "Level of anxiety (observable entity)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            },
+            {
+              "code": "C130344",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "HAMD 24 - Anxiety, Psychic"
+            }
+          ],
+          "linkId": "q4-HAMD-7-cognitive-anxiety",
+          "type": "choice",
+          "text": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "84387000",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162468002",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162469005",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162470006",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162471005",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "HAMD-7-somatic-anxiety",
+      "type": "group",
+      "text": "5.) körperliche Angstsymptome",
+      "item": [
+        {
+          "code": [
+            {
+              "code": "405050007",
+              "system": "http://snomed.info/sct",
+              "display": "Level of fear (observable entity)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            },
+            {
+              "code": "267045008",
+              "system": "http://snomed.info/sct",
+              "display": "Gastrointestinal symptom (finding)"
+            },
+            {
+              "code": "87715008",
+              "system": "http://snomed.info/sct",
+              "display": "Xerostomia (finding)"
+            },
+            {
+              "code": "308698004",
+              "system": "http://snomed.info/sct",
+              "display": "Flatulence symptom (finding)"
+            },
+            {
+              "code": "267060006",
+              "system": "http://snomed.info/sct",
+              "display": "Diarrhea symptom (finding)"
+            },
+            {
+              "code": "21522001",
+              "system": "http://snomed.info/sct",
+              "display": "Abdominal pain (finding)"
+            },
+            {
+              "code": "21829004",
+              "system": "http://snomed.info/sct",
+              "display": "Blood vessel finding (finding)"
+            },
+            {
+              "code": "80313002",
+              "system": "http://snomed.info/sct",
+              "display": "Palpitations (finding)"
+            },
+            {
+              "code": "25064002",
+              "system": "http://snomed.info/sct",
+              "display": "Headache (finding)"
+            },
+            {
+              "code": "365852007",
+              "system": "http://snomed.info/sct",
+              "display": "Respiratory function finding (finding)"
+            },
+            {
+              "code": "68978004",
+              "system": "http://snomed.info/sct",
+              "display": "Hyperventilation (finding)"
+            },
+            {
+              "code": "267036007",
+              "system": "http://snomed.info/sct",
+              "display": "Dyspnea (finding)"
+            },
+            {
+              "code": "74964007",
+              "system": "http://snomed.info/sct",
+              "display": "Other (qualifier value)"
+            },
+            {
+              "code": "75088002",
+              "system": "http://snomed.info/sct",
+              "display": "Urgent desire to urinate (finding)"
+            },
+            {
+              "code": "415690000",
+              "system": "http://snomed.info/sct",
+              "display": "Sweating (finding)"
+            },
+            {
+              "code": "C130345",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "HAMD 24 - Anxiety, Somatic"
+            }
+          ],
+          "linkId": "q5-HAMD-7-somatic-anxiety",
+          "type": "choice",
+          "text": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "84387000",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162468002",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162469005",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162470006",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162471005",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "required": true
+    },
+    {
+      "linkId": "HAMD-7-energy-level",
+      "type": "group",
+      "required": true,
+      "text": "6.) Energielevel, (körperliche Symptome)",
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "q6-HAMD-7-energy-level",
+          "text": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786",
+          "code": [
+            {
+              "code": "440398005",
+              "system": "http://snomed.info/sct",
+              "display": "Level of fatigue (observable entity)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b152",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Emotionale Funktionen"
+            },
+            {
+              "code": "C130343",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "HAMD 24 - Psychomotor Agitation"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "84387000",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "161874006",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "161874006",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "repeat-question1",
+      "type": "choice",
+      "text": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786",
+      "enableWhen": [
+        {
+          "question": "899c9b31-3614-423e-ea2a-89cf3caffe93",
+          "operator": "=",
+          "answerCoding": {
+            "code": "161874006"
+          }
+        }
+      ],
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "q-repeat-question1",
+          "text": "Wie energievoll waren Sie die letzte Woche? Fühlten Sie sich müde? Hatten Sie irgendwelche Schmerzen oder ein Schweregefühl in ihren Gliedern, dem Rücken oder dem Kopf?",
+          "code": [
+            {
+              "code": "440398005",
+              "system": "http://snomed.info/sct",
+              "display": "Level of fatigue (observable entity)"
+            },
+            {
+              "code": "307444008",
+              "system": "http://snomed.info/sct",
+              "display": "Frequency per week (qualifier value)"
+            },
+            {
+              "code": "b130",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Funktionen der psychischen Energie und des Antriebs"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "84387000",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "161874006",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "161874006",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "HAMD-7-suicidality",
+      "type": "group",
+      "text": "7.) Suizidalität (Gedanken, Pläne, Versuche)",
+      "required": true,
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "q7-HAMD-7-suicidality",
+          "text": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786",
+          "code": [
+            {
+              "code": "3161000000000000",
+              "system": "http://snomed.info/sct",
+              "display": "Suicide risk (observable entity)"
+            },
+            {
+              "code": "C102089",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "HAMD-21 - Suicide"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "84387000",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162468002",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162469005",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "6471006",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "161474000",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "repeat-question2",
+      "type": "choice",
+      "text": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786",
+      "enableWhen": [
+        {
+          "question": "q-repeat-question2",
+          "operator": "=",
+          "answerCoding": {
+            "code": "161474000"
+          }
+        }
+      ],
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "qrepeat-question2",
+          "text": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786",
+          "code": [
+            {
+              "code": "3161000000000000",
+              "system": "http://snomed.info/sct",
+              "display": "Suicide risk (observable entity)"
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "84387000",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162468002",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "162469005",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "6471006",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "161474000",
+                "display": "McIntyre, R. S., Konarski, J. Z., Mancini, D. A., Fulton, K. A., Parikh, S. V., Grigoriadis, S., Grupp, L. A., Bakish, D., Filteau, M. J., Gorman, C., Nemeroff, C. B., & Kennedy, S. H. (2005). Measuring the severity of depression and remission in primary care: validation of the HAMD-7 scale. CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne, 173(11), 1327–1334. https://doi.org/10.1503/cmaj.050786"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "required": true
+    },
+    {
+      "linkId": "HAMD-7-score",
+      "text": "HAMD-7 Fragebogen Gesamtpunktzahl",
+      "code": [
+        {
+          "code": "782487009",
+          "system": "http://snomed.info/sct",
+          "display": "Health assessment questionnaire score (observable entity)"
+        }
+      ],
+      "type": "quantity",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Gesamtpunktzahl des Fragebogens wird aufsummiert",
+            "name": "score",
+            "language": "text/fhirpath",
+            "expression": "%resource.answers().value.ordinal().sum()"
+          }
+        }
+      ],
+      "required": true,
+      "readOnly": true
+    }
+  ]
+}
