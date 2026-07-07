@@ -1,0 +1,50 @@
+{
+  "resourceType": "Observation",
+  "id": "CTQObservationExample",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "770539002",
+        "system": "http://snomed.info/sct",
+        "display": "Trauma Screening Questionnaire score (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientExample"
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/CTQQuestionnaireResponseExample"
+    }
+  ],
+  "effectiveDateTime": "2024-03-15",
+  "_effectiveDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.eu/fhir/extensions/StructureDefinition/periods-of-life",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "255398004",
+              "system": "http://snomed.info/sct",
+              "display": "Childhood (qualifier value)"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "valueQuantity": {
+    "value": 84,
+    "unit": "score",
+    "system": "http://unitsofmeasure.org",
+    "code": "{score}"
+  },
+  "focus": [
+    {
+      "reference": "Condition/CTQConditionExample"
+    }
+  ]
+}

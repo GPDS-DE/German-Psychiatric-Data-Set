@@ -1,0 +1,22 @@
+{
+  "resourceType": "Condition",
+  "id": "CTQConditionExample",
+  "subject": {
+    "reference": "Patient/PatientExample"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "161472001",
+        "system": "http://snomed.info/sct",
+        "display": "History of psychological trauma (situation)"
+      }
+    ]
+  },
+  "onsetAge": {
+    "value": 8,
+    "unit": "years",
+    "system": "http://unitsofmeasure.org",
+    "code": "a"
+  }
+}

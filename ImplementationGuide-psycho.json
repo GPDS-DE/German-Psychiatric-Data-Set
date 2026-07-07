@@ -1,0 +1,519 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "psycho",
+  "url": "http://charite.de/fhir/psycho/ImplementationGuide/psycho",
+  "version": "0.1.0",
+  "name": "psycho",
+  "status": "draft",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Example Publisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId": "psycho",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.uv.sdc",
+      "version": "3.0.0",
+      "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+      "id": "hl7_fhir_uv_sdc"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "ValueSet/interpersonelle-interaktionen-und-beziehungen"
+        },
+        "name": "(Interpersonelle) Interaktionen und Beziehungen",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/angst-und-tics"
+        },
+        "name": "Angst, Zwänge und Tics",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/appetit"
+        },
+        "name": "Appetit",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aufmerksamkeit-und-gedaechtnis"
+        },
+        "name": "Aufmerksamkeit und Gedächtnis",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aussehen-und-selbstpflege"
+        },
+        "name": "Aussehen und Selbspflege",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/BDI-II-de-DE"
+        },
+        "name": "BDI II",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/bdi-ii-codes"
+        },
+        "name": "BDI-II Codes",
+        "description": "A Value Set for example codes for BDI-II items",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/bildung"
+        },
+        "name": "Bildung",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cdrs-r-codes"
+        },
+        "name": "CDRS-R Codes",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/CTQ-de-DE"
+        },
+        "name": "Childhood Trauma Questionnaire",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/ConditionExample"
+        },
+        "name": "ConditionExample",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ctq-codes"
+        },
+        "name": "CTQ Codes",
+        "description": "A Value Set for example codes for the Childhood Trauma Questionnaire (CTQ)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Condition/CTQConditionExample"
+        },
+        "name": "CTQConditionExample",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/CTQObservationExample"
+        },
+        "name": "CTQObservationExample",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/CTQQuestionnaireResponseExample"
+        },
+        "name": "CTQQuestionnaireResponseExample",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/demografische-daten"
+        },
+        "name": "Demografische Daten",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/denken-und-wahrnehmung"
+        },
+        "name": "Denken und Wahrnehmung",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/einsicht-und-Beurteilung"
+        },
+        "name": "Einsicht und Beurteilung",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/madrs-de-DE"
+        },
+        "name": "Emotionale Funktionen",
+        "description": "A Value Set for MADRS.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/emotionen-und-affekt"
+        },
+        "name": "Emotionen und Affekt",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/familienbeziehungen-und-zuhause"
+        },
+        "name": "Familienbeziehungen und Zuhause",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/fragebogenidentifikation"
+        },
+        "name": "Fragebogenidentifikation",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/hamd-17-codes"
+        },
+        "name": "HAMD-17 Codes",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/HAMD-17-en-US"
+        },
+        "name": "Hamilton Depression Rating Scale (17-items)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/HAMD-17-de-DE"
+        },
+        "name": "Hamilton Depression Rating Scale (17-items)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/HAMD-7-de-DE"
+        },
+        "name": "Hamilton Depression Rating Scale (7-item Kurzform)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ICD-10-diagnosen-AMDP-CASCAP"
+        },
+        "name": "ICD-10-Diagnosen aus AMDP und CASCAP-2",
+        "description": "ValueSet aller eindeutigen ICD-10-Codes aus der Tabelle 'Kodierung von psychiatrischen Befunden (AMDP / CASCAP-2)'. Alle Anzeigetexte wurden gegen die amtliche ICD-10-GM Version 2026 (BfArM, Stand 12.09.2025) verifiziert und korrigiert. Codes, die in der ICD-10-GM 2026 nicht existieren oder nicht terminal sind, tragen einen Kommentar.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/icd10gm-f3-diagnoses"
+        },
+        "name": "ICD-10-GM F3-Diagnosen",
+        "description": "A ValueSet containing all F3 diagnoses (affective disorders) from the ICD-10 German Modification (ICD-10-GM).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/icd11-affective-disorders"
+        },
+        "name": "ICD-11 Affective Disorders (Disorders of Mood)",
+        "description": "A ValueSet containing all affective disorders (disorders of mood) from the ICD-11.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ICD-11-diagnosen-AMDP-CASCAP"
+        },
+        "name": "ICD-11-Diagnosen aus AMDP und CASCAP-2",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/itemtype"
+        },
+        "name": "Item Type Instrument Profile",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/Kid-KINDL-de-DE"
+        },
+        "name": "Kid-KINDL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/Kiddo-KINDL-de-DE"
+        },
+        "name": "Kiddo-KINDL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/Kiddy-KINDL-de-DE"
+        },
+        "name": "Kiddy-KINDL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/KINDL-de-DE-Elternversion"
+        },
+        "name": "KINDL-Elternversion",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/kidscreen-27"
+        },
+        "name": "Körperfunktionen",
+        "description": "A Value Set for bodily functions, emotional functions, and related concepts.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MyPatient"
+        },
+        "name": "MyPatient",
+        "description": "An example profile of the Patient resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/ObservationExample"
+        },
+        "name": "ObservationExample",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/orientierung"
+        },
+        "name": "Orientierung",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/PHQ-2-de-DE"
+        },
+        "name": "Patient Health Questionnaire - 2-Item Short-form",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/PHQ-9-de-DE"
+        },
+        "name": "Patient Health Questionnaire - 9-Item Short-form",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/PHQ-9-en-US"
+        },
+        "name": "Patient Health Questionnaire - 9-Items",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/PatientExample"
+        },
+        "name": "PatientExample",
+        "description": "An example of a patient with a license to krill.",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/MyPatient"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/psych-befund-questionnaire"
+        },
+        "name": "Profil für Psychiatrische Instrumente und Befunde",
+        "description": "Ein allgemeines Profil für psychiatrische Instrumente und Befunde, basierend auf strukturierten Fragebögen zur Erhebung von Symptomen und Diagnosen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/antrieb-und-motorik"
+        },
+        "name": "Psychische Energie, innerer Antrieb, Bewegung, Motorik, Zwänge und Tics",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cascap-2"
+        },
+        "name": "Psychische Funktionen",
+        "description": "Diese Gruppe umfasst Konzepte, die psychische Funktionen wie Bewusstsein, Aufmerksamkeit, Gedächtnis und Denken betreffen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnareResponseExample"
+        },
+        "name": "QuestionnareResponseExample",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/schlaf"
+        },
+        "name": "Schlaf",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/selbstverletzung-und-suizid"
+        },
+        "name": "Selbstverletzung und Suizid",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/selbstwahrnehmung-und-vertrauen"
+        },
+        "name": "Selbstwahrnehmung und Vertrauen",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/sexualfunktion"
+        },
+        "name": "Sexualfunktion",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/somatische-symptome"
+        },
+        "name": "Somatische Symptome",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/sprache"
+        },
+        "name": "Sprache",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/antwortenkodierung"
+        },
+        "name": "Standardisierte fragebogenübergreifende Kodierungsmöglichkeiten für Antworten auf Fragebögen und Scores",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/sucht"
+        },
+        "name": "Sucht",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/trauma"
+        },
+        "name": "Trauma",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/amdp"
+        },
+        "name": "Value Set for AMDP",
+        "description": "A Value Set for psychopathological assessments of adults with codes from mappings to the AMDP standard",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/weinen"
+        },
+        "name": "Weinen",
+        "description": "A Value Set for example codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/YMRS-de-DE"
+        },
+        "name": "YMRS",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ymrs-codes"
+        },
+        "name": "YMRS Codes",
+        "description": "A Value Set for the Young Mania Rating Scale (YMRS) questionnaire and items",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2023+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "QuestionnareResponseExample",
+  "questionnaire": "www.hamd17questionnaire.de",
+  "status": "completed",
+  "item": [
+    {
+      "linkId": "q1-HAMD-17-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162470006",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom severe (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q2-HAMD-17-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162470006",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom severe (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q3-HAMD-17-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "84387000",
+            "system": "http://snomed.info/sct",
+            "display": "Asymptomatic (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q4-HAMD-17-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162470006",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom severe (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q5-HAMD-17-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162468002",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom mild (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q6-HAMD-17-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162470006",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom severe (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q7-HAMD-17-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162468002",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom mild (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q8-HAMD-17-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162468002",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom mild (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q9-HAMD-17-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162468002",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom mild (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q10-HAMD-17-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162470006",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom severe (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q11-HAMD-17-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162468002",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom mild (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q12-HAMD-17-depression",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162468002",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom mild (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q13-HAMD-17-energy-level",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "84387000",
+            "system": "http://snomed.info/sct",
+            "display": "Asymptomatic (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q14-HAMD-17-genital",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162468002",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom mild (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q15-HAMD-17-hypochondria",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162468002",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom mild (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q16-HAMD-17-weight-loss-a",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162468002",
+            "system": "http://snomed.info/sct",
+            "display": "Unknown (qualifier value)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q16-HAMD-17-weight-loss-b",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162468002",
+            "system": "http://snomed.info/sct",
+            "display": "Unknown (qualifier value)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "q17-HAMD-17-insight",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "162468002",
+            "system": "http://snomed.info/sct",
+            "display": "Symptom mild (finding)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "HAMD-17-score",
+      "text": "HAMD-17 Total Score",
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 21,
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -4,164 +4,24 @@
   "name": "ICD_10_Diagnosen_aus_AMDP_und_CASCAP_2",
   "id": "ICD-10-diagnosen-AMDP-CASCAP",
   "title": "ICD-10-Diagnosen aus AMDP und CASCAP-2",
-  "description": "A Value Set for example codes",
+  "description": "ValueSet aller eindeutigen ICD-10-Codes aus der Tabelle 'Kodierung von psychiatrischen Befunden (AMDP / CASCAP-2)'. Alle Anzeigetexte wurden gegen die amtliche ICD-10-GM Version 2026 (BfArM, Stand 12.09.2025) verifiziert und korrigiert. Codes, die in der ICD-10-GM 2026 nicht existieren oder nicht terminal sind, tragen einen Kommentar.",
   "url": "http://charite.de/fhir/psycho/ValueSet/ICD-10-diagnosen-AMDP-CASCAP",
   "compose": {
     "include": [
       {
-        "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "concept": [
           {
-            "code": "F91.-",
-            "display": "Störungen des Sozialverhaltens"
-          },
-          {
-            "code": "R45.6",
-            "display": "Körperliche Gewalt"
-          },
-          {
-            "code": "F63.2",
-            "display": "Pathologisches Stehlen [Kleptomanie]"
-          },
-          {
-            "code": "F63.1",
-            "display": "Pathologische Brandstiftung [Pyromanie]"
-          },
-          {
-            "code": "F8.-",
-            "display": "Entwicklungsstörungen"
-          },
-          {
-            "code": "F7.-",
-            "display": "Intelligenzminderung"
-          },
-          {
-            "code": "F73",
-            "display": "Schwerste Intelligenzminderung"
-          },
-          {
-            "code": "F72",
-            "display": "Schwere Intelligenzminderung"
-          },
-          {
-            "code": "F70",
-            "display": "Leichte Intelligenzminderung"
-          },
-          {
-            "code": "F80.0",
-            "display": "Artikulationsstörung"
-          },
-          {
-            "code": "F80.1",
-            "display": "Expressive Sprachstörung"
-          },
-          {
-            "code": "F80.2",
-            "display": "Rezeptive Sprachstörung"
-          },
-          {
-            "code": "F98.5",
-            "display": "Stottern [Stammeln]"
-          },
-          {
-            "code": "F82.-",
-            "display": "Umschriebene Entwicklungsstörung der motorischen Funktionen"
-          },
-          {
-            "code": "F88",
-            "display": "Andere Entwicklungsstörungen"
-          },
-          {
-            "code": "F81.3",
-            "display": "Kombinierte Störungen schulischer Fertigkeiten"
-          },
-          {
-            "code": "F95.-",
-            "display": "Ticstörungen"
-          },
-          {
-            "code": "F98.-",
-            "display": "Andere Verhaltens- und emotionale Störungen mit Beginn in der Kindheit und Jugend"
-          },
-          {
-            "code": "F41.-",
-            "display": "Andere Angststörungen"
-          },
-          {
-            "code": "F40.8",
-            "display": "Sonstige phobische Störungen"
-          },
-          {
-            "code": "F41.8",
-            "display": "Sonstige spezifische Angststörungen"
-          },
-          {
-            "code": "F40.0",
-            "display": "Agoraphobie"
-          },
-          {
-            "code": "F41.0",
-            "display": "Panikstörung [episodisch paroxysmale Angst]"
-          },
-          {
-            "code": "F41.1",
-            "display": "Generalisierte Angststörung"
-          },
-          {
-            "code": "F42.-",
-            "display": "Zwangsstörung"
-          },
-          {
-            "code": "F42.0",
-            "display": "Vorwiegend Zwangsgedanken oder Grübelzwang"
-          },
-          {
-            "code": "F42.1",
-            "display": "Vorwiegend Zwangshandlungen [Zwangsrituale]"
-          },
-          {
-            "code": "F32.-",
-            "display": "Depressive Episode"
-          },
-          {
-            "code": "R45.84",
-            "display": "Anhedonia"
-          },
-          {
-            "code": "F3",
-            "display": "Affektive Störungen"
-          },
-          {
-            "code": "R45.3",
-            "display": "Demoralisierung und Apathie"
-          },
-          {
-            "code": "R45.1",
-            "display": "Ruhelosigkeit und Erregung"
-          },
-          {
-            "code": "F50.-",
-            "display": "Essstörungen"
-          },
-          {
-            "code": "F50.8",
-            "display": "Sonstige Essstörungen"
-          },
-          {
-            "code": "F45.-",
-            "display": "Somatoforme Störungen"
-          },
-          {
-            "code": "R11",
-            "display": "Übelkeit und Erbrechen"
-          },
-          {
-            "code": "F98.01",
-            "display": "Enuresis diurna"
+            "code": "F22.8",
+            "display": "Sonstige anhaltende wahnhafte Störungen"
           },
           {
             "code": "F98.00",
             "display": "Enuresis nocturna"
+          },
+          {
+            "code": "F98.01",
+            "display": "Enuresis diurna"
           },
           {
             "code": "F98.1",
@@ -172,92 +32,249 @@
             "display": "Schlafstörungen"
           },
           {
-            "code": "F44.-",
-            "display": "Dissoziative Störungen [Konversionsstörungen]"
+            "code": "G47.8",
+            "display": "Sonstige Schlafstörungen"
           },
           {
             "code": "G90",
             "display": "Krankheiten des autonomen Nervensystems"
           },
           {
-            "code": "R52.-",
-            "display": "Schmerz, anderenorts nicht klassifiziert"
+            "code": "G90.8",
+            "display": "Sonstige Krankheiten des autonomen Nervensystems"
           },
           {
-            "code": "R53",
-            "display": "Unwohlsein und Ermüdung"
+            "code": "R11",
+            "display": "Übelkeit und Erbrechen"
           },
           {
-            "code": "F45.2",
-            "display": "Hypochondrische Störung"
+            "code": "R15",
+            "display": "Stuhlinkontinenz"
           },
           {
-            "code": "R44.-",
-            "display": "Sonstige Symptome, die die Sinneswahrnehmungen und das Wahrnehmungsvermögen betreffen"
+            "code": "R25.8",
+            "display": "Sonstige und nicht näher bezeichnete abnorme unwillkürliche Bewegungen"
           },
           {
-            "code": "F65.0",
-            "display": "Fetischismus"
+            "code": "R27.8",
+            "display": "Sonstige und nicht näher bezeichnete Koordinationsstörungen"
           },
           {
-            "code": "X84.9",
-            "display": "Vorsätzliche Selbstschädigung"
-          },
-          {
-            "code": "R45.-",
-            "display": "Symptome, die die Stimmung betreffen"
-          },
-          {
-            "code": "T51.-",
-            "display": "Toxische Wirkung von Alkohol"
-          },
-          {
-            "code": "F19.-",
-            "display": "Psychische und Verhaltensstörungen durch multiplen Substanzgebrauch und Konsum anderer psychotroper Substanzen"
-          },
-          {
-            "code": "R48.1",
-            "display": "Agnosie des Körperschemas"
-          },
-          {
-            "code": "F64.-",
-            "display": "Störungen der Geschlechtsidentität"
-          },
-          {
-            "code": "F52.-",
-            "display": "Sexuelle Funktionsstörungen, nicht verursacht durch eine organische Störung oder Krankheit"
-          },
-          {
-            "code": "F52.7",
-            "display": "Gesteigertes sexuelles Verlangen"
+            "code": "R32",
+            "display": "Nicht näher bezeichnete Harninkontinenz"
           },
           {
             "code": "R40.0",
-            "display": "Somnoleszenz"
+            "display": "Somnolenz"
+          },
+          {
+            "code": "R41",
+            "display": "Sonstige Symptome, die das Erkennungsvermögen und das Bewusstsein betreffen"
+          },
+          {
+            "code": "R41.-",
+            "display": "Sonstige Symptome, die das Erkennungsvermögen und das Bewusstsein betreffen"
           },
           {
             "code": "R41.0",
             "display": "Orientierungsstörung, nicht näher bezeichnet"
           },
           {
-            "code": "F30.2",
-            "display": "Manie mit psychotischen Symptomen"
+            "code": "R41.8",
+            "display": "Sonstige und nicht näher bezeichnete Symptome, die das Erkennungsvermögen und das Bewusstsein betreffen"
           },
           {
-            "code": "F22.-",
-            "display": "Anhaltende wahnhafte Störungen"
+            "code": "R44",
+            "display": "Sonstige Symptome, die die Sinneswahrnehmungen und das Wahrnehmungsvermögen betreffen"
           },
           {
-            "code": "F20.-",
-            "display": "Schizophrenie"
+            "code": "R44.-",
+            "display": "Sonstige Symptome, die die Sinneswahrnehmungen und das Wahrnehmungsvermögen betreffen"
           },
           {
-            "code": "F94.0",
-            "display": "Elektiver Mutismus"
+            "code": "R44.0",
+            "display": "Akustische Halluzinationen"
+          },
+          {
+            "code": "R44.1",
+            "display": "Optische Halluzinationen"
+          },
+          {
+            "code": "R44.2",
+            "display": "Sonstige Halluzinationen"
+          },
+          {
+            "code": "R44.8",
+            "display": "Sonstige und nicht näher bezeichnete Symptome, die die Sinneswahrnehmungen und das Wahrnehmungsvermögen betreffen"
+          },
+          {
+            "code": "R45",
+            "display": "Symptome, die die Stimmung betreffen"
+          },
+          {
+            "code": "R45.-",
+            "display": "Symptome, die die Stimmung betreffen"
+          },
+          {
+            "code": "R45.0",
+            "display": "Nervosität"
+          },
+          {
+            "code": "R45.1",
+            "display": "Ruhelosigkeit und Erregung"
+          },
+          {
+            "code": "R45.2",
+            "display": "Unglücklichsein"
+          },
+          {
+            "code": "R45.3",
+            "display": "Demoralisierung und Apathie"
+          },
+          {
+            "code": "R45.4",
+            "display": "Reizbarkeit und Wut"
+          },
+          {
+            "code": "R45.5",
+            "display": "Feindseligkeit"
+          },
+          {
+            "code": "R45.6",
+            "display": "Körperliche Gewalt"
           },
           {
             "code": "R45.8",
             "display": "Sonstige Symptome, die die Stimmung betreffen"
+          },
+          {
+            "code": "R46.3",
+            "display": "Hyperaktivität"
+          },
+          {
+            "code": "R46.8",
+            "display": "Sonstige Symptome, die das äußere Erscheinungsbild und das Verhalten betreffen"
+          },
+          {
+            "code": "R47.0",
+            "display": "Dysphasie und Aphasie"
+          },
+          {
+            "code": "R47.8",
+            "display": "Sonstige und nicht näher bezeichnete Sprech- und Sprachstörungen"
+          },
+          {
+            "code": "R48.1",
+            "display": "Agnosie"
+          },
+          {
+            "code": "R48.8",
+            "display": "Sonstige und nicht näher bezeichnete Werkzeugstörungen"
+          },
+          {
+            "code": "R49.8",
+            "display": "Sonstige und nicht näher bezeichnete Störungen der Stimme"
+          },
+          {
+            "code": "R52",
+            "display": "Schmerz, anderenorts nicht klassifiziert"
+          },
+          {
+            "code": "R52.-",
+            "display": "Schmerz, anderenorts nicht klassifiziert"
+          },
+          {
+            "code": "R52.8",
+            "display": "Schmerz, anderenorts nicht klassifiziert"
+          },
+          {
+            "code": "R53",
+            "display": "Malaise und Fatigue"
+          },
+          {
+            "code": "R53.8",
+            "display": "Malaise und Fatigue"
+          },
+          {
+            "code": "R62",
+            "display": "Ausbleiben der erwarteten normalen physiologischen Entwicklung"
+          },
+          {
+            "code": "R62.9",
+            "display": "Ausbleiben der erwarteten physiologischen Entwicklung, nicht näher bezeichnet"
+          },
+          {
+            "code": "R63",
+            "display": "Symptome, die die Nahrungs- und Flüssigkeitsaufnahme betreffen"
+          },
+          {
+            "code": "R63.0",
+            "display": "Anorexie"
+          },
+          {
+            "code": "R63.2",
+            "display": "Polyphagie"
+          },
+          {
+            "code": "R63.3",
+            "display": "Ernährungsprobleme und unsachgemäße Ernährung"
+          },
+          {
+            "code": "R63.4",
+            "display": "Abnorme Gewichtsabnahme"
+          },
+          {
+            "code": "R63.6",
+            "display": "Ungenügende Aufnahme von Nahrung und Flüssigkeit"
+          },
+          {
+            "code": "R68",
+            "display": "Sonstige Allgemeinsymptome"
+          },
+          {
+            "code": "R68.8",
+            "display": "Sonstige näher bezeichnete Allgemeinsymptome"
+          },
+          {
+            "code": "T51",
+            "display": "Toxische Wirkung von Alkohol"
+          },
+          {
+            "code": "T51.-",
+            "display": "Toxische Wirkung von Alkohol"
+          },
+          {
+            "code": "T51.8",
+            "display": "Sonstige Alkohole"
+          },
+          {
+            "code": "X84.9!",
+            "display": "Absichtliche Selbstbeschädigung"
+          },
+          {
+            "code": "Z72.0",
+            "display": "Konsum von Alkohol, Tabak, Arzneimitteln oder Drogen"
+          },
+          {
+            "code": "Z72.2",
+            "display": "Arzneimittel- oder Drogenkonsum"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "R11.2",
+            "display": "Übelkeit mit Erbrechen, nicht näher bezeichnet"
+          },
+          {
+            "code": "R37",
+            "display": "Sexuelle Funktionsstörung, nicht näher bezeichnet"
+          },
+          {
+            "code": "R45.84",
+            "display": "Anhedonia"
           }
         ]
       }

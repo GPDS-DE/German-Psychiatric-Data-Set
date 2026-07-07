@@ -1,0 +1,433 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "CTQQuestionnaireResponseExample",
+  "questionnaire": "http://charite.de/fhir/psycho/Questionnaire/CTQ-de-DE",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/PatientExample"
+  },
+  "authored": "2024-03-15",
+  "item": [
+    {
+      "linkId": "CTQ-date",
+      "answer": [
+        {
+          "valueDate": "2024-03-15"
+        }
+      ]
+    },
+    {
+      "linkId": "CTQ-growing-up",
+      "item": [
+        {
+          "linkId": "CTQ-q1",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q2",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q3",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q4",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q5",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q6",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q7",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q8",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q9",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q10",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q11",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q12",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q13",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q14",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q15",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q16",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q17",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q18",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q19",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q20",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q21",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q22",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q23",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q24",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q25",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q26",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q27",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CTQ-q28",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "27789000",
+                "system": "http://snomed.info/sct",
+                "display": "Infrequent (qualifier value)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "CTQ-score",
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 84,
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "CTQ-score-selected1",
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 15,
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "CTQ-score-selected2",
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 15,
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "CTQ-score-selected3",
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 15,
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "CTQ-score-selected4",
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 15,
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "CTQ-score-selected5",
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 15,
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          }
+        }
+      ]
+    }
+  ]
+}
