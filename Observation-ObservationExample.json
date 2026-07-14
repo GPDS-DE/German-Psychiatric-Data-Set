@@ -16,34 +16,9 @@
       }
     ]
   },
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "code": "162470006",
-        "system": "http://snomed.info/sct",
-        "display": "Symptom severe (finding)"
-      }
-    ]
-  },
   "focus": [
     {
       "reference": "Condition/ConditionExample"
     }
-  ],
-  "_effectiveDateTime": {
-    "extension": [
-      {
-        "url": "http://hl7.eu/fhir/extensions/StructureDefinition/periods-of-life",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "713152004",
-              "system": "http://snomed.info/sct",
-              "display": "Early childhood"
-            }
-          ]
-        }
-      }
-    ]
-  }
+  ]
 }
