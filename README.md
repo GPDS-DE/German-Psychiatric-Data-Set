@@ -43,11 +43,13 @@ Piper Ranallo (University of Minnesota)
 William Bosl (University of San Francisco)
 
 # Technical Implementation:
-Nina Haffer (BIH@Charité)
+Nina Haffer (Charité)
 
 Julian Saß (BIH@Charité)
 
 Paul Müller (BIH@Charité)
+
+Lotte Schwiening (BIH@Charité)
 
 # Contact Information:
 nina.haffer@charite.de
