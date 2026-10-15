@@ -12,10 +12,6 @@
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "concept": [
           {
-            "code": "F22.8",
-            "display": "Sonstige anhaltende wahnhafte Störungen"
-          },
-          {
             "code": "F98.00",
             "display": "Enuresis nocturna"
           },
@@ -26,10 +22,6 @@
           {
             "code": "F98.1",
             "display": "Nichtorganische Enkopresis"
-          },
-          {
-            "code": "G47.-",
-            "display": "Schlafstörungen"
           },
           {
             "code": "G47.8",
@@ -72,10 +64,6 @@
             "display": "Sonstige Symptome, die das Erkennungsvermögen und das Bewusstsein betreffen"
           },
           {
-            "code": "R41.-",
-            "display": "Sonstige Symptome, die das Erkennungsvermögen und das Bewusstsein betreffen"
-          },
-          {
             "code": "R41.0",
             "display": "Orientierungsstörung, nicht näher bezeichnet"
           },
@@ -85,10 +73,6 @@
           },
           {
             "code": "R44",
-            "display": "Sonstige Symptome, die die Sinneswahrnehmungen und das Wahrnehmungsvermögen betreffen"
-          },
-          {
-            "code": "R44.-",
             "display": "Sonstige Symptome, die die Sinneswahrnehmungen und das Wahrnehmungsvermögen betreffen"
           },
           {
@@ -109,10 +93,6 @@
           },
           {
             "code": "R45",
-            "display": "Symptome, die die Stimmung betreffen"
-          },
-          {
-            "code": "R45.-",
             "display": "Symptome, die die Stimmung betreffen"
           },
           {
@@ -180,10 +160,6 @@
             "display": "Schmerz, anderenorts nicht klassifiziert"
           },
           {
-            "code": "R52.-",
-            "display": "Schmerz, anderenorts nicht klassifiziert"
-          },
-          {
             "code": "R52.8",
             "display": "Schmerz, anderenorts nicht klassifiziert"
           },
@@ -240,15 +216,11 @@
             "display": "Toxische Wirkung von Alkohol"
           },
           {
-            "code": "T51.-",
-            "display": "Toxische Wirkung von Alkohol"
-          },
-          {
             "code": "T51.8",
             "display": "Sonstige Alkohole"
           },
           {
-            "code": "X84.9!",
+            "code": "X84.9",
             "display": "Absichtliche Selbstbeschädigung"
           },
           {

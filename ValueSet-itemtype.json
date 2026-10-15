@@ -4,7 +4,7 @@
   "name": "ItemType",
   "id": "itemtype",
   "title": "Item Type Instrument Profile",
-  "description": "A Value Set for example codes",
+  "description": "Im Profil PsychQuestionnaire zulässige Item-Typen (FHIR R4).",
   "url": "http://charite.de/fhir/psycho/ValueSet/itemtype",
   "compose": {
     "include": [
@@ -20,16 +20,24 @@
             "display": "Display"
           },
           {
+            "code": "choice",
+            "display": "Choice"
+          },
+          {
             "code": "date",
             "display": "Date"
           },
           {
-            "code": "question",
-            "display": "Question"
+            "code": "integer",
+            "display": "Integer"
           },
           {
-            "code": "coding",
-            "display": "Coding"
+            "code": "quantity",
+            "display": "Quantity"
+          },
+          {
+            "code": "string",
+            "display": "String"
           }
         ]
       }

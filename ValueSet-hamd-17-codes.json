@@ -20,7 +20,7 @@
             "display": "Initial insomnia (disorder)"
           },
           {
-            "code": "29373008",
+            "code": "67233009",
             "display": "Middle insomnia (disorder)"
           },
           {
@@ -164,10 +164,6 @@
           {
             "code": "C100409",
             "display": "GRID-HAMD-17 - Somatic Symptoms Gastrointestinal"
-          },
-          {
-            "code": "C130343",
-            "display": "HAMD 24 - Psychomotor Agitation"
           },
           {
             "code": "C100412",

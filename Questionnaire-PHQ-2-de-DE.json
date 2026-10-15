@@ -1,12 +1,18 @@
 {
   "resourceType": "Questionnaire",
   "id": "PHQ-2-de-DE",
-  "language": "de-DE",
-  "title": "Patient Health Questionnaire - 2-Item Short-form",
-  "status": "draft",
+  "meta": {
+    "profile": [
+      "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
+    ]
+  },
   "subjectType": [
     "Patient"
   ],
+  "url": "http://charite.de/fhir/psycho/Questionnaire/PHQ-2-de-DE",
+  "language": "de-DE",
+  "title": "Patient Health Questionnaire - 2-Item Short-form",
+  "status": "draft",
   "code": [
     {
       "code": "55757-9",

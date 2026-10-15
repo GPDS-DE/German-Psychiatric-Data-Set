@@ -2,22 +2,41 @@
   "resourceType": "ImplementationGuide",
   "id": "psycho",
   "url": "http://charite.de/fhir/psycho/ImplementationGuide/psycho",
-  "version": "0.1.0",
-  "name": "psycho",
+  "version": "1.0.0",
+  "name": "GermanPsychiatricDataSet",
+  "title": "German Psychiatric Data Set (GPDS)",
   "status": "draft",
-  "publisher": "Example Publisher",
+  "publisher": "Berlin Institute of Health at Charité – Universitätsmedizin Berlin",
   "contact": [
     {
-      "name": "Example Publisher",
+      "name": "Berlin Institute of Health at Charité – Universitätsmedizin Berlin",
       "telecom": [
         {
           "system": "url",
-          "value": "http://example.org/example-publisher"
+          "value": "https://www.bihealth.org"
+        },
+        {
+          "system": "email",
+          "value": "nina.haffer@charite.de"
         }
       ]
     }
   ],
+  "description": "FHIR R4 specification of the German Psychiatric Data Set (GPDS): psychiatric PROMs, CROMs and psychopathological assessments mapped to SNOMED CT, ICF, ICD, LOINC and NCIt.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "DE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Germany"
+        }
+      ]
+    }
+  ],
+  "copyright": "© 2023+ Berlin Institute of Health at Charité. Own artifacts licensed under CC BY 4.0. Third-party content keeps its own terms: SNOMED CT (SNOMED International), LOINC (Regenstrief Institute), ICD-10-GM (BfArM/WHO), ICD-11 and ICF (WHO), NCIt (NCI), and the wording of the psychiatric instruments (respective rights holders).",
   "packageId": "psycho",
+  "license": "CC-BY-4.0",
   "fhirVersion": [
     "4.0.1"
   ],
@@ -75,8 +94,9 @@
         "reference": {
           "reference": "Questionnaire/BDI-II-de-DE"
         },
-        "name": "BDI II",
-        "exampleBoolean": true
+        "name": "BDI-II (deutsch)",
+        "description": "Beck-Depressions-Inventar, 2. Revision (BDI-II), deutsche Fassung. Lizenzgeschützte Item-Texte sind nicht enthalten.",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {
@@ -85,6 +105,54 @@
         "name": "BDI-II Codes",
         "description": "A Value Set for example codes for BDI-II items",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Condition/CTQConditionExample"
+        },
+        "name": "Beispiel: Befund zum CTQ",
+        "description": "Fiktive Condition, auf die sich der CTQ-Score bezieht.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/CTQQuestionnaireResponseExample"
+        },
+        "name": "Beispiel: CTQ-Antwortbogen",
+        "description": "Fiktiver ausgefüllter CTQ als QuestionnaireResponse.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/CTQObservationExample"
+        },
+        "name": "Beispiel: CTQ-Gesamtscore",
+        "description": "Fiktiver CTQ-Gesamtscore als Observation; die Komponente gibt die Lebensphase an, auf die sich die berichteten Erfahrungen beziehen.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/ConditionExample"
+        },
+        "name": "Beispiel: Diagnose",
+        "description": "Fiktive Diagnose einer mittelgradigen depressiven Episode als Condition.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnareResponseExample"
+        },
+        "name": "Beispiel: HAMD-17-Antwortbogen",
+        "description": "Fiktiver ausgefüllter HAMD-17 als QuestionnaireResponse.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/ObservationExample"
+        },
+        "name": "Beispiel: HAMD-17-Gesamtscore",
+        "description": "Fiktiver HAMD-17-Gesamtscore als Observation.",
+        "exampleBoolean": true
       },
       {
         "reference": {
@@ -106,15 +174,9 @@
         "reference": {
           "reference": "Questionnaire/CTQ-de-DE"
         },
-        "name": "Childhood Trauma Questionnaire",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Condition/ConditionExample"
-        },
-        "name": "ConditionExample",
-        "exampleBoolean": true
+        "name": "CTQ (deutsch)",
+        "description": "Childhood Trauma Questionnaire (CTQ), deutsche Fassung, als FHIR Questionnaire mit Terminologie-Mapping.",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {
@@ -123,27 +185,6 @@
         "name": "CTQ Codes",
         "description": "A Value Set for example codes for the Childhood Trauma Questionnaire (CTQ)",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Condition/CTQConditionExample"
-        },
-        "name": "CTQConditionExample",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/CTQObservationExample"
-        },
-        "name": "CTQObservationExample",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "QuestionnaireResponse/CTQQuestionnaireResponseExample"
-        },
-        "name": "CTQQuestionnaireResponseExample",
-        "exampleBoolean": true
       },
       {
         "reference": {
@@ -203,6 +244,22 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/HAMD-17-de-DE"
+        },
+        "name": "HAMD-17 (deutsch)",
+        "description": "Hamilton Depression Rating Scale mit 17 Items (HAMD-17), deutsche Fassung auf Basis von HAMD-7 und GRID-HAMD-17.",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/HAMD-17-en-US"
+        },
+        "name": "HAMD-17 (English)",
+        "description": "Hamilton Depression Rating Scale, 17 items (HAMD-17), English version, as a FHIR Questionnaire with terminology mapping.",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
+      },
+      {
+        "reference": {
           "reference": "ValueSet/hamd-17-codes"
         },
         "name": "HAMD-17 Codes",
@@ -211,24 +268,11 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/HAMD-17-en-US"
-        },
-        "name": "Hamilton Depression Rating Scale (17-items)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/HAMD-17-de-DE"
-        },
-        "name": "Hamilton Depression Rating Scale (17-items)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Questionnaire/HAMD-7-de-DE"
         },
-        "name": "Hamilton Depression Rating Scale (7-item Kurzform)",
-        "exampleBoolean": true
+        "name": "HAMD-7 (deutsch)",
+        "description": "Hamilton Depression Rating Scale, 7-Item-Kurzform (HAMD-7), deutsche Fassung.",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {
@@ -267,36 +311,40 @@
           "reference": "ValueSet/itemtype"
         },
         "name": "Item Type Instrument Profile",
-        "description": "A Value Set for example codes",
+        "description": "Im Profil PsychQuestionnaire zulässige Item-Typen (FHIR R4).",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "Questionnaire/Kid-KINDL-de-DE"
         },
-        "name": "Kid-KINDL",
-        "exampleBoolean": true
+        "name": "Kid-KINDL (deutsch)",
+        "description": "KINDL-Fragebogen zur gesundheitsbezogenen Lebensqualität, Selbstbericht für Kinder (Kid-KINDL).",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {
           "reference": "Questionnaire/Kiddo-KINDL-de-DE"
         },
-        "name": "Kiddo-KINDL",
-        "exampleBoolean": true
+        "name": "Kiddo-KINDL (deutsch)",
+        "description": "KINDL-Fragebogen zur gesundheitsbezogenen Lebensqualität, Selbstbericht für Jugendliche (Kiddo-KINDL).",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {
           "reference": "Questionnaire/Kiddy-KINDL-de-DE"
         },
-        "name": "Kiddy-KINDL",
-        "exampleBoolean": true
+        "name": "Kiddy-KINDL (deutsch)",
+        "description": "KINDL-Fragebogen zur gesundheitsbezogenen Lebensqualität, Fassung für jüngere Kinder (Kiddy-KINDL).",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {
           "reference": "Questionnaire/KINDL-de-DE-Elternversion"
         },
-        "name": "KINDL-Elternversion",
-        "exampleBoolean": true
+        "name": "KINDL-Elternversion (deutsch)",
+        "description": "KINDL-Fragebogen zur gesundheitsbezogenen Lebensqualität, Fremdbericht durch die Eltern.",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {
@@ -308,21 +356,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/MyPatient"
-        },
-        "name": "MyPatient",
-        "description": "An example profile of the Patient resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Observation/ObservationExample"
-        },
-        "name": "ObservationExample",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "ValueSet/orientierung"
         },
         "name": "Orientierung",
@@ -331,39 +364,42 @@
       },
       {
         "reference": {
+          "reference": "Patient/PatientExample"
+        },
+        "name": "PatientExample",
+        "description": "Fiktiver Beispielpatient für die Beispielinstanzen des GPDS.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/PHQ-2-de-DE"
         },
-        "name": "Patient Health Questionnaire - 2-Item Short-form",
-        "exampleBoolean": true
+        "name": "PHQ-2 (deutsch)",
+        "description": "Patient Health Questionnaire mit 2 Items (PHQ-2), deutsche Fassung, kodiert mit LOINC.",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {
           "reference": "Questionnaire/PHQ-9-de-DE"
         },
-        "name": "Patient Health Questionnaire - 9-Item Short-form",
-        "exampleBoolean": true
+        "name": "PHQ-9 (deutsch)",
+        "description": "Patient Health Questionnaire mit 9 Items (PHQ-9), deutsche Fassung, kodiert mit LOINC.",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {
           "reference": "Questionnaire/PHQ-9-en-US"
         },
-        "name": "Patient Health Questionnaire - 9-Items",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Patient/PatientExample"
-        },
-        "name": "PatientExample",
-        "description": "An example of a patient with a license to krill.",
-        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/MyPatient"
+        "name": "PHQ-9 (English)",
+        "description": "Patient Health Questionnaire, 9 items (PHQ-9), English version, coded with LOINC.",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {
           "reference": "StructureDefinition/psych-befund-questionnaire"
         },
         "name": "Profil für Psychiatrische Instrumente und Befunde",
-        "description": "Ein allgemeines Profil für psychiatrische Instrumente und Befunde, basierend auf strukturierten Fragebögen zur Erhebung von Symptomen und Diagnosen.",
+        "description": "Ein allgemeines Profil für psychiatrische Instrumente und Befunde, basierend auf strukturierten Fragebögen zur Erhebung von Symptomen und Diagnosen. Das Profil leitet sich vom Profil SDC Base Questionnaire des HL7 Structured Data Capture (SDC) Implementation Guide 3.0.0 ab und nutzt für die Score-Berechnung die SDC-Extension calculatedExpression sowie die Standard-Extension ordinalValue.",
         "exampleBoolean": false
       },
       {
@@ -381,13 +417,6 @@
         "name": "Psychische Funktionen",
         "description": "Diese Gruppe umfasst Konzepte, die psychische Funktionen wie Bewusstsein, Aufmerksamkeit, Gedächtnis und Denken betreffen.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "QuestionnaireResponse/QuestionnareResponseExample"
-        },
-        "name": "QuestionnareResponseExample",
-        "exampleBoolean": true
       },
       {
         "reference": {
@@ -481,8 +510,9 @@
         "reference": {
           "reference": "Questionnaire/YMRS-de-DE"
         },
-        "name": "YMRS",
-        "exampleBoolean": true
+        "name": "YMRS (deutsch)",
+        "description": "Young Mania Rating Scale (YMRS), deutsche Fassung. Lizenzgeschützte Item-Texte sind nicht enthalten.",
+        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {

@@ -1,12 +1,18 @@
 {
   "resourceType": "Questionnaire",
   "id": "PHQ-9-de-DE",
-  "language": "de-DE",
-  "title": "Patient Health Questionnaire - 9-Item Short-form",
-  "status": "draft",
+  "meta": {
+    "profile": [
+      "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
+    ]
+  },
   "subjectType": [
     "Patient"
   ],
+  "url": "http://charite.de/fhir/psycho/Questionnaire/PHQ-9-de-DE",
+  "language": "de-DE",
+  "title": "Patient Health Questionnaire - 9-Item Short-form",
+  "status": "draft",
   "code": [
     {
       "code": "44249-1",

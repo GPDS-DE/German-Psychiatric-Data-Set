@@ -1,17 +1,23 @@
 {
   "resourceType": "Questionnaire",
   "id": "HAMD-17-en-US",
-  "language": "en-US",
-  "title": "Hamilton Depression Rating Scale (17-items)",
-  "status": "draft",
+  "meta": {
+    "profile": [
+      "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
+    ]
+  },
   "subjectType": [
     "Patient"
   ],
+  "url": "http://charite.de/fhir/psycho/Questionnaire/HAMD-17-en-US",
+  "language": "en-US",
+  "title": "Hamilton Depression Rating Scale (17-items)",
+  "status": "draft",
   "code": [
     {
-      "code": "1231454007",
+      "code": "273503001",
       "system": "http://snomed.info/sct",
-      "display": "Hamilton Anxiety Rating Scale (assessment scale)"
+      "display": "Hamilton rating scale for depression (assessment scale)"
     },
     {
       "code": "C100767",
@@ -250,7 +256,7 @@
           "linkId": "q3-HAMD-17-suicidality",
           "code": [
             {
-              "code": "3161000000000000",
+              "code": "3161000175102",
               "system": "http://snomed.info/sct",
               "display": "Suicide risk (observable entity)"
             },
@@ -341,10 +347,11 @@
       "type": "choice",
       "enableWhen": [
         {
-          "question": "q-repeat-question3",
+          "question": "q3-HAMD-17-suicidality",
           "operator": "=",
           "answerCoding": {
-            "code": "161474000"
+            "code": "161474000",
+            "system": "http://snomed.info/sct"
           }
         }
       ],
@@ -354,7 +361,7 @@
           "linkId": "qrepeat-question3",
           "code": [
             {
-              "code": "3161000000000000",
+              "code": "3161000175102",
               "system": "http://snomed.info/sct",
               "display": "Suicide risk (observable entity)"
             }
@@ -521,7 +528,7 @@
           "linkId": "q5-HAMD-17-insomnia-middle",
           "code": [
             {
-              "code": "29373008",
+              "code": "67233009",
               "system": "http://snomed.info/sct",
               "display": "Middle insomnia (disorder)"
             },
@@ -721,11 +728,7 @@
             },
             {
               "valueCoding": {
-                "id": "ans2-HAMD-17-interest"
-              }
-            },
-            {
-              "valueCoding": {
+                "id": "ans2-HAMD-17-interest",
                 "system": "http://snomed.info/sct",
                 "code": "162469005",
                 "display": "HAMILTON M. (1960). A rating scale for depression. Journal of neurology, neurosurgery, and psychiatry, 23(1), 56–62. https://doi.org/10.1136/jnnp.23.1.56"
@@ -780,7 +783,7 @@
           "linkId": "q8-HAMD-17-slow",
           "code": [
             {
-              "code": "#1144814003",
+              "code": "1144814003",
               "system": "http://snomed.info/sct",
               "display": "Psychomotor retardation (finding)"
             },
@@ -827,11 +830,7 @@
             },
             {
               "valueCoding": {
-                "id": "ans2-HAMD-17-slow"
-              }
-            },
-            {
-              "valueCoding": {
+                "id": "ans2-HAMD-17-slow",
                 "system": "http://snomed.info/sct",
                 "code": "162469005",
                 "display": "HAMILTON M. (1960). A rating scale for depression. Journal of neurology, neurosurgery, and psychiatry, 23(1), 56–62. https://doi.org/10.1136/jnnp.23.1.56"
@@ -1149,7 +1148,7 @@
             {
               "code": "365852007",
               "system": "http://snomed.info/sct",
-              "display": "Respiratory function finding (finding)"
+              "display": "Finding of respiratory function (finding)"
             },
             {
               "code": "68978004",
@@ -1343,7 +1342,7 @@
       "item": [
         {
           "type": "choice",
-          "linkId": "q13-HAMD-7-energy-level",
+          "linkId": "q13-HAMD-17-energy-level",
           "code": [
             {
               "code": "440398005",
@@ -1422,7 +1421,8 @@
           "question": "q13-HAMD-17-energy-level",
           "operator": "=",
           "answerCoding": {
-            "code": "161874006"
+            "code": "161874006",
+            "system": "http://snomed.info/sct"
           }
         }
       ],
@@ -1451,7 +1451,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "id": "ans0-HAMD-17-energy-level",
+                "id": "repeat-ans0-HAMD-17-energy-level",
                 "system": "http://snomed.info/sct",
                 "code": "84387000",
                 "display": "HAMILTON M. (1960). A rating scale for depression. Journal of neurology, neurosurgery, and psychiatry, 23(1), 56–62. https://doi.org/10.1136/jnnp.23.1.56"
@@ -1465,7 +1465,7 @@
             },
             {
               "valueCoding": {
-                "id": "ans1-HAMD-17-energy-level",
+                "id": "repeat-ans1-HAMD-17-energy-level",
                 "system": "http://snomed.info/sct",
                 "code": "161874006",
                 "display": "HAMILTON M. (1960). A rating scale for depression. Journal of neurology, neurosurgery, and psychiatry, 23(1), 56–62. https://doi.org/10.1136/jnnp.23.1.56"
@@ -1479,7 +1479,7 @@
             },
             {
               "valueCoding": {
-                "id": "ans2-HAMD-17-energy-level",
+                "id": "repeat-ans2-HAMD-17-energy-level",
                 "system": "http://snomed.info/sct",
                 "code": "161874006",
                 "display": "HAMILTON M. (1960). A rating scale for depression. Journal of neurology, neurosurgery, and psychiatry, 23(1), 56–62. https://doi.org/10.1136/jnnp.23.1.56"

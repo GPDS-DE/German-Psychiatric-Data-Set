@@ -20,22 +20,6 @@
     }
   ],
   "effectiveDateTime": "2024-03-15",
-  "_effectiveDateTime": {
-    "extension": [
-      {
-        "url": "http://hl7.eu/fhir/extensions/StructureDefinition/periods-of-life",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "255398004",
-              "system": "http://snomed.info/sct",
-              "display": "Childhood (qualifier value)"
-            }
-          ]
-        }
-      }
-    ]
-  },
   "valueQuantity": {
     "value": 84,
     "unit": "score",
@@ -45,6 +29,22 @@
   "focus": [
     {
       "reference": "Condition/CTQConditionExample"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "text": "Period of life the reported experiences refer to"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "68433009",
+            "system": "http://snomed.info/sct",
+            "display": "Childhood (finding)"
+          }
+        ]
+      }
     }
   ]
 }

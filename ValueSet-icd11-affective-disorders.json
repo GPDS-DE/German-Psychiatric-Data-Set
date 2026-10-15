@@ -12,96 +12,112 @@
         "system": "http://id.who.int/icd/release/11/mms",
         "concept": [
           {
-            "code": "6A7",
-            "display": "Disorders of mood"
-          },
-          {
-            "code": "6A70",
-            "display": "Manic episode"
-          },
-          {
-            "code": "6A71",
+            "code": "6A60",
             "display": "Bipolar type I disorder"
           },
           {
-            "code": "6A71.0",
-            "display": "Current manic episode without psychotic symptoms"
-          },
-          {
-            "code": "6A71.1",
-            "display": "Current manic episode with psychotic symptoms"
-          },
-          {
-            "code": "6A71.2",
-            "display": "Current depressive episode without psychotic symptoms"
-          },
-          {
-            "code": "6A71.3",
-            "display": "Current depressive episode with psychotic symptoms"
-          },
-          {
-            "code": "6A71.4",
-            "display": "Mixed episode"
-          },
-          {
-            "code": "6A72",
+            "code": "6A61",
             "display": "Bipolar type II disorder"
           },
           {
-            "code": "6A73",
-            "display": "Depressive episode"
-          },
-          {
-            "code": "6A73.0",
-            "display": "Mild depressive episode"
-          },
-          {
-            "code": "6A73.1",
-            "display": "Moderate depressive episode"
-          },
-          {
-            "code": "6A73.2",
-            "display": "Severe depressive episode without psychotic symptoms"
-          },
-          {
-            "code": "6A73.3",
-            "display": "Severe depressive episode with psychotic symptoms"
-          },
-          {
-            "code": "6A74",
-            "display": "Recurrent depressive disorder"
-          },
-          {
-            "code": "6A74.0",
-            "display": "Current mild depressive episode"
-          },
-          {
-            "code": "6A74.1",
-            "display": "Current moderate depressive episode"
-          },
-          {
-            "code": "6A74.2",
-            "display": "Current severe depressive episode without psychotic symptoms"
-          },
-          {
-            "code": "6A74.3",
-            "display": "Current severe depressive episode with psychotic symptoms"
-          },
-          {
-            "code": "6A75",
-            "display": "Dysthymic disorder"
-          },
-          {
-            "code": "6A76",
+            "code": "6A62",
             "display": "Cyclothymic disorder"
           },
           {
-            "code": "6A77",
+            "code": "6A6Y",
+            "display": "Other specified bipolar or related disorders"
+          },
+          {
+            "code": "6A6Z",
+            "display": "Bipolar or related disorders, unspecified"
+          },
+          {
+            "code": "6A70",
+            "display": "Single episode depressive disorder"
+          },
+          {
+            "code": "6A70.0",
+            "display": "Single episode depressive disorder, mild"
+          },
+          {
+            "code": "6A70.1",
+            "display": "Single episode depressive disorder, moderate, without psychotic symptoms"
+          },
+          {
+            "code": "6A70.2",
+            "display": "Single episode depressive disorder, moderate, with psychotic symptoms"
+          },
+          {
+            "code": "6A70.3",
+            "display": "Single episode depressive disorder, severe, without psychotic symptoms"
+          },
+          {
+            "code": "6A70.4",
+            "display": "Single episode depressive disorder, severe, with psychotic symptoms"
+          },
+          {
+            "code": "6A70.5",
+            "display": "Single episode depressive disorder, unspecified severity"
+          },
+          {
+            "code": "6A70.6",
+            "display": "Single episode depressive disorder, currently in partial remission"
+          },
+          {
+            "code": "6A70.7",
+            "display": "Single episode depressive disorder, currently in full remission"
+          },
+          {
+            "code": "6A71",
+            "display": "Recurrent depressive disorder"
+          },
+          {
+            "code": "6A71.0",
+            "display": "Recurrent depressive disorder, current episode mild"
+          },
+          {
+            "code": "6A71.1",
+            "display": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms"
+          },
+          {
+            "code": "6A71.2",
+            "display": "Recurrent depressive disorder, current episode moderate, with psychotic symptoms"
+          },
+          {
+            "code": "6A71.3",
+            "display": "Recurrent depressive disorder, current episode severe, without psychotic symptoms"
+          },
+          {
+            "code": "6A71.4",
+            "display": "Recurrent depressive disorder, current episode severe, with psychotic symptoms"
+          },
+          {
+            "code": "6A71.5",
+            "display": "Recurrent depressive disorder, current episode, unspecified severity"
+          },
+          {
+            "code": "6A71.6",
+            "display": "Recurrent depressive disorder, currently in partial remission"
+          },
+          {
+            "code": "6A71.7",
+            "display": "Recurrent depressive disorder, currently in full remission"
+          },
+          {
+            "code": "6A72",
+            "display": "Dysthymic disorder"
+          },
+          {
+            "code": "6A73",
             "display": "Mixed depressive and anxiety disorder"
           },
           {
+            "code": "6A7Y",
+            "display": "Other specified depressive disorders"
+          },
+          {
             "code": "6A7Z",
-            "display": "Disorders of mood, unspecified"
+            "display": "Depressive disorders, unspecified"
           }
         ]
       }
