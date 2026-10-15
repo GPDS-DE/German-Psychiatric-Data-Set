@@ -22,7 +22,7 @@ Discussion Forum: international FHIR chat
 Participation: Interoperability Forum
 
 # Summary
-This Minimal Data Set (MDS) for psychiatric instruments includes 12 PROMs, CROMs and Psychopathological Assessments. The MDS primarily covers the fields of psychiatry and questionnaire data.
+This Minimal Data Set (MDS) for psychiatric instruments includes PROMs, CROMs and Psychopathological Assessments. The MDS primarily covers the fields of psychiatry and questionnaire data.
 
 # Authors and Contacts 
 # Consulted Experts:
