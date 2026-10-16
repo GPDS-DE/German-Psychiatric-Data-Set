@@ -5,7 +5,7 @@ library(dplyr)
 
 
 # Define the file path and file name
-file_path <- "/Users/ninahaffer/Downloads/R Analysen"
+file_path <- "."
 file_name <- "AMDP SNOMED CT.xlsx"
 full_path <- file.path(file_path, file_name)
 
