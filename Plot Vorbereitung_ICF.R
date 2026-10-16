@@ -1,11 +1,11 @@
 # Load necessary libraries
 library(readxl)  # Zum Lesen der Excel-Datei
-library(dplyr)   # Für die Datenverarbeitung
-library(ggplot2) # Für die Visualisierung
+library(dplyr)   # FÃ¼r die Datenverarbeitung
+library(ggplot2) # FÃ¼r die Visualisierung
 library(tidyr)   # Zum Transformieren der Daten
 
 # Define the file path and file name
-file_path <- "/Users/ninahaffer/Downloads/R ISO"
+file_path <- "."
 file_name <- "ISO-ICF.xlsx"
 full_path <- file.path(file_path, file_name)
 
@@ -127,14 +127,14 @@ cleaned_columns <- list(cleaned_column1, cleaned_column2, cleaned_column3,
                         cleaned_column7, cleaned_column8, cleaned_column9, 
                         cleaned_column10)
 
-# Daten für den Plot vorbereiten
+# Daten fÃ¼r den Plot vorbereiten
 plot_data <- lapply(seq_along(cleaned_columns), function(i) {
         col_data <- cleaned_columns[[i]]
         
-        # Zähle die Häufigkeiten der Werte zwischen 0 und 4
+        # ZÃ¤hle die HÃ¤ufigkeiten der Werte zwischen 0 und 4
         value_counts <- table(factor(col_data, levels = 0:4))
         
-        # Berechne Prozentsätze
+        # Berechne ProzentsÃ¤tze
         percentages <- prop.table(value_counts) * 100
         
         # Erstelle ein DataFrame mit Spaltenindex und Werten
@@ -147,8 +147,8 @@ plot_data <- lapply(seq_along(cleaned_columns), function(i) {
 plot_data <- do.call(rbind, plot_data)
 
 # Farben manuell definieren (0 = Blau, 4 = Lila)
-custom_colors <- c("0" = "#e0f3f8",  # Helles Türkis
-                   "1" = "#abd9e9",  # Türkis
+custom_colors <- c("0" = "#e0f3f8",  # Helles TÃ¼rkis
+                   "1" = "#abd9e9",  # TÃ¼rkis
                    "2" = "#74add1",  # Hellblau 
                    "3" = "#4575b4",  # Blau 
                    "4" = "#d73027")  # Lila
