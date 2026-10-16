@@ -92,14 +92,6 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/BDI-II-de-DE"
-        },
-        "name": "BDI-II (deutsch)",
-        "description": "Beck-Depressions-Inventar, 2. Revision (BDI-II), deutsche Fassung. Lizenzgeschützte Item-Texte sind nicht enthalten.",
-        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
-      },
-      {
-        "reference": {
           "reference": "ValueSet/bdi-ii-codes"
         },
         "name": "BDI-II Codes",
@@ -172,14 +164,6 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/CTQ-de-DE"
-        },
-        "name": "CTQ (deutsch)",
-        "description": "Childhood Trauma Questionnaire (CTQ), deutsche Fassung, als FHIR Questionnaire mit Terminologie-Mapping.",
-        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
-      },
-      {
-        "reference": {
           "reference": "ValueSet/ctq-codes"
         },
         "name": "CTQ Codes",
@@ -241,14 +225,6 @@
         "name": "Fragebogenidentifikation",
         "description": "A Value Set for example codes",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/HAMD-17-de-DE"
-        },
-        "name": "HAMD-17 (deutsch)",
-        "description": "Hamilton Depression Rating Scale mit 17 Items (HAMD-17), deutsche Fassung auf Basis von HAMD-7 und GRID-HAMD-17.",
-        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {
@@ -505,14 +481,6 @@
         "name": "Weinen",
         "description": "A Value Set for example codes",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/YMRS-de-DE"
-        },
-        "name": "YMRS (deutsch)",
-        "description": "Young Mania Rating Scale (YMRS), deutsche Fassung. Lizenzgeschützte Item-Texte sind nicht enthalten.",
-        "exampleCanonical": "http://charite.de/fhir/psycho/StructureDefinition/psych-befund-questionnaire"
       },
       {
         "reference": {
