@@ -55,7 +55,7 @@ print(prop_agreement)
 
 
 # Define the file path and file name
-file_path <- "/Users/ninahaffer/Downloads/R Analysen"
+file_path <- "."
 file_name <- "AMDP ICF.xlsx"
 full_path <- file.path(file_path, file_name)
 
@@ -105,7 +105,7 @@ print(prop_agreement)
 
 
 # Define the file path and file name
-file_path <- "/Users/ninahaffer/Downloads/R Analysen"
+file_path <- "."
 file_name <- "AMDP ICD-10.xlsx"
 full_path <- file.path(file_path, file_name)
 
@@ -156,7 +156,7 @@ print(prop_agreement)
 
 
 # Define the file path and file name
-file_path <- "/Users/ninahaffer/Downloads/R Analysen"
+file_path <- "."
 file_name <- "AMDP ICD-11.xlsx"
 full_path <- file.path(file_path, file_name)
 
