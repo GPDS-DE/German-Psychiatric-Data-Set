@@ -106,11 +106,11 @@ print(prop_agreement)
 
 # Define the file path and file name
 file_path <- "."
-file_name <- "AMDP ICD-10.xlsx"
+file_name <- "Kodierung von psychiatrischen Befunden_AMDP_CASCAP 2_070726.xlsx"
 full_path <- file.path(file_path, file_name)
 
 # Read the Excel file
-data_ICD10 <- read_excel(full_path)
+data_ICD10 <- read_excel(full_path, sheet = "AMDP_ICD-10")
 data_clean_ICD10 <- na.omit(data_ICD10)
 
 # Extract the relevant columns for interrater agreement
